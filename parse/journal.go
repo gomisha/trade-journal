@@ -3,12 +3,21 @@ package parse1
 import (
 	"encoding/csv"
 	"fmt"
+	"io"
 	"log"
 	"os"
 	"strings"
 )
 
+type Transaction struct {
+	ticker  string
+	account string
+	date    string
+}
+
 type Journal struct {
+	// each entry is for a ticker and all the transactions associated with that ticker
+	trades map[string][]Transaction
 }
 
 func NewJournal() Journal {
@@ -37,7 +46,7 @@ func ScrubFile(csvPath string) {
 	}
 }
 
-func (j Journal) ParseTrades(csvPath string) [][]string {
+func (j *Journal) ParseTrades(csvPath string) [][]string {
 	ScrubFile(csvPath)
 
 	file, err := os.Open(csvPath)
@@ -49,18 +58,60 @@ func (j Journal) ParseTrades(csvPath string) [][]string {
 
 	// expect variable number of columns so parser won't crash
 	reader.FieldsPerRecord = -1
+	accountAlias := ""
 
-	records, err := reader.ReadAll()
+	for {
+		rec, err := reader.Read()
+		if err == io.EOF {
+			break
+		}
+		if err != nil {
+			log.Fatal(err)
+		}
 
-	if err != nil {
-		log.Fatal(err)
+		// find account alias
+		if rec[0] == "Account Information" && rec[1] == "Data" && rec[2] == "Account Alias" {
+			accountAlias = rec[3]
+		}
+
+		// find trade entries
+		if rec[0] == "Trades" && rec[1] == "Data" && rec[2] == "Order" {
+			fmt.Printf("%+v\n", rec)
+			transaction := Transaction{
+				account: accountAlias,
+			}
+			switch rec[3] {
+			case "Stocks":
+				// stock ticker will be in this column
+				transaction.ticker = rec[5]
+			case "Equity and Index Options":
+				optionTicker := strings.Split(rec[5], " ")
+				// options ticker will be in first split index: PR 20JAN23 9 C
+				transaction.ticker = optionTicker[0]
+			default:
+				log.Fatal("Invalid transaction type: ", rec[3])
+			}
+			j.addTransaction(transaction)
+		}
 	}
-
-	fmt.Println(records)
-
 	return [][]string{}
 }
 
-func (j Journal) toCsv([][]string) []string {
+func (j *Journal) addTransaction(transaction Transaction) {
+	if j.trades == nil {
+		j.trades = make(map[string][]Transaction)
+	}
+	// get list of transactions for that ticker
+	transactions := j.trades[transaction.ticker]
+	if transactions == nil {
+		transactions = []Transaction{transaction}
+	} else {
+		transactions = append(transactions, transaction)
+	}
+	j.trades[transaction.ticker] = transactions
+	//j.trades[transaction.ticker] = append(j.trades[transaction.ticker], transaction)
+}
+
+func (j *Journal) toCsv([][]string) []string {
 	return []string{}
 }
