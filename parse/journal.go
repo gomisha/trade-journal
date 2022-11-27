@@ -3,7 +3,6 @@ package parse1
 import (
 	"encoding/csv"
 	"fmt"
-	"io"
 	"log"
 	"os"
 	"path/filepath"
@@ -56,25 +55,13 @@ func (j Journal) ParseTrades(csvDir string, csvFile string) [][]string {
 	// expect variable number of columns so parser won't crash
 	reader.FieldsPerRecord = -1
 
-	for {
-		rec, err := reader.Read()
-		if err == io.EOF {
-			break
-		}
-		if err != nil {
-			log.Fatal(err)
-		}
+	records, err := reader.ReadAll()
 
-		fmt.Printf("%+v\n", rec)
+	if err != nil {
+		log.Fatal(err)
 	}
 
-	//records, err := reader.ReadAll()
-
-	//if err != nil {
-	//	panic(err)
-	//}
-
-	//fmt.Println(records)
+	fmt.Println(records)
 
 	return [][]string{}
 }
