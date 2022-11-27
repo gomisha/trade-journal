@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"log"
 	"os"
-	"path/filepath"
 	"strings"
 )
 
@@ -18,10 +17,8 @@ func NewJournal() Journal {
 
 // ScrubFile removed lines that will break the CSV parser.
 // Specifically lines with double quotes in the middle of the column that are not escaped.
-func ScrubFile(csvDir string, csvFile string) {
-	csvFilePath := filepath.Join(csvDir, csvFile)
-
-	input, err := os.ReadFile(csvFilePath)
+func ScrubFile(csvPath string) {
+	input, err := os.ReadFile(csvPath)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -34,18 +31,16 @@ func ScrubFile(csvDir string, csvFile string) {
 		}
 	}
 	output := strings.Join(lines, "\n")
-	err = os.WriteFile(csvFilePath, []byte(output), 0644)
+	err = os.WriteFile(csvPath, []byte(output), 0644)
 	if err != nil {
 		log.Fatalln(err)
 	}
 }
 
-func (j Journal) ParseTrades(csvDir string, csvFile string) [][]string {
-	ScrubFile(csvDir, csvFile)
+func (j Journal) ParseTrades(csvPath string) [][]string {
+	ScrubFile(csvPath)
 
-	//filepath.Join(rawJsonFilePath, testData.RawJSONTestRunFile)
-	csvFilePath := filepath.Join(csvDir, csvFile)
-	file, err := os.Open(csvFilePath)
+	file, err := os.Open(csvPath)
 	if err != nil {
 		log.Fatal(err)
 	}

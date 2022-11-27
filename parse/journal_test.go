@@ -5,10 +5,9 @@ import "github.com/stretchr/testify/require"
 
 func TestConvert(t *testing.T) {
 	// read original csv file trade data
-	filePath := "../testdata/input"
-	file := "1-dmc.csv"
+	filePath := "../testdata/input/1-dmc.csv"
 	journal := NewJournal()
-	actualParsedTrades := journal.ParseTrades(filePath, file)
+	actualParsedTrades := journal.ParseTrades(filePath)
 
 	expectedTrades := [][]string{
 		{"2022-11-25", "TFSA", "", "Trade", "", "", "PR", "", "", "", "Buy", "", "600", "10.588333333", "", "", "", "", "", "", "", "-3"},
