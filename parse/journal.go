@@ -10,10 +10,12 @@ import (
 )
 
 type Transaction struct {
-	ticker     string
-	account    string
-	date       string
-	commission string
+	ticker      string
+	account     string
+	date        string
+	commission  string
+	stockPrice  string
+	optionPrice string
 }
 
 type Journal struct {
@@ -89,10 +91,16 @@ func (j *Journal) ParseTrades(csvPath string) [][]string {
 			case "Stocks":
 				// stock ticker will be in this column
 				transaction.ticker = rec[5]
+				transaction.optionPrice = ""
+				transaction.stockPrice = rec[8]
+
 			case "Equity and Index Options":
 				optionTicker := strings.Split(rec[5], " ")
 				// options ticker will be in first split index: PR 20JAN23 9 C
 				transaction.ticker = optionTicker[0]
+				transaction.stockPrice = ""
+				transaction.optionPrice = rec[8]
+
 			default:
 				log.Fatal("Invalid transaction type: ", rec[3])
 			}
