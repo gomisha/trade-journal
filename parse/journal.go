@@ -10,9 +10,10 @@ import (
 )
 
 type Transaction struct {
-	ticker  string
-	account string
-	date    string
+	ticker     string
+	account    string
+	date       string
+	commission string
 }
 
 type Journal struct {
@@ -80,8 +81,9 @@ func (j *Journal) ParseTrades(csvPath string) [][]string {
 			dateTime := strings.Split(rec[6], " ")
 
 			transaction := Transaction{
-				account: accountAlias,
-				date:    dateTime[0],
+				account:    accountAlias,
+				date:       dateTime[0],
+				commission: rec[11],
 			}
 			switch rec[3] {
 			case "Stocks":
