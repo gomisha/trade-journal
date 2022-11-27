@@ -77,8 +77,11 @@ func (j *Journal) ParseTrades(csvPath string) [][]string {
 		// find trade entries
 		if rec[0] == "Trades" && rec[1] == "Data" && rec[2] == "Order" {
 			fmt.Printf("%+v\n", rec)
+			dateTime := strings.Split(rec[6], " ")
+
 			transaction := Transaction{
 				account: accountAlias,
+				date:    dateTime[0],
 			}
 			switch rec[3] {
 			case "Stocks":
