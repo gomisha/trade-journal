@@ -18,6 +18,7 @@ type Transaction struct {
 	optionPrice     string
 	optionContracts string
 	shares          string
+	action          string // buy / sell / transfer
 }
 
 type Journal struct {
@@ -97,6 +98,11 @@ func (j *Journal) ParseTrades(csvPath string) [][]string {
 				transaction.stockPrice = rec[8]
 				transaction.shares = rec[7]
 				transaction.optionContracts = ""
+				if strings.HasPrefix(transaction.shares, "-") {
+					transaction.action = "Sell"
+				} else {
+					transaction.action = "Buy"
+				}
 
 			case "Equity and Index Options":
 				optionTicker := strings.Split(rec[5], " ")
@@ -106,6 +112,11 @@ func (j *Journal) ParseTrades(csvPath string) [][]string {
 				transaction.optionPrice = rec[8]
 				transaction.shares = ""
 				transaction.optionContracts = rec[7]
+				if strings.HasPrefix(transaction.optionContracts, "-") {
+					transaction.action = "Sell"
+				} else {
+					transaction.action = "Buy"
+				}
 
 			default:
 				log.Fatal("Invalid transaction type: ", rec[3])
