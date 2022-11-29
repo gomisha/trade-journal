@@ -9,12 +9,12 @@ import (
 )
 
 type Transaction struct {
-	ticker          string
-	account         string
-	date            string
-	commission      string
-	stockPrice      string
-	optionPrice     string
+	ticker     string
+	account    string
+	date       string
+	commission string
+	price      string // stock / option price
+	//optionPrice     string
 	optionContracts string // # of contracts
 	optionContract  string // contract name e.g. PR 20JAN23 9 C
 	shares          string
@@ -89,13 +89,12 @@ func (j *Journal) ReadTransactions(csvPath string) []Transaction {
 				account:    accountAlias,
 				date:       dateTime[0],
 				commission: rec[11],
+				price:      rec[8],
 			}
 			switch rec[3] {
 			case "Stocks":
 				// stock ticker will be in this column
 				transaction.ticker = rec[5]
-				transaction.optionPrice = ""
-				transaction.stockPrice = rec[8]
 				transaction.shares = rec[7]
 				transaction.optionContracts = ""
 				transaction.action = "Trade"
@@ -109,9 +108,6 @@ func (j *Journal) ReadTransactions(csvPath string) []Transaction {
 				optionTicker := strings.Split(rec[5], " ")
 				// options ticker will be in first split index: PR 20JAN23 9 C
 				transaction.ticker = optionTicker[0]
-				transaction.stockPrice = ""
-				transaction.optionPrice = rec[8]
-				transaction.shares = ""
 				transaction.optionContracts = rec[7]
 				transaction.optionContract = rec[5]
 				transaction.action = "Trade - Option"
@@ -152,20 +148,36 @@ func (j *Journal) addTransaction(transaction Transaction) {
 }
 
 func (j *Journal) ToCsv(txs []Transaction) {
-	//builder := strings.Builder{}
-	//buf := new(strings.Builder)
-	//
-	//for _, transaction := range txs {
-	//	builder.WriteString()
-	//}
-
-	// convert [] Transaction to [] string so they can be written to CSV
+	// convert [] Transaction to [] string, so they can be written to CSV
 	var txsStr [][]string
-	for i, tx := range txs {
-		txsStr[i] = append(txsStr[i], tx.date)
-		txsStr[i] = append(txsStr[i], tx.account)
-		txsStr[i] = append(txsStr[i], "")
-		txsStr[i] = append(txsStr[i], tx.ticker)
+	for _, tx := range txs {
+		var row []string
+
+		//txsStr[i] = make([]string, 10)
+		row = append(row, tx.date)
+		row = append(row, tx.account)
+		row = append(row, "")
+		row = append(row, tx.action)
+		row = append(row, "")
+		row = append(row, "")
+		row = append(row, tx.ticker)
+		row = append(row, "")
+		row = append(row, "")
+		row = append(row, tx.optionContract)
+		row = append(row, tx.buySell)
+		row = append(row, tx.optionContracts)
+		row = append(row, tx.shares)
+		row = append(row, tx.price)
+		row = append(row, "")
+		row = append(row, "")
+		row = append(row, "")
+		row = append(row, "")
+		row = append(row, "")
+		row = append(row, "")
+		row = append(row, "")
+		row = append(row, tx.commission)
+
+		txsStr = append(txsStr, row)
 	}
 
 	// create the file
@@ -175,7 +187,6 @@ func (j *Journal) ToCsv(txs []Transaction) {
 	}
 	defer f.Close()
 
-	//writer := csv.NewWriter(f)
-	//writer.WriteAll()
-
+	writer := csv.NewWriter(f)
+	writer.WriteAll(txsStr)
 }

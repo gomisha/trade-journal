@@ -17,7 +17,7 @@ func TestReadTransactions(t *testing.T) {
 			account:    "TFSA",
 			date:       "2022-11-25",
 			commission: "-3",
-			stockPrice: "10.588333333",
+			price:      "10.588333333",
 			shares:     "600",
 			buySell:    "Buy",
 			action:     "Trade",
@@ -30,7 +30,7 @@ func TestReadTransactions(t *testing.T) {
 			buySell:         "Sell",
 			optionContracts: "-6",
 			optionContract:  "PR 20JAN23 9 C",
-			optionPrice:     "1.971666667",
+			price:           "1.971666667",
 			action:          "Trade - Option",
 		},
 		{
@@ -41,7 +41,7 @@ func TestReadTransactions(t *testing.T) {
 			buySell:         "Buy",
 			optionContracts: "6",
 			optionContract:  "PR 20JAN23 5 P",
-			optionPrice:     "0.053333333",
+			price:           "0.053333333",
 			action:          "Trade - Option",
 		},
 	}
