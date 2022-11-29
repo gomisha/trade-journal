@@ -16,13 +16,14 @@ type Transaction struct {
 	commission      string
 	stockPrice      string
 	optionPrice     string
-	optionContracts string
+	optionContracts string // # of contracts
+	optionContract  string // contract name e.g. PR 20JAN23 9 C
 	shares          string
 	action          string // buy / sell / transfer
 }
 
 type Journal struct {
-	// each entry is for a ticker and all the transactions associated with that ticker
+	// each map entry is for a ticker and all the transactions associated with that ticker
 	trades map[string][]Transaction
 }
 
@@ -52,7 +53,7 @@ func ScrubFile(csvPath string) {
 	}
 }
 
-func (j *Journal) ParseTrades(csvPath string) [][]string {
+func (j *Journal) ParseTrades(csvPath string) []Transaction {
 	ScrubFile(csvPath)
 
 	file, err := os.Open(csvPath)
@@ -83,7 +84,7 @@ func (j *Journal) ParseTrades(csvPath string) [][]string {
 		// find trade entries
 		if rec[0] == "Trades" && rec[1] == "Data" && rec[2] == "Order" {
 			fmt.Printf("%+v\n", rec)
-			dateTime := strings.Split(rec[6], " ")
+			dateTime := strings.Split(rec[6], ", ")
 
 			transaction := Transaction{
 				account:    accountAlias,
@@ -112,6 +113,7 @@ func (j *Journal) ParseTrades(csvPath string) [][]string {
 				transaction.optionPrice = rec[8]
 				transaction.shares = ""
 				transaction.optionContracts = rec[7]
+				transaction.optionContract = rec[5]
 				if strings.HasPrefix(transaction.optionContracts, "-") {
 					transaction.action = "Sell"
 				} else {
@@ -124,7 +126,17 @@ func (j *Journal) ParseTrades(csvPath string) [][]string {
 			j.addTransaction(transaction)
 		}
 	}
-	return [][]string{}
+
+	var transactions []Transaction
+
+	for ticker, tickerTransactions := range j.trades {
+		fmt.Printf("Key: %s, Value: %s\n", ticker, tickerTransactions)
+		for _, transaction := range tickerTransactions {
+			transactions = append(transactions, transaction)
+		}
+	}
+
+	return transactions
 }
 
 func (j *Journal) addTransaction(transaction Transaction) {
@@ -139,7 +151,6 @@ func (j *Journal) addTransaction(transaction Transaction) {
 		transactions = append(transactions, transaction)
 	}
 	j.trades[transaction.ticker] = transactions
-	//j.trades[transaction.ticker] = append(j.trades[transaction.ticker], transaction)
 }
 
 func (j *Journal) toCsv([][]string) []string {
