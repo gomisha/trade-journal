@@ -2,7 +2,6 @@ package parse1
 
 import (
 	"encoding/csv"
-	"fmt"
 	"io"
 	"log"
 	"os"
@@ -83,7 +82,6 @@ func (j *Journal) ParseTrades(csvPath string) []Transaction {
 
 		// find trade entries
 		if rec[0] == "Trades" && rec[1] == "Data" && rec[2] == "Order" {
-			fmt.Printf("%+v\n", rec)
 			dateTime := strings.Split(rec[6], ", ")
 
 			transaction := Transaction{
@@ -128,14 +126,11 @@ func (j *Journal) ParseTrades(csvPath string) []Transaction {
 	}
 
 	var transactions []Transaction
-
-	for ticker, tickerTransactions := range j.trades {
-		fmt.Printf("Key: %s, Value: %s\n", ticker, tickerTransactions)
+	for _, tickerTransactions := range j.trades {
 		for _, transaction := range tickerTransactions {
 			transactions = append(transactions, transaction)
 		}
 	}
-
 	return transactions
 }
 
