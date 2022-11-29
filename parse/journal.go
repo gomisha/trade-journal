@@ -18,7 +18,8 @@ type Transaction struct {
 	optionContracts string // # of contracts
 	optionContract  string // contract name e.g. PR 20JAN23 9 C
 	shares          string
-	action          string // buy / sell / transfer
+	buySell         string // buy / sell / transfer
+	action          string // trade / trade-option / dividend
 }
 
 type Journal struct {
@@ -97,10 +98,11 @@ func (j *Journal) ReadTransactions(csvPath string) []Transaction {
 				transaction.stockPrice = rec[8]
 				transaction.shares = rec[7]
 				transaction.optionContracts = ""
+				transaction.action = "Trade"
 				if strings.HasPrefix(transaction.shares, "-") {
-					transaction.action = "Sell"
+					transaction.buySell = "Sell"
 				} else {
-					transaction.action = "Buy"
+					transaction.buySell = "Buy"
 				}
 
 			case "Equity and Index Options":
@@ -112,10 +114,11 @@ func (j *Journal) ReadTransactions(csvPath string) []Transaction {
 				transaction.shares = ""
 				transaction.optionContracts = rec[7]
 				transaction.optionContract = rec[5]
+				transaction.action = "Trade - Option"
 				if strings.HasPrefix(transaction.optionContracts, "-") {
-					transaction.action = "Sell"
+					transaction.buySell = "Sell"
 				} else {
-					transaction.action = "Buy"
+					transaction.buySell = "Buy"
 				}
 
 			default:
@@ -148,6 +151,31 @@ func (j *Journal) addTransaction(transaction Transaction) {
 	j.trades[transaction.ticker] = transactions
 }
 
-func (j *Journal) toCsv([][]string) []string {
-	return []string{}
+func (j *Journal) ToCsv(txs []Transaction) {
+	//builder := strings.Builder{}
+	//buf := new(strings.Builder)
+	//
+	//for _, transaction := range txs {
+	//	builder.WriteString()
+	//}
+
+	// convert [] Transaction to [] string so they can be written to CSV
+	var txsStr [][]string
+	for i, tx := range txs {
+		txsStr[i] = append(txsStr[i], tx.date)
+		txsStr[i] = append(txsStr[i], tx.account)
+		txsStr[i] = append(txsStr[i], "")
+		txsStr[i] = append(txsStr[i], tx.ticker)
+	}
+
+	// create the file
+	f, err := os.Create("./transactions.csv")
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer f.Close()
+
+	//writer := csv.NewWriter(f)
+	//writer.WriteAll()
+
 }

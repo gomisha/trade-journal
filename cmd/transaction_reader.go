@@ -18,11 +18,9 @@ func main() {
 		os.Exit(1)
 	}
 
-	fmt.Println("Hello world")
-
 	journal := parse.NewJournal()
 	transactions := journal.ReadTransactions(*dataFlag)
-	//csvTransactions := journal.ToCsv(transactions)
+	journal.ToCsv(transactions)
 
 	for i, transaction := range transactions {
 		fmt.Println("transaction: ", i, " ", transaction)
