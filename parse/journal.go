@@ -52,7 +52,7 @@ func ScrubFile(csvPath string) {
 	}
 }
 
-func (j *Journal) ParseTrades(csvPath string) []Transaction {
+func (j *Journal) ReadTransactions(csvPath string) []Transaction {
 	ScrubFile(csvPath)
 
 	file, err := os.Open(csvPath)
@@ -80,7 +80,7 @@ func (j *Journal) ParseTrades(csvPath string) []Transaction {
 			accountAlias = rec[3]
 		}
 
-		// find trade entries
+		// find trade transactions
 		if rec[0] == "Trades" && rec[1] == "Data" && rec[2] == "Order" {
 			dateTime := strings.Split(rec[6], ", ")
 

@@ -1,14 +1,16 @@
 package parse1
 
-import "testing"
+import (
+	"testing"
+)
 import "github.com/stretchr/testify/require"
 
-func TestConvert(t *testing.T) {
-	// read original csv file trade data
-	filePath := "../testdata/input/1-dmc.csv"
-	journal := NewJournal()
-	actualTransactions := journal.ParseTrades(filePath)
+type TestData struct {
+	expectedTransactions []Transaction
+	filePath             string
+}
 
+func TestReadTransactions(t *testing.T) {
 	expectedTransactions := []Transaction{
 		{
 			ticker:     "PR",
@@ -41,5 +43,20 @@ func TestConvert(t *testing.T) {
 		},
 	}
 
-	require.Equal(t, expectedTransactions, actualTransactions)
+	testDataMap := map[string]TestData{
+		"stock, short call, long put": {
+			expectedTransactions: expectedTransactions,
+			filePath:             "../testdata/input/1-dmc.csv",
+		},
+	}
+
+	for k, testData := range testDataMap {
+		t.Run(k, func(t *testing.T) {
+			// read original csv file trade data
+			journal := NewJournal()
+			actualTransactions := journal.ReadTransactions(testData.filePath)
+
+			require.ElementsMatch(t, testData.expectedTransactions, actualTransactions)
+		})
+	}
 }
