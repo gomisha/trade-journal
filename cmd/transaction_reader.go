@@ -3,7 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
-	parse1 "github.com/gomisha/trade-journal/parse"
+	"github.com/gomisha/trade-journal/parse"
 	"os"
 )
 
@@ -20,7 +20,7 @@ func main() {
 
 	fmt.Println("Hello world")
 
-	journal := parse1.NewJournal()
+	journal := parse.NewJournal()
 	transactions := journal.ReadTransactions(*dataFlag)
 	//csvTransactions := journal.ToCsv(transactions)
 
