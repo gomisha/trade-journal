@@ -107,9 +107,10 @@ func (j *Journal) ReadTransactions(csvPath string) []Transaction {
 			case "Equity and Index Options":
 				optionTicker := strings.Split(rec[5], " ")
 				// options ticker will be in first split index: PR 20JAN23 9 C
+				optionContract := strings.Split(rec[5], optionTicker[0]+" ")
 				transaction.ticker = optionTicker[0]
 				transaction.optionContracts = rec[7]
-				transaction.optionContract = rec[5]
+				transaction.optionContract = optionContract[1] //extract "20JAN23 9 C" from "PR 20JAN23 9 C"
 				transaction.action = "Trade - Option"
 				if strings.HasPrefix(transaction.optionContracts, "-") {
 					transaction.buySell = "Sell"
