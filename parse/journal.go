@@ -117,7 +117,8 @@ func (j *Journal) ReadTransactions(csvPath string) []Transaction {
 				} else {
 					transaction.buySell = "Buy"
 				}
-
+			case "Forex":
+				continue
 			default:
 				log.Fatal("Invalid transaction type: ", rec[3])
 			}
