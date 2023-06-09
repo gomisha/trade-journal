@@ -2,8 +2,9 @@ package parse
 
 import (
 	"testing"
+
+	"github.com/stretchr/testify/require"
 )
-import "github.com/stretchr/testify/require"
 
 type TestData struct {
 	expectedTransactions []Transaction
@@ -11,45 +12,60 @@ type TestData struct {
 }
 
 func TestReadTransactions(t *testing.T) {
-	expectedTransactions := []Transaction{
+	expectedTransactions1 := []Transaction{
 		{
-			ticker:     "PR",
-			account:    "TFSA",
 			date:       "2022-11-25",
-			commission: "-3",
-			price:      "10.588333333",
-			shares:     "600",
-			buySell:    "Buy",
+			account:    "TFSA",
 			action:     "Trade",
+			ticker:     "PR",
+			buySell:    "Buy",
+			shares:     "600",
+			price:      "10.588333333",
+			commission: "-3",
 		},
 		{
-			ticker:          "PR",
-			account:         "TFSA",
 			date:            "2022-11-25",
-			commission:      "-3.0190707",
+			account:         "TFSA",
+			action:          "Trade - Option",
+			ticker:          "PR",
+			optionContract:  "20JAN23 9 C",
 			buySell:         "Sell",
 			optionContracts: "-6",
-			optionContract:  "20JAN23 9 C",
 			price:           "1.971666667",
-			action:          "Trade - Option",
+			commission:      "-3.0190707",
 		},
 		{
-			ticker:          "PR",
-			account:         "TFSA",
 			date:            "2022-11-25",
-			commission:      "-0.9789",
+			account:         "TFSA",
+			action:          "Trade - Option",
+			ticker:          "PR",
+			optionContract:  "20JAN23 5 P",
 			buySell:         "Buy",
 			optionContracts: "6",
-			optionContract:  "20JAN23 5 P",
 			price:           "0.053333333",
-			action:          "Trade - Option",
+			commission:      "-0.9789",
+		},
+	}
+
+	expectedTransactions2 := []Transaction{
+		{
+			date:     "2023-06-08",
+			account:  "RRSP",
+			action:   "Dividend",
+			ticker:   "MSFT",
+			dividend: "136",
+			notes:    "MSFT(US5949181045) Cash Dividend USD 0.68 per Share (Ordinary Dividend)",
 		},
 	}
 
 	testDataMap := map[string]TestData{
 		"stock, short call, long put": {
-			expectedTransactions: expectedTransactions,
+			expectedTransactions: expectedTransactions1,
 			filePath:             "../testdata/input/1-dmc.csv",
+		},
+		"dividend": {
+			expectedTransactions: expectedTransactions2,
+			filePath:             "../testdata/input/2-dividend.csv",
 		},
 	}
 
