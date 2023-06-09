@@ -53,7 +53,7 @@ func TestReadTransactions(t *testing.T) {
 			account:  "RRSP",
 			action:   "Dividend",
 			ticker:   "MSFT",
-			dividend: "68.00",
+			dividend: "136",
 			notes:    "MSFT(US5949181045) Cash Dividend USD 0.68 per Share (Ordinary Dividend)",
 		},
 	}
