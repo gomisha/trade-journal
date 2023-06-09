@@ -47,23 +47,26 @@ func TestReadTransactions(t *testing.T) {
 		},
 	}
 
-	//expectedTransactions2 := []Transaction{
-	//	{
-	//		ticker:  "MSFT",
-	//		account: "RRSP",
-	//		notes:   "MSFT(US5949181045) Cash Dividend USD 0.68 per Share (Ordinary Dividend)",
-	//	},
-	//}
+	expectedTransactions2 := []Transaction{
+		{
+			date:     "2023-06-08",
+			account:  "RRSP",
+			action:   "Dividend",
+			ticker:   "MSFT",
+			dividend: "68.00",
+			notes:    "MSFT(US5949181045) Cash Dividend USD 0.68 per Share (Ordinary Dividend)",
+		},
+	}
 
 	testDataMap := map[string]TestData{
 		"stock, short call, long put": {
 			expectedTransactions: expectedTransactions1,
 			filePath:             "../testdata/input/1-dmc.csv",
 		},
-		//"dividend": {
-		//	expectedTransactions: expectedTransactions2,
-		//	filePath:             "../testdata/input/2-dividend.csv",
-		//},
+		"dividend": {
+			expectedTransactions: expectedTransactions2,
+			filePath:             "../testdata/input/2-dividend.csv",
+		},
 	}
 
 	for k, testData := range testDataMap {
