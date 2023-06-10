@@ -58,6 +58,40 @@ func TestReadTransactions(t *testing.T) {
 		},
 	}
 
+	expectedTransactions3 := []Transaction{
+		{
+			date:         "2023-06-05",
+			account:      "Margin",
+			action:       "Forex",
+			commission:   "-2",
+			forexUSDBuy:  "4,838.82",
+			forexUSDCAD:  "1.3433",
+			forexCADSell: "-6499.986906",
+			notes:        "converted all CAD to USD",
+		},
+		{
+			date:       "2022-06-05",
+			account:    "Margin",
+			action:     "Trade",
+			ticker:     "TECK",
+			buySell:    "Buy",
+			shares:     "100",
+			price:      "42.09",
+			commission: "-0.37025725",
+		},
+		{
+			date:            "2022-06-05",
+			account:         "Margin",
+			action:          "Trade - Option",
+			ticker:          "TECK",
+			optionContract:  "21JUL23 38 C",
+			buySell:         "Sell",
+			optionContracts: "-1",
+			price:           "5.07",
+			commission:      "-1.055546",
+		},
+	}
+
 	testDataMap := map[string]TestData{
 		"stock, short call, long put": {
 			expectedTransactions: expectedTransactions1,
@@ -66,6 +100,10 @@ func TestReadTransactions(t *testing.T) {
 		"dividend": {
 			expectedTransactions: expectedTransactions2,
 			filePath:             "../testdata/input/2-dividend.csv",
+		},
+		"forex": {
+			expectedTransactions: expectedTransactions3,
+			filePath:             "../testdata/input/3-forex.csv",
 		},
 	}
 

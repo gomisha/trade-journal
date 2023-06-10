@@ -21,6 +21,10 @@ type Transaction struct {
 	buySell         string // buy / sell / transfer
 	action          string // trade / trade-option / dividend
 
+	forexUSDBuy  string // USD bought during CAD -> USD forex
+	forexUSDCAD  string // exchange rate USD/CAD
+	forexCADSell string // CAD sold during CAD -> USD forex
+
 	dividend string // dividend payment
 	notes    string // automated notes (e.g. dividend payment)
 }
