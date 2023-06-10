@@ -2,9 +2,11 @@ package parse
 
 import (
 	"encoding/csv"
+	"fmt"
 	"io"
 	"log"
 	"os"
+	"strconv"
 	"strings"
 )
 
@@ -111,11 +113,11 @@ func (j *Journal) ReadTransactions(csvPath string) []Transaction {
 			transaction := Transaction{
 				date:       dateTime[0],
 				account:    accountAlias,
-				price:      rec[8],
 				commission: rec[11],
 			}
 			switch rec[3] {
 			case "Stocks":
+				transaction.price = rec[8]
 				// stock ticker will be in this column
 				transaction.ticker = rec[5]
 				transaction.shares = rec[7]
@@ -128,6 +130,7 @@ func (j *Journal) ReadTransactions(csvPath string) []Transaction {
 				}
 
 			case "Equity and Index Options":
+				transaction.price = rec[8]
 				optionTicker := strings.Split(rec[5], " ")
 				// options ticker will be in first split index: PR 20JAN23 9 C
 				optionContract := strings.Split(rec[5], optionTicker[0]+" ")
@@ -141,7 +144,27 @@ func (j *Journal) ReadTransactions(csvPath string) []Transaction {
 					transaction.buySell = "Buy"
 				}
 			case "Forex":
-				continue
+				transaction.action = "Forex"
+				// Trades,Data,Order,Forex,CAD,USD.CAD,"2023-06-05, 11:17:59","4,838.82",1.3433,,-6499.986906,-2,,,4.259739,
+				transaction.forexUSDBuy = rec[7]
+				transaction.forexUSDCAD = rec[8]
+
+				usdBuyNoComma := strings.ReplaceAll(transaction.forexUSDBuy, ",", "") // remove comma from string
+				usdBuy, err := strconv.ParseFloat(usdBuyNoComma, 64)
+				if err != nil {
+					panic(err)
+				}
+
+				usdcad, err := strconv.ParseFloat(transaction.forexUSDCAD, 64)
+				if err != nil {
+					panic(err)
+				}
+
+				cadSell := usdBuy * usdcad * -1
+
+				// use 6 decimal places to correspond with IBKR report
+				transaction.forexCADSell = fmt.Sprintf("%.6f", cadSell)
+				transaction.notes = "converted all CAD to USD"
 			default:
 				log.Fatal("Invalid transaction type: ", rec[3])
 			}

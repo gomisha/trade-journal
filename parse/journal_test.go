@@ -70,7 +70,7 @@ func TestReadTransactions(t *testing.T) {
 			notes:        "converted all CAD to USD",
 		},
 		{
-			date:       "2022-06-05",
+			date:       "2023-06-05",
 			account:    "Margin",
 			action:     "Trade",
 			ticker:     "TECK",
@@ -80,7 +80,7 @@ func TestReadTransactions(t *testing.T) {
 			commission: "-0.37025725",
 		},
 		{
-			date:            "2022-06-05",
+			date:            "2023-06-05",
 			account:         "Margin",
 			action:          "Trade - Option",
 			ticker:          "TECK",
