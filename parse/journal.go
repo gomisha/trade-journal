@@ -164,7 +164,13 @@ func (j *Journal) ReadTransactions(csvPath string) []Transaction {
 
 				// use 6 decimal places to correspond with IBKR report
 				transaction.forexCADSell = fmt.Sprintf("%.6f", cadSell)
-				transaction.notes = "converted all CAD to USD"
+
+				if cadSell < 0.05 {
+					transaction.notes = "remaining CAD auto converted"
+				} else {
+					transaction.notes = "converted all CAD to USD"
+				}
+
 			default:
 				log.Fatal("Invalid transaction type: ", rec[3])
 			}
