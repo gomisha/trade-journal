@@ -145,6 +145,30 @@ func (j *Journal) ReadTransactions(csvPath string) []Transaction {
 					transaction.buySell = "Buy"
 				}
 
+				shares, err := strconv.ParseFloat(transaction.shares, 64)
+				if err != nil {
+					panic(err)
+				}
+
+				price, err := strconv.ParseFloat(transaction.price, 64)
+				if err != nil {
+					panic(err)
+				}
+
+				// proceeds calculation
+				proceeds := -1 * shares * price
+				transaction.proceeds = fmt.Sprintf("%.2f", proceeds)
+
+				// cost basis buy or option calculation
+				commission, err := strconv.ParseFloat(transaction.commission, 64)
+				if err != nil {
+					panic(err)
+				}
+
+				costBasisBuyOrOption := proceeds + commission
+				transaction.costBasisBuyOrOption = fmt.Sprint(costBasisBuyOrOption)
+				transaction.costBasisTotal = transaction.costBasisBuyOrOption
+
 			case "Equity and Index Options":
 				transaction.price = rec[8]
 				optionTicker := strings.Split(rec[5], " ")
@@ -160,7 +184,7 @@ func (j *Journal) ReadTransactions(csvPath string) []Transaction {
 					transaction.buySell = "Buy"
 				}
 
-				// proceeds calculation: (contracts * price)
+				// proceeds calculation
 				contracts, err := strconv.ParseFloat(transaction.optionContracts, 64)
 				if err != nil {
 					panic(err)
@@ -171,12 +195,7 @@ func (j *Journal) ReadTransactions(csvPath string) []Transaction {
 					panic(err)
 				}
 
-				proceeds := contracts * -100 * price
-
-				// buying option would have negative proceeds
-				//if transaction.buySell == "Buy" {
-				//	proceeds *= -1
-				//}
+				proceeds := -100 * contracts * price
 
 				transaction.proceeds = fmt.Sprintf("%.2f", proceeds)
 

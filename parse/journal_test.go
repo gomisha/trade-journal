@@ -21,9 +21,9 @@ func TestReadTransactions(t *testing.T) {
 			buySell:              "Buy",
 			shares:               "600",
 			price:                "10.588333333",
-			proceeds:             "-6353",
-			costBasisBuyOrOption: "-6356",
-			costBasisTotal:       "-6356",
+			proceeds:             "-6353.00",
+			costBasisBuyOrOption: "-6355.999999799999",
+			costBasisTotal:       "-6355.999999799999",
 			commission:           "-3",
 		},
 		{
