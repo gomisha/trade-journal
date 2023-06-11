@@ -23,6 +23,11 @@ type Transaction struct {
 	buySell         string // buy / sell / transfer
 	action          string // trade / trade-option / dividend
 
+	proceeds             string // will be calculated, not imported
+	costBasisShare       string // will be calculated, not imported
+	costBasisBuyOrOption string // will be calculated, not imported
+	costBasisTotal       string // will be calculated, not imported
+
 	forexUSDBuy  string // USD bought during CAD -> USD forex
 	forexUSDCAD  string // exchange rate USD/CAD
 	forexCADSell string // CAD sold during CAD -> USD forex
@@ -140,6 +145,30 @@ func (j *Journal) ReadTransactions(csvPath string) []Transaction {
 					transaction.buySell = "Buy"
 				}
 
+				shares, err := strconv.ParseFloat(transaction.shares, 64)
+				if err != nil {
+					panic(err)
+				}
+
+				price, err := strconv.ParseFloat(transaction.price, 64)
+				if err != nil {
+					panic(err)
+				}
+
+				// proceeds calculation
+				proceeds := -1 * shares * price
+				transaction.proceeds = fmt.Sprintf("%.2f", proceeds)
+
+				// cost basis buy or option calculation
+				commission, err := strconv.ParseFloat(transaction.commission, 64)
+				if err != nil {
+					panic(err)
+				}
+
+				costBasisBuyOrOption := proceeds + commission
+				transaction.costBasisBuyOrOption = fmt.Sprint(costBasisBuyOrOption)
+				transaction.costBasisTotal = transaction.costBasisBuyOrOption
+
 			case "Equity and Index Options":
 				transaction.price = rec[8]
 				optionTicker := strings.Split(rec[5], " ")
@@ -154,6 +183,34 @@ func (j *Journal) ReadTransactions(csvPath string) []Transaction {
 				} else {
 					transaction.buySell = "Buy"
 				}
+
+				// proceeds calculation
+				contracts, err := strconv.ParseFloat(transaction.optionContracts, 64)
+				if err != nil {
+					panic(err)
+				}
+
+				price, err := strconv.ParseFloat(transaction.price, 64)
+				if err != nil {
+					panic(err)
+				}
+
+				proceeds := -100 * contracts * price
+
+				transaction.proceeds = fmt.Sprintf("%.2f", proceeds)
+
+				// cost basis per share calculation
+				transaction.costBasisShare = "0"
+
+				// cost basis buy or option calculation
+				commission, err := strconv.ParseFloat(transaction.commission, 64)
+				if err != nil {
+					panic(err)
+				}
+
+				costBasisBuyOrOption := proceeds + commission
+				transaction.costBasisBuyOrOption = fmt.Sprint(costBasisBuyOrOption)
+
 			case "Forex":
 				transaction.action = "Forex"
 				// Trades,Data,Order,Forex,CAD,USD.CAD,"2023-06-05, 11:17:59","4,838.82",1.3433,,-6499.986906,-2,,,4.259739,
@@ -270,11 +327,11 @@ func (j *Journal) ToCsv(txs []Transaction) {
 		row = append(row, tx.optionContracts)
 		row = append(row, tx.shares)
 		row = append(row, tx.price)
+		row = append(row, tx.proceeds)
 		row = append(row, "")
-		row = append(row, "")
-		row = append(row, "")
-		row = append(row, "")
-		row = append(row, "")
+		row = append(row, tx.costBasisShare)
+		row = append(row, tx.costBasisBuyOrOption)
+		row = append(row, tx.costBasisTotal)
 		row = append(row, "")
 		row = append(row, tx.dividend)
 		row = append(row, tx.commission)
