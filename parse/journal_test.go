@@ -92,6 +92,18 @@ func TestReadTransactions(t *testing.T) {
 		},
 	}
 
+	expectedTransactions4 := []Transaction{
+		{
+			date:     "2023-06-09",
+			account:  "Margin",
+			action:   "Dividend",
+			ticker:   "SMG",
+			dividend: "66",
+			fee:      "-9.9",
+			notes:    "SMG(US8101861065) Payment in Lieu of Dividend (Ordinary Dividend)\n15% tax withdrawn",
+		},
+	}
+
 	testDataMap := map[string]TestData{
 		"stock, short call, long put": {
 			expectedTransactions: expectedTransactions1,
@@ -104,6 +116,10 @@ func TestReadTransactions(t *testing.T) {
 		"forex": {
 			expectedTransactions: expectedTransactions3,
 			filePath:             "../testdata/input/3-forex.csv",
+		},
+		"dividend - withholding tax": {
+			expectedTransactions: expectedTransactions4,
+			filePath:             "../testdata/input/4-dividend-withholding-tax.csv",
 		},
 	}
 

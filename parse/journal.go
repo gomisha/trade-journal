@@ -28,6 +28,7 @@ type Transaction struct {
 	forexCADSell string // CAD sold during CAD -> USD forex
 
 	dividend string // dividend payment
+	fee      string // e.g. dividend withholding, monthly live data subscription
 	notes    string // automated notes (e.g. dividend payment)
 }
 
@@ -89,10 +90,8 @@ func (j *Journal) ReadTransactions(csvPath string) []Transaction {
 		// find account alias
 		if rec[0] == "Account Information" && rec[1] == "Data" && rec[2] == "Account Alias" {
 			accountAlias = rec[3]
-		} else
-
-		// dividend transaction
-		if rec[0] == "Dividends" && rec[1] == "Data" && rec[2] == "USD" {
+		} else if rec[0] == "Dividends" && rec[1] == "Data" && rec[2] == "USD" {
+			// dividend transaction
 			ticker := strings.Split(rec[4], "(") // e.g. MSFT(US5949181045) Cash Dividend USD 0.68 per Share (Ordinary Dividend)
 
 			transaction := Transaction{
@@ -104,10 +103,22 @@ func (j *Journal) ReadTransactions(csvPath string) []Transaction {
 				notes:    rec[4],
 			}
 			j.addTransaction(transaction)
-		} else
+		} else if rec[0] == "Withholding Tax" && rec[1] == "Data" && rec[2] == "USD" {
+			// some dividend payments will have 15% withholding tax
 
-		// find trade transactions
-		if rec[0] == "Trades" && rec[1] == "Data" && rec[2] == "Order" {
+			// e.g. SMG(US8101861065) Payment in Lieu of Dividend - US Tax
+			ticker := strings.Split(rec[4], "(")[0]
+
+			// look up transactions by ticker and ensure there's a single dividend transaction
+			transaction := j.findSingleTransaction(ticker, "Dividend")
+
+			transaction.fee = rec[5]
+			transaction.notes += "\n15% tax withdrawn"
+
+			j.updateSingleTransaction(ticker, transaction)
+		} else if rec[0] == "Trades" && rec[1] == "Data" && rec[2] == "Order" {
+			// find trade transactions
+
 			dateTime := strings.Split(rec[6], ", ")
 
 			transaction := Transaction{
@@ -205,6 +216,39 @@ func (j *Journal) addTransaction(transaction Transaction) {
 	j.trades[transaction.ticker] = transactions
 }
 
+func (j *Journal) findSingleTransaction(ticker string, action string) Transaction {
+	if j.trades == nil {
+		panic("No transactions in journal")
+	}
+	// get list of transactions for that ticker
+	transactions := j.trades[ticker]
+	if transactions == nil {
+		panic(fmt.Sprintf("no transactions for ticker %s", ticker))
+	}
+	if len(transactions) > 1 {
+		panic(fmt.Sprintf("expected only 1 transaction for ticker %s but have %d", ticker, len(transactions)))
+	}
+	if (transactions)[0].action != action {
+		panic(fmt.Sprintf("expected transaction for ticker %s has unexpected action %s", ticker, transactions[0].action))
+	}
+	return (transactions)[0]
+}
+
+func (j *Journal) updateSingleTransaction(ticker string, transaction Transaction) {
+	if j.trades == nil {
+		panic("No transactions in journal")
+	}
+	// get list of transactions for that ticker
+	transactions := j.trades[ticker]
+	if transactions == nil {
+		panic(fmt.Sprintf("no transactions for ticker %s", ticker))
+	}
+	if len(transactions) > 1 {
+		panic(fmt.Sprintf("expected only 1 transaction for ticker %s but have %d", ticker, len(transactions)))
+	}
+	j.trades[ticker] = []Transaction{transaction}
+}
+
 func (j *Journal) ToCsv(txs []Transaction) {
 	// convert [] Transaction to [] string, so they can be written to CSV
 	var txsStr [][]string
@@ -236,7 +280,7 @@ func (j *Journal) ToCsv(txs []Transaction) {
 		row = append(row, tx.commission)
 		row = append(row, "")
 		row = append(row, "")
-		row = append(row, "")
+		row = append(row, tx.fee)
 		row = append(row, "")
 		row = append(row, tx.forexUSDBuy)
 		row = append(row, tx.forexUSDCAD)
