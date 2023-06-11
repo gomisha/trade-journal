@@ -149,6 +149,10 @@ func (j *Journal) ReadTransactions(csvPath string) []Transaction {
 				transaction.forexUSDBuy = rec[7]
 				transaction.forexUSDCAD = rec[8]
 
+				if transaction.commission == "0" {
+					transaction.commission = ""
+				}
+
 				usdBuyNoComma := strings.ReplaceAll(transaction.forexUSDBuy, ",", "") // remove comma from string
 				usdBuy, err := strconv.ParseFloat(usdBuyNoComma, 64)
 				if err != nil {
