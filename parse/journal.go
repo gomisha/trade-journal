@@ -196,6 +196,19 @@ func (j *Journal) ReadTransactions(csvPath string) []Transaction {
 					panic(err)
 				}
 
+				// option assignments (e.g. short calls called away) will have a price of 0
+				if price == 0 {
+					// look up transactions by ticker and ensure there's a single stock trade transaction
+					singleTransaction := j.findSingleTransaction(transaction.ticker, "Trade")
+
+					// update that stock trade transaction with option contract name
+					singleTransaction.optionContract = transaction.optionContract
+
+					j.updateSingleTransaction(transaction.ticker, singleTransaction)
+
+					continue // don't add this transaction because assignments will be condensed to a single transaction which already exists
+				}
+
 				proceeds := -100 * contracts * price
 
 				transaction.proceeds = fmt.Sprintf("%.2f", proceeds)
