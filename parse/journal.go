@@ -23,6 +23,11 @@ type Transaction struct {
 	buySell         string // buy / sell / transfer
 	action          string // trade / trade-option / dividend
 
+	proceeds             string // will be calculated, not imported
+	costBasisShare       string // will be calculated, not imported
+	costBasisBuyOrOption string // will be calculated, not imported
+	costBasisTotal       string // will be calculated, not imported
+
 	forexUSDBuy  string // USD bought during CAD -> USD forex
 	forexUSDCAD  string // exchange rate USD/CAD
 	forexCADSell string // CAD sold during CAD -> USD forex
@@ -154,6 +159,39 @@ func (j *Journal) ReadTransactions(csvPath string) []Transaction {
 				} else {
 					transaction.buySell = "Buy"
 				}
+
+				// proceeds calculation: (contracts * price)
+				contracts, err := strconv.ParseFloat(transaction.optionContracts, 64)
+				if err != nil {
+					panic(err)
+				}
+
+				price, err := strconv.ParseFloat(transaction.price, 64)
+				if err != nil {
+					panic(err)
+				}
+
+				proceeds := contracts * -100 * price
+
+				// buying option would have negative proceeds
+				//if transaction.buySell == "Buy" {
+				//	proceeds *= -1
+				//}
+
+				transaction.proceeds = fmt.Sprintf("%.2f", proceeds)
+
+				// cost basis per share calculation
+				transaction.costBasisShare = "0"
+
+				// cost basis buy or option calculation
+				commission, err := strconv.ParseFloat(transaction.commission, 64)
+				if err != nil {
+					panic(err)
+				}
+
+				costBasisBuyOrOption := proceeds + commission
+				transaction.costBasisBuyOrOption = fmt.Sprint(costBasisBuyOrOption)
+
 			case "Forex":
 				transaction.action = "Forex"
 				// Trades,Data,Order,Forex,CAD,USD.CAD,"2023-06-05, 11:17:59","4,838.82",1.3433,,-6499.986906,-2,,,4.259739,
