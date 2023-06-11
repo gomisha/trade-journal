@@ -27,6 +27,7 @@ type Transaction struct {
 	costBasisShare       string // will be calculated, not imported
 	costBasisBuyOrOption string // will be calculated, not imported
 	costBasisTotal       string // will be calculated, not imported
+	realizedPL           string // will be calculated, not imported
 
 	forexUSDBuy  string // USD bought during CAD -> USD forex
 	forexUSDCAD  string // exchange rate USD/CAD
