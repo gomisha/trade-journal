@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"io"
 	"log"
+	"math"
 	"os"
 	"strconv"
 	"strings"
@@ -170,6 +171,22 @@ func (j *Journal) ReadTransactions(csvPath string) []Transaction {
 				transaction.costBasisBuyOrOption = fmt.Sprint(costBasisBuyOrOption)
 				transaction.costBasisTotal = transaction.costBasisBuyOrOption
 
+				// for call assignments, there will be negative shares multiple of -100
+				if shares < 0 && math.Mod(shares, -100) == 0 {
+					// cost basis total will be different from transaction.costBasisBuyOrOption and we will need this to
+					// calculate cost basis per share
+					costBasisTotal, err := strconv.ParseFloat(rec[12], 64)
+					if err != nil {
+						panic(err)
+					}
+					// cost basis total is negative from IBKR, so make it positive
+					costBasisTotal *= -1
+					transaction.costBasisTotal = fmt.Sprint(costBasisTotal)
+
+					// import this figure directly from IBKR since it takes into account previous option credit
+					transaction.realizedPL = rec[13]
+				}
+
 			case "Equity and Index Options":
 				transaction.price = rec[8]
 				optionTicker := strings.Split(rec[5], " ")
@@ -202,11 +219,25 @@ func (j *Journal) ReadTransactions(csvPath string) []Transaction {
 					singleTransaction := j.findSingleTransaction(transaction.ticker, "Trade")
 
 					// update that stock trade transaction with option contract name
+					singleTransaction.action = "Trade - Option - Assignment"
+					singleTransaction.costBasisBuyOrOption = ""
 					singleTransaction.optionContract = transaction.optionContract
+					costBasisTotal, err := strconv.ParseFloat(singleTransaction.costBasisTotal, 64)
+					if err != nil {
+						panic(err)
+					}
+					shares, err := strconv.ParseFloat(singleTransaction.shares, 64)
+					if err != nil {
+						panic(err)
+					}
+
+					costBasisPerShare := costBasisTotal / shares
+					singleTransaction.costBasisShare = fmt.Sprint(costBasisPerShare)
 
 					j.updateSingleTransaction(transaction.ticker, singleTransaction)
 
-					continue // don't add this transaction because assignments will be condensed to a single transaction which already exists
+					// don't add this transaction because assignments will be condensed to a single transaction which already exists
+					continue
 				}
 
 				proceeds := -100 * contracts * price

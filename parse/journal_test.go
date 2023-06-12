@@ -130,9 +130,9 @@ func TestReadTransactions(t *testing.T) {
 			shares:         "-100",
 			price:          "155",
 			proceeds:       "15500.00",
-			costBasisShare: "-172.6737",
-			costBasisTotal: "17267.37",
-			realizedPL:     "-1767.5085",
+			costBasisShare: "-172.67370257",
+			costBasisTotal: "17267.370257", // import IBKR value and multiply by -1
+			realizedPL:     "3873.744617",  // imports IBKR value
 			commission:     "-0.1385",
 		},
 	}
