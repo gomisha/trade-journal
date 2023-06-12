@@ -119,6 +119,24 @@ func TestReadTransactions(t *testing.T) {
 		},
 	}
 
+	expectedTransactions5 := []Transaction{
+		{
+			date:           "2023-06-08",
+			account:        "RRSP",
+			action:         "Trade - Option - Assignment",
+			ticker:         "FDX",
+			optionContract: "16JUN23 155 C",
+			buySell:        "Sell",
+			shares:         "-100",
+			price:          "155",
+			proceeds:       "15500.00",
+			costBasisShare: "-172.67370257",
+			costBasisTotal: "17267.370257", // import IBKR value and multiply by -1
+			realizedPL:     "3873.744617",  // imports IBKR value
+			commission:     "-0.1385",
+		},
+	}
+
 	testDataMap := map[string]TestData{
 		"stock, short call, long put": {
 			expectedTransactions: expectedTransactions1,
@@ -135,6 +153,10 @@ func TestReadTransactions(t *testing.T) {
 		"dividend - withholding tax": {
 			expectedTransactions: expectedTransactions4,
 			filePath:             "../testdata/input/4-dividend-withholding-tax.csv",
+		},
+		"call assignment": {
+			expectedTransactions: expectedTransactions5,
+			filePath:             "../testdata/input/5-call-assignment.csv",
 		},
 	}
 

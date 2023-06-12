@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"io"
 	"log"
+	"math"
 	"os"
 	"strconv"
 	"strings"
@@ -27,6 +28,7 @@ type Transaction struct {
 	costBasisShare       string // will be calculated, not imported
 	costBasisBuyOrOption string // will be calculated, not imported
 	costBasisTotal       string // will be calculated, not imported
+	realizedPL           string // will be calculated, not imported
 
 	forexUSDBuy  string // USD bought during CAD -> USD forex
 	forexUSDCAD  string // exchange rate USD/CAD
@@ -169,6 +171,22 @@ func (j *Journal) ReadTransactions(csvPath string) []Transaction {
 				transaction.costBasisBuyOrOption = fmt.Sprint(costBasisBuyOrOption)
 				transaction.costBasisTotal = transaction.costBasisBuyOrOption
 
+				// for call assignments, there will be negative shares multiple of -100
+				if shares < 0 && math.Mod(shares, -100) == 0 {
+					// cost basis total will be different from transaction.costBasisBuyOrOption and we will need this to
+					// calculate cost basis per share
+					costBasisTotal, err := strconv.ParseFloat(rec[12], 64)
+					if err != nil {
+						panic(err)
+					}
+					// cost basis total is negative from IBKR, so make it positive
+					costBasisTotal *= -1
+					transaction.costBasisTotal = fmt.Sprint(costBasisTotal)
+
+					// import this figure directly from IBKR since it takes into account previous option credit
+					transaction.realizedPL = rec[13]
+				}
+
 			case "Equity and Index Options":
 				transaction.price = rec[8]
 				optionTicker := strings.Split(rec[5], " ")
@@ -193,6 +211,33 @@ func (j *Journal) ReadTransactions(csvPath string) []Transaction {
 				price, err := strconv.ParseFloat(transaction.price, 64)
 				if err != nil {
 					panic(err)
+				}
+
+				// option assignments (e.g. short calls called away) will have a price of 0
+				if price == 0 {
+					// look up transactions by ticker and ensure there's a single stock trade transaction
+					singleTransaction := j.findSingleTransaction(transaction.ticker, "Trade")
+
+					// update that stock trade transaction with option contract name
+					singleTransaction.action = "Trade - Option - Assignment"
+					singleTransaction.costBasisBuyOrOption = ""
+					singleTransaction.optionContract = transaction.optionContract
+					costBasisTotal, err := strconv.ParseFloat(singleTransaction.costBasisTotal, 64)
+					if err != nil {
+						panic(err)
+					}
+					shares, err := strconv.ParseFloat(singleTransaction.shares, 64)
+					if err != nil {
+						panic(err)
+					}
+
+					costBasisPerShare := costBasisTotal / shares
+					singleTransaction.costBasisShare = fmt.Sprint(costBasisPerShare)
+
+					j.updateSingleTransaction(transaction.ticker, singleTransaction)
+
+					// don't add this transaction because assignments will be condensed to a single transaction which already exists
+					continue
 				}
 
 				proceeds := -100 * contracts * price
@@ -332,7 +377,7 @@ func (j *Journal) ToCsv(txs []Transaction) {
 		row = append(row, tx.costBasisShare)
 		row = append(row, tx.costBasisBuyOrOption)
 		row = append(row, tx.costBasisTotal)
-		row = append(row, "")
+		row = append(row, tx.realizedPL)
 		row = append(row, tx.dividend)
 		row = append(row, tx.commission)
 		row = append(row, "")
