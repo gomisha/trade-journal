@@ -240,8 +240,11 @@ func (j *Journal) ReadTransactions(csvPath string) []Transaction {
 					continue
 				}
 
-				// hit GTC target or closed manually
-				if transaction.buySell == "Buy" {
+				// hit GTC target or closed manually - only for calls
+				// check if contract is a call or put (e.g. PR 20JAN23 9 C would extract C)
+				lastLetter := optionContract[1][len(optionContract[1])-1:]
+
+				if transaction.buySell == "Buy" && lastLetter == "C" {
 					singleTransaction := j.findSingleTransaction(transaction.ticker, "Trade")
 					singleTransaction.action = "Trade - Close"
 					singleTransaction.costBasisBuyOrOption = ""
