@@ -377,7 +377,7 @@ func (j *Journal) ToCsv(txs []Transaction) {
 		row = append(row, tx.costBasisShare)
 		row = append(row, tx.costBasisBuyOrOption)
 		row = append(row, tx.costBasisTotal)
-		row = append(row, "")
+		row = append(row, tx.realizedPL)
 		row = append(row, tx.dividend)
 		row = append(row, tx.commission)
 		row = append(row, "")
