@@ -171,7 +171,7 @@ func (j *Journal) ReadTransactions(csvPath string) []Transaction {
 				transaction.costBasisBuyOrOption = fmt.Sprint(costBasisBuyOrOption)
 				transaction.costBasisTotal = transaction.costBasisBuyOrOption
 
-				// for call assignments, there will be negative shares multiple of -100
+				// for call assignments and GTC target hits, there will be negative shares multiple of -100
 				if shares < 0 && math.Mod(shares, -100) == 0 {
 					// cost basis total will be different from transaction.costBasisBuyOrOption and we will need this to
 					// calculate cost basis per share
@@ -238,6 +238,27 @@ func (j *Journal) ReadTransactions(csvPath string) []Transaction {
 
 					// don't add this transaction because assignments will be condensed to a single transaction which already exists
 					continue
+				}
+
+				// hit GTC target or closed manually
+				if transaction.buySell == "Buy" {
+					singleTransaction := j.findSingleTransaction(transaction.ticker, "Trade")
+					singleTransaction.action = "Trade - Close"
+					singleTransaction.costBasisBuyOrOption = ""
+
+					costBasisTotal, err := strconv.ParseFloat(singleTransaction.costBasisTotal, 64)
+					if err != nil {
+						panic(err)
+					}
+					shares, err := strconv.ParseFloat(singleTransaction.shares, 64)
+					if err != nil {
+						panic(err)
+					}
+
+					costBasisPerShare := costBasisTotal / shares
+					singleTransaction.costBasisShare = fmt.Sprint(costBasisPerShare)
+
+					j.updateSingleTransaction(transaction.ticker, singleTransaction)
 				}
 
 				proceeds := -100 * contracts * price
