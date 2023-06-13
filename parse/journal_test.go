@@ -169,6 +169,68 @@ func TestReadTransactions(t *testing.T) {
 		},
 	}
 
+	expectedTransactions7 := []Transaction{
+		// HPQ roll out
+		{
+			date:                 "2023-06-12",
+			account:              "RRSP",
+			action:               "Trade - Option",
+			ticker:               "HPQ",
+			optionContract:       "16JUN23 27 C",
+			buySell:              "Buy",
+			optionContracts:      "2",
+			price:                "3.32",
+			proceeds:             "-664.00",
+			costBasisShare:       "0",
+			costBasisBuyOrOption: "-664.6581",
+			commission:           "-0.6581",
+		},
+		{
+			date:                 "2023-06-12",
+			account:              "RRSP",
+			action:               "Trade - Option",
+			ticker:               "HPQ",
+			optionContract:       "18AUG23 27 C",
+			buySell:              "Sell",
+			optionContracts:      "-2",
+			price:                "3.62",
+			proceeds:             "724.00",
+			costBasisShare:       "0",
+			costBasisBuyOrOption: "723.331228",
+			commission:           "-0.668772",
+		},
+
+		// STNG roll down
+		{
+			date:                 "2023-06-12",
+			account:              "RRSP",
+			action:               "Trade - Option",
+			ticker:               "STNG",
+			optionContract:       "21JUL23 46 C",
+			buySell:              "Buy",
+			optionContracts:      "1",
+			price:                "1.97",
+			proceeds:             "-197.00",
+			costBasisShare:       "0",
+			costBasisBuyOrOption: "-197.64905",
+			commission:           "-0.64905",
+		},
+		{
+			date:                 "2023-06-12",
+			account:              "RRSP",
+			action:               "Trade - Option",
+			ticker:               "STNG",
+			optionContract:       "21JUL23 44 C",
+			buySell:              "Sell",
+			optionContracts:      "-1",
+			price:                "2.79",
+			proceeds:             "279.00",
+			costBasisShare:       "0",
+			costBasisBuyOrOption: "278.346278",
+			commission:           "-0.653722",
+		},
+	}
+
 	testDataMap := map[string]TestData{
 		"stock, short call, long put": {
 			expectedTransactions: expectedTransactions1,
@@ -193,6 +255,10 @@ func TestReadTransactions(t *testing.T) {
 		"hit target": {
 			expectedTransactions: expectedTransactions6,
 			filePath:             "../testdata/input/6-hit-target.csv",
+		},
+		"roll out call, roll down call": {
+			expectedTransactions: expectedTransactions7,
+			filePath:             "../testdata/input/7-roll-out-roll-down.csv",
 		},
 	}
 
