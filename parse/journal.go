@@ -122,7 +122,7 @@ func (j *Journal) ReadTransactions(csvPath string) []Transaction {
 			transaction.fee = rec[5]
 			transaction.notes += "\n15% tax withdrawn"
 
-			j.updateSingleTransaction(ticker, transaction)
+			j.updateSingleTransaction(ticker, *transaction)
 		} else if rec[0] == "Trades" && rec[1] == "Data" && rec[2] == "Order" {
 			// find trade transactions
 
@@ -234,7 +234,7 @@ func (j *Journal) ReadTransactions(csvPath string) []Transaction {
 					costBasisPerShare := costBasisTotal / shares
 					singleTransaction.costBasisShare = fmt.Sprint(costBasisPerShare)
 
-					j.updateSingleTransaction(transaction.ticker, singleTransaction)
+					j.updateSingleTransaction(transaction.ticker, *singleTransaction)
 
 					// don't add this transaction because assignments will be condensed to a single transaction which already exists
 					continue
@@ -246,22 +246,24 @@ func (j *Journal) ReadTransactions(csvPath string) []Transaction {
 
 				if transaction.buySell == "Buy" && lastLetter == "C" {
 					singleTransaction := j.findSingleTransaction(transaction.ticker, "Trade")
-					singleTransaction.action = "Trade - Close"
-					singleTransaction.costBasisBuyOrOption = ""
+					if singleTransaction != nil {
+						singleTransaction.action = "Trade - Close"
+						singleTransaction.costBasisBuyOrOption = ""
 
-					costBasisTotal, err := strconv.ParseFloat(singleTransaction.costBasisTotal, 64)
-					if err != nil {
-						panic(err)
+						costBasisTotal, err := strconv.ParseFloat(singleTransaction.costBasisTotal, 64)
+						if err != nil {
+							panic(err)
+						}
+						shares, err := strconv.ParseFloat(singleTransaction.shares, 64)
+						if err != nil {
+							panic(err)
+						}
+
+						costBasisPerShare := costBasisTotal / shares
+						singleTransaction.costBasisShare = fmt.Sprint(costBasisPerShare)
+
+						j.updateSingleTransaction(transaction.ticker, *singleTransaction)
 					}
-					shares, err := strconv.ParseFloat(singleTransaction.shares, 64)
-					if err != nil {
-						panic(err)
-					}
-
-					costBasisPerShare := costBasisTotal / shares
-					singleTransaction.costBasisShare = fmt.Sprint(costBasisPerShare)
-
-					j.updateSingleTransaction(transaction.ticker, singleTransaction)
 				}
 
 				proceeds := -100 * contracts * price
@@ -342,22 +344,25 @@ func (j *Journal) addTransaction(transaction Transaction) {
 	j.trades[transaction.ticker] = transactions
 }
 
-func (j *Journal) findSingleTransaction(ticker string, action string) Transaction {
+func (j *Journal) findSingleTransaction(ticker string, action string) *Transaction {
 	if j.trades == nil {
-		panic("No transactions in journal")
+		// when rolling an option there won't be an existing stock transaction so return nil
+		return nil
 	}
 	// get list of transactions for that ticker
 	transactions := j.trades[ticker]
 	if transactions == nil {
-		panic(fmt.Sprintf("no transactions for ticker %s", ticker))
+		// when rolling a call / put there won't be an existing stock transaction so return nil
+		return nil
 	}
 	if len(transactions) > 1 {
 		panic(fmt.Sprintf("expected only 1 transaction for ticker %s but have %d", ticker, len(transactions)))
 	}
 	if (transactions)[0].action != action {
-		panic(fmt.Sprintf("expected transaction for ticker %s has unexpected action %s", ticker, transactions[0].action))
+		// when rolling an option, there won't be a transaction action to match so return nil
+		return nil
 	}
-	return (transactions)[0]
+	return &(transactions)[0]
 }
 
 func (j *Journal) updateSingleTransaction(ticker string, transaction Transaction) {
