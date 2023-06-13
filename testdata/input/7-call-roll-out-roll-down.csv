@@ -670,9 +670,6 @@ Trades,SubTotal,,Equity and Index Options,USD,STNG 21JUL23 44 C,,-1,,,279,-0.653
 Trades,Data,Order,Equity and Index Options,USD,STNG 21JUL23 46 C,"2023-06-12, 14:22:31",1,1.97,1.925,-197,-0.64905,444.34495,246.6959,-4.5,C;CP
 Trades,SubTotal,,Equity and Index Options,USD,STNG 21JUL23 46 C,,1,,,-197,-0.64905,444.34495,246.6959,-4.5,
 Trades,Total,,Equity and Index Options,USD,,,,,,-1065,-4.735804,941.992464,-127.74334,-45.95,
-Dividends,Header,Currency,Date,Description,Amount
-Dividends,Data,USD,2023-06-12,TGT(US87612E1064) Cash Dividend USD 1.08 per Share (Ordinary Dividend),108
-Dividends,Data,Total,,,108
 Change in Dividend Accruals,Header,Asset Category,Currency,Symbol,Date,Ex Date,Pay Date,Quantity,Tax,Fee,Gross Rate,Gross Amount,Net Amount,Code
 Change in Dividend Accruals,Data,Starting Dividend Accruals in USD,,,,,,,,,,,275,
 Change in Dividend Accruals,Data,Stocks,USD,STNG,2023-06-09,2023-06-12,2023-06-30,100,0,0,0.25,25,25,Po
