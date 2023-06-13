@@ -258,7 +258,7 @@ func TestReadTransactions(t *testing.T) {
 		},
 		"roll out call, roll down call": {
 			expectedTransactions: expectedTransactions7,
-			filePath:             "../testdata/input/7-roll-out-roll-down.csv",
+			filePath:             "../testdata/input/7-call-roll-out-roll-down.csv",
 		},
 	}
 
