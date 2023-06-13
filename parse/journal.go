@@ -261,6 +261,8 @@ func (j *Journal) ReadTransactions(csvPath string) []Transaction {
 
 						costBasisPerShare := costBasisTotal / shares
 						singleTransaction.costBasisShare = fmt.Sprint(costBasisPerShare)
+						singleTransaction.notes = "hit GTC target"
+						transaction.notes = "hit GTC target"
 
 						j.updateSingleTransaction(transaction.ticker, *singleTransaction)
 					}
