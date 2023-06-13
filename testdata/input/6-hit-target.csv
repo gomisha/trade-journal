@@ -1,0 +1,337 @@
+Statement,Header,Field Name,Field Value
+Statement,Data,BrokerName,Interactive Brokers Canada Inc.
+Statement,Data,BrokerAddress,"1800 McGill College Avenue, Suite 2106, Montreal, Quebec, Canada  H3A 3J6"
+Statement,Data,Title,Activity Statement
+Statement,Data,Period,"June 8, 2023"
+Statement,Data,WhenGenerated,"2023-06-12, 08:05:56 EDT"
+Account Information,Header,Field Name,Field Value
+Account Information,Data,Name,John Smith
+Account Information,Data,Account Alias,TFSA
+Account Information,Data,Account,U1234567
+Account Information,Data,Account Type,Individual
+Account Information,Data,Customer Type,Tax-Free Savings Account
+Account Information,Data,Account Capabilities,Cash
+Account Information,Data,Base Currency,USD
+Net Asset Value,Header,Asset Class,Prior Total,Current Long,Current Short,Current Total,Change
+Net Asset Value,Data,Cash ,2345.816153042,4330.058888792,0,4330.058888792,1984.24273575
+Net Asset Value,Data,Stock,110521,107818,0,107818,-2703
+Net Asset Value,Data,Options,-28174.78,1720.98,-28964.91,-27243.93,930.85
+Net Asset Value,Data,Dividend Accruals,178.5,178.5,0,178.5,0
+Net Asset Value,Data,Total,84870.536153042,114047.538888792,-28964.91,85082.628888792,212.09273575
+Net Asset Value,Header,Time Weighted Rate of Return
+Net Asset Value,Data,0.249901492%
+Change in NAV,Header,Field Name,Field Value
+Change in NAV,Data,Starting Value,84870.536153042
+Change in NAV,Data,Mark-to-Market,218.85
+Change in NAV,Data,Commissions,-6.75726425
+Change in NAV,Data,Ending Value,85082.628888792
+Mark-to-Market Performance Summary,Header,Asset Category,Symbol,Prior Quantity,Current Quantity,Prior Price,Current Price,Mark-to-Market P/L Position,Mark-to-Market P/L Transaction,Mark-to-Market P/L Commissions,Mark-to-Market P/L Other,Mark-to-Market P/L Total,Code
+Mark-to-Market Performance Summary,Data,Stocks,ALLY,100,100,28.5300,28.4000,-13,0,0,0,-13,CP
+Mark-to-Market Performance Summary,Data,Stocks,BAC,200,200,29.4800,29.2300,-50,0,0,0,-50,
+Mark-to-Market Performance Summary,Data,Stocks,BBWI,100,0,41.1900,42.0000,81,-56,-0.51790925,0,24.48209075,CP
+Mark-to-Market Performance Summary,Data,Stocks,DBI,100,100,7.2100,8.6500,144,0,0,0,144,CP
+Mark-to-Market Performance Summary,Data,Stocks,DKS,100,100,135.4100,134.9700,-44,0,0,0,-44,CP
+Mark-to-Market Performance Summary,Data,Stocks,EBIX,100,100,22.0000,22.0500,5,0,0,0,5,CP
+Mark-to-Market Performance Summary,Data,Stocks,MOS,200,200,36.2800,34.9300,-270,0,0,0,-270,CP
+Mark-to-Market Performance Summary,Data,Stocks,NTR,100,100,59.3400,58.9400,-40,0,0,0,-40,CP
+Mark-to-Market Performance Summary,Data,Stocks,NVDA,100,100,374.7500,385.1000,1035,0,0,0,1035,CP
+Mark-to-Market Performance Summary,Data,Stocks,OVV,100,200,38.1700,38.0100,-16,-13,-0.37025725,0,-29.37025725,CP
+Mark-to-Market Performance Summary,Data,Stocks,PBF,100,100,40.8700,41.3200,45,0,0,0,45,CP
+Mark-to-Market Performance Summary,Data,Stocks,SPG,100,0,112.7000,109.7100,-299,-1971,-0.0865,0,-2270.0865,CP
+Mark-to-Market Performance Summary,Data,Stocks,TECK,0,100,--,42.7500,0,6,-0.37025725,0,5.62974275,CP
+Mark-to-Market Performance Summary,Data,Stocks,VFC,0,200,--,19.6100,0,28,-0.8405145,0,27.1594855,CP
+Mark-to-Market Performance Summary,Data,Stocks,VLO,100,100,113.5200,112.4400,-108,0,0,0,-108,
+Mark-to-Market Performance Summary,Data,Total,,,,,,470,-2006,-2.18543825,0,-1538.18543825,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,ALLY 16JUN23 22 C,-1,-1,6.5985,6.4337,16.48,0,0,0,16.48,CP
+Mark-to-Market Performance Summary,Data,Equity and Index Options,BAC 16JUN23 27 C,-2,-2,2.5851,2.3126,54.5,0,0,0,54.5,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,BAC 16JUN23 30 P,1,1,0.7592,0.9061,14.69,0,0,0,14.69,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,BBWI 16JUN23 35 C,-1,0,6.3196,7.0994,-77.98,56.94,-1.05155,0,-22.09155,CP
+Mark-to-Market Performance Summary,Data,Equity and Index Options,DBI 21JUL23 7.5 C,-1,-1,0.6750,1.2714,-59.64,0,0,0,-59.64,CP
+Mark-to-Market Performance Summary,Data,Equity and Index Options,DBI 21JUL23 7.5 P,1,1,0.9471,0.1502,-79.69,0,0,0,-79.69,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,DKS 16JUN23 110 C,-1,-1,25.5578,25.0242,53.36,0,0,0,53.36,CP
+Mark-to-Market Performance Summary,Data,Equity and Index Options,EBIX 16JUN23 15 C,-1,-1,7.0505,7.0965,-4.6,0,0,0,-4.6,CP
+Mark-to-Market Performance Summary,Data,Equity and Index Options,MOS 16JUN23 32.5 C,-2,-2,3.8774,2.6503,245.42,0,0,0,245.42,CP
+Mark-to-Market Performance Summary,Data,Equity and Index Options,MOS 16JUN23 32.5 P,2,2,0.0650,0.1650,20,0,0,0,20,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NTR 16JUN23 54 C,-1,-1,5.5669,5.1558,41.11,0,0,0,41.11,CP
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NTR 16JUN23 60 P,1,1,1.5152,1.7147,19.95,0,0,0,19.95,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NVDA 21JUL23 190 C,-1,-1,186.3613,196.2453,-988.4,0,0,0,-988.4,CP
+Mark-to-Market Performance Summary,Data,Equity and Index Options,OVV 16JUN23 34 C,-1,-1,4.3008,4.1075,19.33,0,0,0,19.33,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,OVV 16JUN23 44 P,1,1,6.0868,6.2464,15.96,0,0,0,15.96,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,OVV 21JUL23 34 C,0,-1,--,4.7915,0,2.85,-1.055346,0,1.794654,CP
+Mark-to-Market Performance Summary,Data,Equity and Index Options,PBF 16JUN23 30 C,-1,-1,10.9981,11.3830,-38.49,0,0,0,-38.49,CP
+Mark-to-Market Performance Summary,Data,Equity and Index Options,SPG 21JUL23 90 C,-1,0,22.7000,20.5368,216.32,2053.68,0,0,2270,CP
+Mark-to-Market Performance Summary,Data,Equity and Index Options,TECK 21JUL23 38 C,0,-1,--,5.4914,0,-9.14,-1.05581,0,-10.19581,CP
+Mark-to-Market Performance Summary,Data,Equity and Index Options,VFC 21JUL23 17.5 C,0,-2,--,2.3714,0,-19.28,-1.40912,0,-20.68912,CP
+Mark-to-Market Performance Summary,Data,Equity and Index Options,VLO 16JUN23 105 C,-1,-1,9.0550,7.9802,107.48,0,0,0,107.48,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,VLO 16JUN23 120 P,1,1,6.9224,7.8624,94,0,0,0,94,
+Mark-to-Market Performance Summary,Data,Total,,,,,,-330.2,2085.05,-4.571826,0,1750.278174,
+Mark-to-Market Performance Summary,Data,Forex,CAD,0.000000185,0.000000185,0.74789,0.74864,0,0,0,0,0,
+Mark-to-Market Performance Summary,Data,Forex,USD,2345.816152904,4330.058888654,1.0000,1.0000,0,0,0,0,0,
+Mark-to-Market Performance Summary,Data,Total,,,,,,0,0,0,0,0,
+Mark-to-Market Performance Summary,Data,Total (All Assets),,,,,,139.8,79.05,-6.75726425,0,212.09273575,
+Realized & Unrealized Performance Summary,Header,Asset Category,Symbol,Cost Adj.,Realized S/T Profit,Realized S/T Loss,Realized L/T Profit,Realized L/T Loss,Realized Total,Unrealized S/T Profit,Unrealized S/T Loss,Unrealized L/T Profit,Unrealized L/T Loss,Unrealized Total,Total,Code
+Realized & Unrealized Performance Summary,Data,Stocks,ALLY,0,0,0,0,0,0,197,0,0,0,197,197,CP
+Realized & Unrealized Performance Summary,Data,Stocks,BAC,0,0,0,0,0,0,0,-1047,0,0,-1047,-1047,
+Realized & Unrealized Performance Summary,Data,Stocks,BBWI,0,326.48209075,0,0,0,326.48209075,0,0,0,0,0,326.48209075,CP
+Realized & Unrealized Performance Summary,Data,Stocks,DBI,0,0,0,0,0,0,0,-21,0,0,-21,-21,CP
+Realized & Unrealized Performance Summary,Data,Stocks,DKS,0,0,0,0,0,0,953,0,0,0,953,953,CP
+Realized & Unrealized Performance Summary,Data,Stocks,EBIX,0,0,0,0,0,0,423,0,0,0,423,423,CP
+Realized & Unrealized Performance Summary,Data,Stocks,MOS,0,0,0,0,0,0,0,-131,0,0,-131,-131,CP
+Realized & Unrealized Performance Summary,Data,Stocks,NTR,0,0,0,0,0,0,0,-1189,0,0,-1189,-1189,CP
+Realized & Unrealized Performance Summary,Data,Stocks,NVDA,0,0,0,0,0,0,12082,0,0,0,12082,12082,CP
+Realized & Unrealized Performance Summary,Data,Stocks,OVV,0,0,0,0,0,0,0,-1235.370257,0,0,-1235.370257,-1235.370257,CP
+Realized & Unrealized Performance Summary,Data,Stocks,PBF,0,0,0,0,0,0,0,-552,0,0,-552,-552,CP
+Realized & Unrealized Performance Summary,Data,Stocks,SPG,0,64.851378,0,0,0,64.851378,0,0,0,0,0,64.851378,CP
+Realized & Unrealized Performance Summary,Data,Stocks,TECK,0,0,0,0,0,0,5.629743,0,0,0,5.629743,5.629743,CP
+Realized & Unrealized Performance Summary,Data,Stocks,VFC,0,0,0,0,0,0,27.159486,0,0,0,27.159486,27.159486,CP
+Realized & Unrealized Performance Summary,Data,Stocks,VLO,0,0,0,0,0,0,0,-2703,0,0,-2703,-2703,
+Realized & Unrealized Performance Summary,Data,Total,,0,391.33346875,0,0,0,391.33346875,13687.789229,-6878.370257,0,0,6809.418972,7200.75244075,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,ALLY 16JUN23 22 C,0,0,0,0,0,0,0,-117.425706,0,0,-117.425706,-117.425706,CP
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,BAC 16JUN23 27 C,0,0,0,0,0,0,102.68583,-71.96277,0,0,30.72306,30.72306,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,BAC 16JUN23 30 P,0,0,0,0,0,0,0,-83.43905,0,0,-83.43905,-83.43905,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,BBWI 16JUN23 35 C,0,0,-293.105936,0,0,-293.105936,0,0,0,0,0,-293.105936,CP
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,DBI 21JUL23 7.5 C,0,0,0,0,0,0,48.807094,0,0,0,48.807094,48.807094,CP
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,DBI 21JUL23 7.5 P,0,0,0,0,0,0,0,-115.27905,0,0,-115.27905,-115.27905,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,DKS 16JUN23 110 C,0,0,0,0,0,0,1309.898006,0,0,0,1309.898006,1309.898006,CP
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,EBIX 16JUN23 15 C,0,0,0,0,0,0,0,-244.705218,0,0,-244.705218,-244.705218,CP
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,MOS 16JUN23 32.5 C,0,0,0,0,0,0,168.52892,0,0,0,168.52892,168.52892,CP
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,MOS 16JUN23 32.5 P,0,0,0,0,0,0,0,-277.8981,0,0,-277.8981,-277.8981,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NTR 16JUN23 54 C,0,0,0,0,0,0,0,-386.23253,0,0,-386.23253,-386.23253,CP
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NTR 16JUN23 60 P,0,0,0,0,0,0,0,-132.57905,0,0,-132.57905,-132.57905,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NVDA 21JUL23 190 C,0,0,0,0,0,0,0,-11721.644722,0,0,-11721.644722,-11721.644722,CP
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,OVV 16JUN23 34 C,0,0,0,0,0,0,0,-219.403026,0,0,-219.403026,-219.403026,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,OVV 16JUN23 44 P,0,0,0,0,0,0,0,-361.00905,0,0,-361.00905,-361.00905,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,OVV 21JUL23 34 C,0,0,0,0,0,0,1.794654,0,0,0,1.794654,1.794654,CP
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,PBF 16JUN23 30 C,0,0,0,0,0,0,627.634374,0,0,0,627.634374,627.634374,CP
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,TECK 21JUL23 38 C,0,0,0,0,0,0,0,-10.19581,0,0,-10.19581,-10.19581,CP
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,VFC 21JUL23 17.5 C,0,0,0,0,0,0,0,-20.68912,0,0,-20.68912,-20.68912,CP
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,VLO 16JUN23 105 C,0,0,0,0,0,0,0,-12.727778,0,0,-12.727778,-12.727778,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,VLO 16JUN23 120 P,0,0,0,0,0,0,0,-355.45905,0,0,-355.45905,-355.45905,
+Realized & Unrealized Performance Summary,Data,Total,,0,0,-293.105936,0,0,-293.105936,2259.348878,-14130.65003,0,0,-11871.301152,-12164.407088,
+Realized & Unrealized Performance Summary,Data,Total (All Assets),,0,391.33346875,-293.105936,0,0,98.22753275,15947.138107,-21009.020287,0,0,-5061.88218,-4963.65464725,
+Cash Report,Header,Currency Summary,Currency,Total,
+Cash Report,Data,Starting Cash,Base Currency Summary,2345.816153042,
+Cash Report,Data,Commissions,Base Currency Summary,-6.75726425,
+Cash Report,Data,Trades (Sales),Base Currency Summary,14621,
+Cash Report,Data,Trades (Purchase),Base Currency Summary,-12630,
+Cash Report,Data,Ending Cash,Base Currency Summary,4330.058888792,
+Cash Report,Data,Ending Settled Cash,Base Currency Summary,2339.058888792,
+Open Positions,Header,DataDiscriminator,Asset Category,Currency,Symbol,Quantity,Mult,Cost Price,Cost Basis,Close Price,Value,Unrealized P/L,Code
+Open Positions,Data,Summary,Stocks,USD,ALLY,100,1,26.43,2643,28.4,2840,197,CP
+Open Positions,Data,Summary,Stocks,USD,BAC,200,1,34.465,6893,29.23,5846,-1047,
+Open Positions,Data,Summary,Stocks,USD,DBI,100,1,8.86,886,8.65,865,-21,CP
+Open Positions,Data,Summary,Stocks,USD,DKS,100,1,125.44,12544,134.97,13497,953,CP
+Open Positions,Data,Summary,Stocks,USD,EBIX,100,1,17.82,1782,22.05,2205,423,CP
+Open Positions,Data,Summary,Stocks,USD,MOS,200,1,35.585,7117,34.93,6986,-131,CP
+Open Positions,Data,Summary,Stocks,USD,NTR,100,1,70.83,7083,58.94,5894,-1189,CP
+Open Positions,Data,Summary,Stocks,USD,NVDA,100,1,264.28,26428,385.1,38510,12082,CP
+Open Positions,Data,Summary,Stocks,USD,OVV,200,1,44.186851285,8837.370257,38.01,7602,-1235.370257,CP
+Open Positions,Data,Summary,Stocks,USD,PBF,100,1,46.84,4684,41.32,4132,-552,CP
+Open Positions,Data,Summary,Stocks,USD,TECK,100,1,42.69370257,4269.370257,42.75,4275,5.629743,CP
+Open Positions,Data,Summary,Stocks,USD,VFC,200,1,19.47420257,3894.840514,19.61,3922,27.159486,CP
+Open Positions,Data,Summary,Stocks,USD,VLO,100,1,139.47,13947,112.44,11244,-2703,
+Open Positions,Total,,Stocks,USD,,,,,101008.581028,,107818,6809.418972,
+Open Positions,Header,DataDiscriminator,Asset Category,Currency,Symbol,Quantity,Mult,Cost Price,Cost Basis,Close Price,Value,Unrealized P/L,Code
+Open Positions,Data,Summary,Equity and Index Options,USD,ALLY 16JUN23 22 C,-1,100,5.25944294,-525.944294,6.4337,-643.37,-117.425706,CP
+Open Positions,Data,Summary,Equity and Index Options,USD,BAC 16JUN23 27 C,-2,100,2.4662153,-493.24306,2.3126,-462.52,30.72306,
+Open Positions,Data,Summary,Equity and Index Options,USD,BAC 16JUN23 30 P,1,100,1.7404905,174.04905,0.9061,90.61,-83.43905,
+Open Positions,Data,Summary,Equity and Index Options,USD,DBI 21JUL23 7.5 C,-1,100,1.75947094,-175.947094,1.2714,-127.14,48.807094,CP
+Open Positions,Data,Summary,Equity and Index Options,USD,DBI 21JUL23 7.5 P,1,100,1.3029905,130.29905,0.1502,15.02,-115.27905,
+Open Positions,Data,Summary,Equity and Index Options,USD,DKS 16JUN23 110 C,-1,100,38.12318006,-3812.318006,25.0242,-2502.42,1309.898006,CP
+Open Positions,Data,Summary,Equity and Index Options,USD,EBIX 16JUN23 15 C,-1,100,4.64944782,-464.944782,7.0965,-709.65,-244.705218,CP
+Open Positions,Data,Summary,Equity and Index Options,USD,MOS 16JUN23 32.5 C,-2,100,3.4929446,-698.58892,2.6503,-530.06,168.52892,CP
+Open Positions,Data,Summary,Equity and Index Options,USD,MOS 16JUN23 32.5 P,2,100,1.5544905,310.8981,0.165,33,-277.8981,
+Open Positions,Data,Summary,Equity and Index Options,USD,NTR 16JUN23 54 C,-1,100,1.2934747,-129.34747,5.1558,-515.58,-386.23253,CP
+Open Positions,Data,Summary,Equity and Index Options,USD,NTR 16JUN23 60 P,1,100,3.0404905,304.04905,1.7147,171.47,-132.57905,
+Open Positions,Data,Summary,Equity and Index Options,USD,NVDA 21JUL23 190 C,-1,100,79.02885278,-7902.885278,196.2453,-19624.53,-11721.644722,CP
+Open Positions,Data,Summary,Equity and Index Options,USD,OVV 16JUN23 34 C,-1,100,1.91346974,-191.346974,4.1075,-410.75,-219.403026,
+Open Positions,Data,Summary,Equity and Index Options,USD,OVV 16JUN23 44 P,1,100,9.8564905,985.64905,6.2464,624.64,-361.00905,
+Open Positions,Data,Summary,Equity and Index Options,USD,OVV 21JUL23 34 C,-1,100,4.80944654,-480.944654,4.7915,-479.15,1.794654,CP
+Open Positions,Data,Summary,Equity and Index Options,USD,PBF 16JUN23 30 C,-1,100,17.65934374,-1765.934374,11.383,-1138.3,627.634374,CP
+Open Positions,Data,Summary,Equity and Index Options,USD,TECK 21JUL23 38 C,-1,100,5.3894419,-538.94419,5.4914,-549.14,-10.19581,CP
+Open Positions,Data,Summary,Equity and Index Options,USD,VFC 21JUL23 17.5 C,-2,100,2.2679544,-453.59088,2.3714,-474.28,-20.68912,CP
+Open Positions,Data,Summary,Equity and Index Options,USD,VLO 16JUN23 105 C,-1,100,7.85292222,-785.292222,7.9802,-798.02,-12.727778,
+Open Positions,Data,Summary,Equity and Index Options,USD,VLO 16JUN23 120 P,1,100,11.4169905,1141.69905,7.8624,786.24,-355.45905,
+Open Positions,Total,,Equity and Index Options,USD,,,,,-15372.628848,,-27243.93,-11871.301152,
+Complex Positions Summary,Header,Currency,Description,Symbol,Quantity,Multiplier,Close Price,Value,MTM P/L
+Complex Positions Summary,Data,USD,ALLY +100xSTK  -1xJun 22 Call STK/OPT,,1,-,-,2196.63,3.48
+Complex Positions Summary,Data,USD,ALLY FINANCIAL INC,ALLY,100,1,28.4,2840,-13
+Complex Positions Summary,Data,USD,ALLY 16JUN23 22 C,ALLY  230616C00022000,-1,100,6.4337,-643.37,16.48
+Complex Positions Summary,Data,USD,BBWI +100xSTK  -1xJun 35 Call STK/OPT,,0,-,-,-,2.390541
+Complex Positions Summary,Data,USD,BATH & BODY WORKS INC,BBWI,0,-,-,-,24.482091
+Complex Positions Summary,Data,USD,BBWI 16JUN23 35 C,BBWI  230616C00035000,0,-,-,-,-22.09155
+Complex Positions Summary,Data,USD,DBI +100xSTK  -1xJul 7.5 Call STK/OPT,,1,-,-,737.86,84.36
+Complex Positions Summary,Data,USD,DESIGNER BRANDS INC-CLASS A,DBI,100,1,8.65,865,144
+Complex Positions Summary,Data,USD,DBI 21JUL23 7.5 C,DBI   230721C00007500,-1,100,1.2714,-127.14,-59.64
+Complex Positions Summary,Data,USD,DKS +100xSTK  -1xJun 110 Call STK/OPT,,1,-,-,10994.58,9.36
+Complex Positions Summary,Data,USD,DICK'S SPORTING GOODS INC,DKS,100,1,134.97,13497,-44
+Complex Positions Summary,Data,USD,DKS 16JUN23 110 C,DKS   230616C00110000,-1,100,25.0242,-2502.42,53.36
+Complex Positions Summary,Data,USD,EBIX +100xSTK  -1xJun 15 Call STK/OPT,,1,-,-,1495.35,0.4
+Complex Positions Summary,Data,USD,EBIX INC,EBIX,100,1,22.05,2205,5
+Complex Positions Summary,Data,USD,EBIX 16JUN23 15 C,EBIX  230616C00015000,-1,100,7.0965,-709.65,-4.6
+Complex Positions Summary,Data,USD,MOS +100xSTK  -1xJun 32.5 Call STK/OPT,,2,-,-,6455.94,-24.58
+Complex Positions Summary,Data,USD,MOSAIC CO/THE,MOS,200,1,34.93,6986,-270
+Complex Positions Summary,Data,USD,MOS 16JUN23 32.5 C,MOS   230616C00032500,-2,100,2.6503,-530.06,245.42
+Complex Positions Summary,Data,USD,NTR +100xSTK  -1xJun 54 Call STK/OPT,,1,-,-,5378.42,1.11
+Complex Positions Summary,Data,USD,NUTRIEN LTD,NTR,100,1,58.94,5894,-40
+Complex Positions Summary,Data,USD,NTR 16JUN23 54 C,NTR   230616C00054000,-1,100,5.1558,-515.58,41.11
+Complex Positions Summary,Data,USD,NVDA +100xSTK  -1xJul 190 Call STK/OPT,,1,-,-,18885.47,46.6
+Complex Positions Summary,Data,USD,NVIDIA CORP,NVDA,100,1,385.1,38510,1035
+Complex Positions Summary,Data,USD,NVDA 21JUL23 190 C,NVDA  230721C00190000,-1,100,196.2453,-19624.53,-988.4
+Complex Positions Summary,Data,USD,OVV +100xSTK  -1xJul 34 Call STK/OPT,,1,-,-,3321.85,-11.575603
+Complex Positions Summary,Data,USD,OVINTIV INC,OVV,100,1,38.01,3801,-13.370257
+Complex Positions Summary,Data,USD,OVV 21JUL23 34 C,OVV   230721C00034000,-1,100,4.7915,-479.15,1.794654
+Complex Positions Summary,Data,USD,PBF +100xSTK  -1xJun 30 Call STK/OPT,,1,-,-,2993.7,6.51
+Complex Positions Summary,Data,USD,PBF ENERGY INC-CLASS A,PBF,100,1,41.32,4132,45
+Complex Positions Summary,Data,USD,PBF 16JUN23 30 C,PBF   230616C00030000,-1,100,11.383,-1138.3,-38.49
+Complex Positions Summary,Data,USD,TECK +100xSTK  -1xJul 38 Call STK/OPT,,1,-,-,3725.86,-4.566067
+Complex Positions Summary,Data,USD,TECK RESOURCES LTD-CLS B,TECK,100,1,42.75,4275,5.629743
+Complex Positions Summary,Data,USD,TECK 21JUL23 38 C,TECK  230721C00038000,-1,100,5.4914,-549.14,-10.19581
+Complex Positions Summary,Data,USD,VFC +100xSTK  -1xJul 17.5 Call STK/OPT,,2,-,-,3447.72,6.470366
+Complex Positions Summary,Data,USD,VF CORP,VFC,200,1,19.61,3922,27.159486
+Complex Positions Summary,Data,USD,VFC 21JUL23 17.5 C,VFC   230721C00017500,-2,100,2.3714,-474.28,-20.68912
+Complex Positions Summary,Data,Total,,,,,,59633.38,119.959237
+Trades,Header,DataDiscriminator,Asset Category,Currency,Symbol,Date/Time,Quantity,T. Price,C. Price,Proceeds,Comm/Fee,Basis,Realized P/L,MTM P/L,Code
+Trades,Data,Order,Stocks,USD,BBWI,"2023-06-08, 09:30:24",-100,41.44,42,4144,-0.51790925,-3817,326.482091,-56,C;CP
+Trades,SubTotal,,Stocks,USD,BBWI,,-100,,,4144,-0.51790925,-3817,326.482091,-56,
+Trades,Total,,Stocks,USD,,,,,,1167,-2.18543825,-2101.418971,391.333469,-2006,
+Trades,Header,DataDiscriminator,Asset Category,Currency,Symbol,Date/Time,Quantity,T. Price,C. Price,Proceeds,Comm/Fee,Basis,Realized P/L,MTM P/L,Code
+Trades,Data,Order,Equity and Index Options,USD,BBWI 16JUN23 35 C,"2023-06-08, 09:30:24",1,6.53,7.0994,-653,-1.05155,360.945614,-293.105936,56.94,C;CP
+Trades,SubTotal,,Equity and Index Options,USD,BBWI 16JUN23 35 C,,1,,,-653,-1.05155,360.945614,-293.105936,56.94,
+Trades,Total,,Equity and Index Options,USD,,,,,,824,-4.571826,215.403768,-293.105936,2085.05,
+Financial Instrument Information,Header,Asset Category,Symbol,Description,Conid,Security ID,Listing Exch,Multiplier,Type,Code
+Financial Instrument Information,Data,Stocks,ALLY,ALLY FINANCIAL INC,148233980,US02005N1000,NYSE,1,COMMON,CP
+Financial Instrument Information,Data,Stocks,BAC,BANK OF AMERICA CORP,10098,US0605051046,NYSE,1,COMMON,
+Financial Instrument Information,Data,Stocks,BBWI,BATH & BODY WORKS INC,502252263,US0708301041,NYSE,1,COMMON,CP
+Financial Instrument Information,Data,Stocks,DBI,DESIGNER BRANDS INC-CLASS A,358401411,US2505651081,NYSE,1,COMMON,CP
+Financial Instrument Information,Data,Stocks,DKS,DICK'S SPORTING GOODS INC,16310970,US2533931026,NYSE,1,COMMON,CP
+Financial Instrument Information,Data,Stocks,EBIX,EBIX INC,6732559,US2787152063,NASDAQ,1,COMMON,CP
+Financial Instrument Information,Data,Stocks,MOS,MOSAIC CO/THE,88292752,US61945C1036,NYSE,1,COMMON,CP
+Financial Instrument Information,Data,Stocks,NTR,NUTRIEN LTD,301035662,CA67077M1086,NYSE,1,COMMON,CP
+Financial Instrument Information,Data,Stocks,NVDA,NVIDIA CORP,4815747,US67066G1040,NASDAQ,1,COMMON,CP
+Financial Instrument Information,Data,Stocks,OVV,OVINTIV INC,400651394,US69047Q1022,NYSE,1,COMMON,CP
+Financial Instrument Information,Data,Stocks,PBF,PBF ENERGY INC-CLASS A,118786560,US69318G1067,NYSE,1,COMMON,CP
+Financial Instrument Information,Data,Stocks,SPG,SIMON PROPERTY GROUP INC,2009113,US8288061091,NYSE,1,REIT,CP
+Financial Instrument Information,Data,Stocks,TECK,TECK RESOURCES LTD-CLS B,39921623,CA8787422044,NYSE,1,COMMON,CP
+Financial Instrument Information,Data,Stocks,VFC,VF CORP,13440,US9182041080,NYSE,1,COMMON,CP
+Financial Instrument Information,Data,Stocks,VLO,VALERO ENERGY CORP,13497,US91913Y1001,NYSE,1,COMMON,
+Financial Instrument Information,Header,Asset Category,Symbol,Description,Conid,Listing Exch,Multiplier,Expiry,Delivery Month,Type,Strike,Code
+Financial Instrument Information,Data,Equity and Index Options,ALLY  230616C00022000,ALLY 16JUN23 22 C,592418131,CBOE,100,2023-06-16,2023-06,C,22,CP
+Financial Instrument Information,Data,Equity and Index Options,BAC   230616C00027000,BAC 16JUN23 27 C,597696584,CBOE,100,2023-06-16,2023-06,C,27,
+Financial Instrument Information,Data,Equity and Index Options,BAC   230616P00030000,BAC 16JUN23 30 P,549697296,CBOE,100,2023-06-16,2023-06,P,30,
+Financial Instrument Information,Data,Equity and Index Options,BBWI  230616C00035000,BBWI 16JUN23 35 C,625298147,CBOE,100,2023-06-16,2023-06,C,35,CP
+Financial Instrument Information,Data,Equity and Index Options,DBI   230721C00007500,DBI 21JUL23 7.5 C,598198670,CBOE,100,2023-07-21,2023-07,C,7.5,CP
+Financial Instrument Information,Data,Equity and Index Options,DBI   230721P00007500,DBI 21JUL23 7.5 P,598199186,CBOE,100,2023-07-21,2023-07,P,7.5,
+Financial Instrument Information,Data,Equity and Index Options,DKS   230616C00110000,DKS 16JUN23 110 C,592516705,CBOE,100,2023-06-16,2023-06,C,110,CP
+Financial Instrument Information,Data,Equity and Index Options,EBIX  230616C00015000,EBIX 16JUN23 15 C,579540934,CBOE,100,2023-06-16,2023-06,C,15,CP
+Financial Instrument Information,Data,Equity and Index Options,MOS   230616C00032500,MOS 16JUN23 32.5 C,632522361,CBOE,100,2023-06-16,2023-06,C,32.5,CP
+Financial Instrument Information,Data,Equity and Index Options,MOS   230616P00032500,MOS 16JUN23 32.5 P,632524157,CBOE,100,2023-06-16,2023-06,P,32.5,
+Financial Instrument Information,Data,Equity and Index Options,NTR   230616C00054000,NTR 16JUN23 54 C,632511030,CBOE,100,2023-06-16,2023-06,C,54,CP
+Financial Instrument Information,Data,Equity and Index Options,NTR   230616P00060000,NTR 16JUN23 60 P,592740654,CBOE,100,2023-06-16,2023-06,P,60,
+Financial Instrument Information,Data,Equity and Index Options,NVDA  230721C00190000,NVDA 21JUL23 190 C,611591900,CBOE,100,2023-07-21,2023-07,C,190,CP
+Financial Instrument Information,Data,Equity and Index Options,OVV   230616C00034000,OVV 16JUN23 34 C,626864704,CBOE,100,2023-06-16,2023-06,C,34,
+Financial Instrument Information,Data,Equity and Index Options,OVV   230616P00044000,OVV 16JUN23 44 P,626866734,CBOE,100,2023-06-16,2023-06,P,44,
+Financial Instrument Information,Data,Equity and Index Options,OVV   230721C00034000,OVV 21JUL23 34 C,620361329,CBOE,100,2023-07-21,2023-07,C,34,CP
+Financial Instrument Information,Data,Equity and Index Options,PBF   230616C00030000,PBF 16JUN23 30 C,538423953,CBOE,100,2023-06-16,2023-06,C,30,CP
+Financial Instrument Information,Data,Equity and Index Options,SPG   230721C00090000,SPG 21JUL23 90 C,598492440,CBOE,100,2023-07-21,2023-07,C,90,CP
+Financial Instrument Information,Data,Equity and Index Options,TECK  230721C00038000,TECK 21JUL23 38 C,625408463,CBOE,100,2023-07-21,2023-07,C,38,CP
+Financial Instrument Information,Data,Equity and Index Options,VFC   230721C00017500,VFC 21JUL23 17.5 C,632076953,CBOE,100,2023-07-21,2023-07,C,17.5,CP
+Financial Instrument Information,Data,Equity and Index Options,VLO   230616C00105000,VLO 16JUN23 105 C,569663783,CBOE,100,2023-06-16,2023-06,C,105,
+Financial Instrument Information,Data,Equity and Index Options,VLO   230616P00120000,VLO 16JUN23 120 P,569664883,CBOE,100,2023-06-16,2023-06,P,120,
+Codes,Header,Code,Meaning,Code (Cont.),Meaning (Cont.)
+Codes,Data,A,Assignment
+Codes,Data,ADR,ADR Fee Accrual
+Codes,Data,AEx,Automatic exercise for dividend-related recommendation.
+Codes,Data,AFx,AutoFX conversion resulting from trading
+Codes,Data,Adj,Adjustment
+Codes,Data,Al,Allocation
+Codes,Data,Aw,Away Trade
+Codes,Data,B,Automatic Buy-in
+Codes,Data,Bo,Direct Borrow
+Codes,Data,C,Closing Trade
+Codes,Data,CD,Cash Delivery
+Codes,Data,CP,Complex Position
+Codes,Data,Ca,Cancelled
+Codes,Data,Co,Corrected Trade
+Codes,Data,Cx,Part or all of this transaction was a Crossing executed as dual agent by IB for two IB customers
+Codes,Data,ETF,ETF Creation/Redemption
+Codes,Data,Ep,Resulted from an Expired Position
+Codes,Data,Ex,Exercise
+Codes,Data,FP,The fractional portion of this trade was executed against IB or an affiliate.
+Codes,Data,FPA,The fractional portion of this trade was executed against IB or an affiliate. IB acted as agent for the whole share portion of this trade.
+Codes,Data,G,Trade in Guaranteed Account Segment
+Codes,Data,GEA,Exercise or Assignment resulting from offsetting positions
+Codes,Data,HC,Highest Cost tax basis election
+Codes,Data,HFI,Investment Transferred to Hedge Fund
+Codes,Data,HFR,Redemption from Hedge Fund
+Codes,Data,I,Internal Transfer
+Codes,Data,IA,The transaction was executed against IB or an affiliate
+Codes,Data,IM,A portion of the order was executed against IB or an affiliate; IB acted as agent on a portion.
+Codes,Data,INV,Investment Transfer from Investor
+Codes,Data,IPO,This transaction was executed as part of an IPO in which IB was a member of the selling group and is classified as a Principal trade.
+Codes,Data,L,Ordered by IB (Margin Violation)
+Codes,Data,LD,Adjusted by Loss Disallowed from Wash Sale
+Codes,Data,LI,"Last In, First Out (LIFO) tax basis election"
+Codes,Data,LT,Long Term P/L
+Codes,Data,Lo,Direct Loan
+Codes,Data,M,Entered manually by IB
+Codes,Data,MEx,Manual exercise for dividend-related recommendation.
+Codes,Data,ML,Maximize Losses tax basis election
+Codes,Data,MLG,Maximize Long Term Gain tax basis election
+Codes,Data,MLL,Maximize Long Term Loss tax basis election
+Codes,Data,MSG,Maximize Short Term Gain tax basis election
+Codes,Data,MSL,Maximize Short Term Loss tax basis election
+Codes,Data,O,Opening Trade
+Codes,Data,P,Partial Execution
+Codes,Data,PI,Price Improvement
+Codes,Data,Po,Interest or Dividend Accrual Posting
+Codes,Data,Pr,Part or all of this transaction was executed by the Exchange as a Crossing by IB against an IB affiliate and is therefore classified as a Principal and not an agency trade
+Codes,Data,R,Dividend Reinvestment
+Codes,Data,RED,Redemption to Investor
+Codes,Data,RI,Recurring Investment
+Codes,Data,RP,"IB acted as agent for the fractional share portion of this trade, which was executed by an IB affiliate as riskless principal."
+Codes,Data,RPA,IB acted as agent for both the fractional share portion and the whole share portion of this trade; the fractional share portion was executed by an IB Affiliate as riskless principal.
+Codes,Data,Rb,Rebill
+Codes,Data,Re,Interest or Dividend Accrual Reversal
+Codes,Data,Ri,Reimbursement
+Codes,Data,SI,This order was solicited by Interactive Brokers
+Codes,Data,SL,Specific Lot tax basis election
+Codes,Data,SO,This order was marked as solicited by your Introducing Broker
+Codes,Data,SS,Customer designated this trade for shortened settlement and so is subject to execution at prices above the prevailing market
+Codes,Data,ST,Short Term P/L
+Codes,Data,T,Transfer
+Codes,Data,Un,Unvested shares from stock grant
+Notes/Legal Notes,Header,Type,Note
+Notes/Legal Notes,Data,Notes,"Most stock exchange transactions settle on the trade date plus two business days. Options, futures and US open-end mutual fund transactions settle on trade date plus one business day. (Some exchanges and other transaction types may have longer or shorter settlement periods.) Ending settled cash reflects the cash that has actually settled.  "
+Notes/Legal Notes,Data,Notes,Initial and maintenance margin requirements are available within the Account Window of the Trader Workstation.
+REMOVED LINE
+Notes/Legal Notes,Data,Notes,"IB acts as agent in executing the fractional share portion of your order. In certain circumstances, IB routes the fractional portion of your order to an affiliate, which may execute the fractional portion of the order as principal. In such circumstances, this is indicated by the codes associated with the trade. If an IB affiliate acts as principal in executing any fractional share portion of your order, the order will be executed at the price displayed for the opposite side of the NBBO from your order (the offer if you are buying and the bid if you are selling) at the time of execution. If an IB affiliate is acting as riskless principal in connection with filling the fractional share portion of your order, the affiliate will execute the fractional share portion of your order at the price it receives for the execution of the whole share."
+Notes/Legal Notes,Data,Notes,"In case of partial executions, commissions are charged on the total quantity executed on the original order. The commission is displayed on the first partial execution only."
+Notes/Legal Notes,Data,Notes,Each closed lot indicated above with a reference to note (6) was chosen by the end of the trading day to be sold versus the specific opening purchase identified in that row.
+Notes/Legal Notes,Data,Notes,Trade execution times are displayed in Eastern Time.
+Notes/Legal Notes,Data,Notes,Applicable commodity Regulatory Fees for your transactions are available on the IB website at www.interactivebrokers.com/en/accounts/fees/exchangeAndRegulatoryFees.php.
+Notes/Legal Notes,Data,Notes,"Borrow Fee Rate represents the cost to borrow stock expressed in percent per annum. It is applied to the collateral value on the stock borrow contract and is separate from any interest earned on credit cash balances. Similarly, Loan Fee Rate represents the benefit to lend stock. A positive rate indicates a cost to the borrower/benefit to the lender and a negative rate indicates a benefit to the borrower/cost to the lender. In general, the fee rates for hard-to-borrow stocks are higher than for normal availability stocks."
+Notes/Legal Notes,Data,Notes,Interest Rate on Customer Collateral represents the interest paid on the collateral posted to the customer's account and received from lending stock.  A positive rate indicates a benefit to the lender.
+Notes/Legal Notes,Data,Notes,"The closing prices on this Activity Statement are indicative and may come from third-party sources. Interactive Brokers does not warrant the accuracy of the prices provided by third-party sources. Due to time zone differences, certain non-US mutual funds may deliver closing prices after the Activity Statement has been produced and the closing prices for such funds will reflect the previous day's price."
+Notes/Legal Notes,Data,Notes,All Market Data and Research services are provided through Global Financial Information Services (GmbH).
+Notes/Legal Notes,Data,Notes,"Market data is provided by Global Financial Information Services (GmbH). Your local broker collects amounts owed for fees and tax for such data on behalf of Global Financial Information Services (GmbH). Note, you are responsible for any applicable taxes relating to the provision of these services."
+Notes/Legal Notes,Data,Notes,"Please note that the ""cost"" of a security position refers to its ""book cost"" which means, in the case of a long security position, the total amount paid for the security, including any transaction charges related to the purchase and in the case of a short security position, the total amount received for the security, net of any transaction charges related to the sale, adjusted for distributions (other than dividends for short security position), returns of capital and corporate actions. In the case of securities transferred in, ""cost"" may in some instances refer to the market value of the security position as at the date of transfer and in such cases, market value information will be used to estimate part or all of the book cost of the relevant security position unless IBC reasonably believes it cannot determine the book cost of such security position.  Accordingly, the stated cost may not be appropriate for account performance or tax reporting purposes."
+Notes/Legal Notes,Data,Fixed Income Notes,"Call features for bonds or preferred stocks may affect the yield. For zero coupon, compound interest and multiplier securities, there are no periodic payments and securities may be callable below maturity value without notice to holder unless registered. For asset-backed securities, the actual yield may vary depending on the speed at which the underlying note is pre-paid. For additional information regarding bond yield, please contact the IB Help Desk at: help@interactivebrokers.com. If this debt security is unrated by a nationally recognized statistical rating organization, it may pose a high risk of default. You should consult a financial advisor to determine whether unrated bonds are appropriate for your portfolio in light of your goals and your financial circumstances. Fees charged by bond trading centers are included in the cost of bond transactions."
+Notes/Legal Notes,Data,Legal Notes,"THIS STATEMENT IS BEING ISSUED TO YOU BY INTERACTIVE BROKERS CANADA INC. WHO HAS AGREED TO ACT AS THE CUSTODIAN FOR THE ASSETS DISCLOSED ON THIS STATEMENT. THE ASSETS THAT MAY BE ELIGIBLE FOR THE CANADIAN INVESTOR PROTECTION FUND (CIPF) COVERAGE, WITHIN SPECIFIED LIMITS, ARE LIMITED TO THOSE DISCLOSED IN THIS ACCOUNT STATEMENT.Please promptly report any inaccuracy or discrepancy in this statement, or in your account. Contact the IB Customer Service Department in writing using the form available on the IB website. You may also contact IB by phone, but if you report an error by phone, you should re-confirm such oral communication in writing in order to protect your rights, including rights under the Canadian Investor Protection Fund (CIPF).Interactive Brokers Canada Inc., www.interactivebrokers.ca, 877-745-4222 (Can.)"
+Notes/Legal Notes,Data,Legal Notes,"Interactive Brokers Group, Inc. (IBKR-NASDAQ) is a related or connected issuer of Interactive Brokers Canada Inc."
+Notes/Legal Notes,Data,Legal Notes,"Trades marked with the exchange indicator of TMBR were effected by Interactive Brokers Canada Inc.(""IB"" or ""IB Canada"") as agent through a market making affiliate, which acted as principal in the transaction and may have a long or short position in the security and may have profited or lost in connection with the transaction."
+Notes/Legal Notes,Data,Legal Notes,"All Volume Weighted Average Price (VWAP) trades are effected pursuant to an average price formula based on a reference price provided by a third-party data provider. Additional information about reference prices are available upon request.  IB, as agent, effects VWAP transactions through a market making affiliate, which acts as principal in such transactions and may have a long or short position in the security and may have profited or lost in connection with the transaction."
+Notes/Legal Notes,Data,Legal Notes,"IB accepts liquidity rebates or other order flow payments from Alternative Trading Systems, market makers and exchanges for certain orders in stocks. IB receives payment for some option orders pursuant to exchange-mandated marketing fee programs or other arrangements. The source and nature of any compensation received by IB in connection with any transaction is available upon written request of the customer. For further information, check the IB website and the Order Routing and Payment for Order Flow Disclosure provided when you opened your account and annually or email help@interactivebrokers.com."
+Notes/Legal Notes,Data,Legal Notes,"For security futures trades, if not already indicated on this statement, information about the time of any transaction, the identity of the counterparty to the transaction, and whether IB is acting as agent or principal, as agent for the counterparty, as agent for both parties to the contract, or as principal, and if acting as principal, whether the transaction was a block transaction or an exchange for physicals transaction, will be available upon written request of the customer."
+Notes/Legal Notes,Data,Legal Notes,"Interactive Brokers Canada Inc. offers ""Order-Execution Only Accounts."" This is an order execution only account. In addition, Customer is requested to promptly advise IB Canada of any material change in Customer's investment objectives or financial situation."
+Notes/Legal Notes,Data,Legal Notes,"Any free credit balances represent funds payable on demand which, although properly recorded in our books, are not segregated and may be used in the conduct of our business."
+Notes/Legal Notes,Data,Legal Notes,The audited financial summary statements of Interactive Brokers Canada Inc. and a list of the Partners/Directors/Officers (PDOs) of Interactive Brokers Canada Inc. are available upon request.
+Notes/Legal Notes,Data,Legal Notes,We are required to disclose to the Canada Revenue Agency all transactions involving the disposition  of securities.  Therefore we recommend that you keep your statements for tax purposes.
+Notes/Legal Notes,Data,Legal Notes,Customers' accounts are protected by the Canadian Investor Protection Fund within specified limits.  A brochure describing the nature and limits of coverage is available upon request.
+Notes/Legal Notes,Data,Legal Notes,"In accordance with IIROC Rule 3217, Interactive Brokers Canada Inc. is required to provide you with the following Leverage Risk Disclosure Statement:  Using borrowed money to finance the purchase of securities involves greater risk than using cash resources only.  If you borrow money to purchase securities, your responsibility to repay the loan and pay interest as required by its terms remains the same even if the value of the securities purchased declines."
+Notes/Legal Notes,Data,Legal Notes,"**If this portfolio statement differs from your records, please report the differences directly to our external auditors. If no differences are reported, they will assume this portfolio statement is correct.** Deloitte s.e.n.c.r.l., Assurance & Advisory Services, audit-IBC@deloitte.ca, Telephone: 514-390-1712, Fax: 514-390-4113"
+Notes/Legal Notes,Data,Legal Notes,"Interactive Brokers LLC provides execution, clearing and custody services to Interactive Brokers Canada Inc."
+Notes/Legal Notes,Data,Legal Notes,"Interactive Brokers Canada Inc. is a member of the Investment Industry Regulatory Organization of Canada (IIROC) and Member - Canadian Investor Protection Fund. Trading of securities and derivatives may involve a high degree of risk and investors should be prepared for the risk of losing their entire investment and losing further amounts. Interactive Brokers Canada Inc. is an execution-only dealer and does not provide investment advice or recommendations regarding the purchase or sale of any securities or derivatives. Our registered office is located at 1800 McGill College Avenue, Suite 2106, Montreal, Quebec, H3A 3J6, Canada."
+Notes/Legal Notes,Data,Legal Notes,"Interactive Brokers Canada Inc. Self-Directed Plan assets are held in trust by the trustee, The Royal Trust Company."
+Notes/Legal Notes,Data,Legal Notes,Cash balances held in registered accounts are held in trust by The Royal Trust Company.
+Notes/Legal Notes,Data,Legal Notes,There are tax consequences pursuant to the Income Tax Act (Canada) on the acquisition or holding by the registered account of non-qualified investments. Please consult a tax adviser and the Canada Revenue Agency for more details.
