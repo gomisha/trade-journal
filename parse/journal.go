@@ -118,6 +118,9 @@ func (j *Journal) ReadTransactions(csvPath string) []Transaction {
 
 			// look up transactions by ticker and ensure there's a single dividend transaction
 			transaction := j.findSingleTransaction(ticker, "Dividend")
+			if transaction == nil {
+				panic(fmt.Sprintf("expected single dividend transaction for ticker %s", ticker))
+			}
 
 			transaction.fee = rec[5]
 			transaction.notes += "\n15% tax withdrawn"
@@ -217,6 +220,9 @@ func (j *Journal) ReadTransactions(csvPath string) []Transaction {
 				if price == 0 {
 					// look up transactions by ticker and ensure there's a single stock trade transaction
 					singleTransaction := j.findSingleTransaction(transaction.ticker, "Trade")
+					if singleTransaction == nil {
+						panic(fmt.Sprintf("expected single Trade transaction for ticker %s", transaction.ticker))
+					}
 
 					// update that stock trade transaction with option contract name
 					singleTransaction.action = "Trade - Option - Assignment"
@@ -358,7 +364,7 @@ func (j *Journal) findSingleTransaction(ticker string, action string) *Transacti
 		return nil
 	}
 	if len(transactions) > 1 {
-		panic(fmt.Sprintf("expected only 1 transaction for ticker %s but have %d", ticker, len(transactions)))
+		return nil
 	}
 	if (transactions)[0].action != action {
 		// when rolling an option, there won't be a transaction action to match so return nil
