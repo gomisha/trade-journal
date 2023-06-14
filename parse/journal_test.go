@@ -152,6 +152,7 @@ func TestReadTransactions(t *testing.T) {
 			costBasisTotal:       "3817",       // imports IBKR value and multiply by -1
 			realizedPL:           "326.482091", // imports IBKR value
 			commission:           "-0.51790925",
+			notes:                "hit GTC target",
 		},
 		{
 			date:                 "2023-06-08",
@@ -166,6 +167,7 @@ func TestReadTransactions(t *testing.T) {
 			costBasisShare:       "0",
 			costBasisBuyOrOption: "-654.05155",
 			commission:           "-1.05155",
+			notes:                "hit GTC target",
 		},
 	}
 
