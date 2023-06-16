@@ -340,9 +340,7 @@ Complex Positions Summary,Data,USD,VF CORP,VFC,200,1,19.35,3870,16
 Complex Positions Summary,Data,USD,VFC 21JUL23 17.5 C,VFC   230721C00017500,-2,100,2.2971,-459.42,2.74
 Complex Positions Summary,Data,Total,,,,,,29585.58,34.107044
 Trades,Header,DataDiscriminator,Asset Category,Currency,Symbol,Date/Time,Quantity,T. Price,C. Price,Proceeds,Comm/Fee,Basis,Realized P/L,MTM P/L,Code
-Trades,Data,Order,Stocks,USD,DKS,"2023-06-14, 16:20:00",-100,110,135.07,11000,-0.1025,-12544,2268.215506,-2507,A;C;CP
-Trades,SubTotal,,Stocks,USD,DKS,,-100,,,11000,-0.1025,-12544,2268.215506,-2507,
-Trades,Total,,Stocks,USD,,,,,,11000,-0.1025,-12544,2268.215506,-2507, 
+Trades,Total,,Stocks,USD,,,,,,11000,-0.1025,-12544,2268.215506,-2507,
 Trades,Header,DataDiscriminator,Asset Category,Currency,Symbol,Date/Time,Quantity,T. Price,C. Price,Proceeds,Comm/Fee,Basis,Realized P/L,MTM P/L,Code
 Trades,Data,Order,Equity and Index Options,USD,MOS 16JUN23 32.5 C,"2023-06-15, 15:00:00",2,3.125,2.7897,-625,-0.6581,698.58892,72.93082,-67.06,C;CP;P
 Trades,SubTotal,,Equity and Index Options,USD,MOS 16JUN23 32.5 C,,2,,,-625,-0.6581,698.58892,72.93082,-67.06,
