@@ -344,32 +344,10 @@ Trades,Data,Order,Stocks,USD,DKS,"2023-06-14, 16:20:00",-100,110,135.07,11000,-0
 Trades,SubTotal,,Stocks,USD,DKS,,-100,,,11000,-0.1025,-12544,2268.215506,-2507,
 Trades,Total,,Stocks,USD,,,,,,11000,-0.1025,-12544,2268.215506,-2507, 
 Trades,Header,DataDiscriminator,Asset Category,Currency,Symbol,Date/Time,Quantity,T. Price,C. Price,Proceeds,Comm/Fee,Basis,Realized P/L,MTM P/L,Code
-Trades,Data,Order,Equity and Index Options,USD,BAC 16JUN23 27 C,"2023-06-15, 14:46:22",2,2.33,2.3738,-466,-0.6581,493.24306,26.58496,8.76,C;P
-Trades,SubTotal,,Equity and Index Options,USD,BAC 16JUN23 27 C,,2,,,-466,-0.6581,493.24306,26.58496,8.76,
-Trades,Data,Order,Equity and Index Options,USD,BAC 21JUL23 27 C,"2023-06-15, 14:46:22",-2,2.72,2.7888,544,-0.667332,-543.332668,0,-13.76,O;P
-Trades,SubTotal,,Equity and Index Options,USD,BAC 21JUL23 27 C,,-2,,,544,-0.667332,-543.332668,0,-13.76,
-Trades,Data,Order,Equity and Index Options,USD,DKS 16JUN23 110 C,"2023-06-14, 16:20:00",1,0,25.0755,0,0,3812.318006,0,2507.55,A;C;CP
-Trades,SubTotal,,Equity and Index Options,USD,DKS 16JUN23 110 C,,1,,,0,0,3812.318006,0,2507.55,
 Trades,Data,Order,Equity and Index Options,USD,MOS 16JUN23 32.5 C,"2023-06-15, 15:00:00",2,3.125,2.7897,-625,-0.6581,698.58892,72.93082,-67.06,C;CP;P
 Trades,SubTotal,,Equity and Index Options,USD,MOS 16JUN23 32.5 C,,2,,,-625,-0.6581,698.58892,72.93082,-67.06,
 Trades,Data,Order,Equity and Index Options,USD,MOS 21JUL23 32.5 C,"2023-06-15, 15:00:00",-2,3.825,3.5839,765,-0.6691,-764.3309,0,48.22,CP;O;P
 Trades,SubTotal,,Equity and Index Options,USD,MOS 21JUL23 32.5 C,,-2,,,765,-0.6691,-764.3309,0,48.22,
-Trades,Data,Order,Equity and Index Options,USD,NTR 16JUN23 54 C,"2023-06-15, 14:54:08",1,5.99,5.6477,-599,-0.64905,129.34747,-470.30158,-34.23,C;CP
-Trades,SubTotal,,Equity and Index Options,USD,NTR 16JUN23 54 C,,1,,,-599,-0.64905,129.34747,-470.30158,-34.23,
-Trades,Data,Order,Equity and Index Options,USD,NTR 28JUL23 54 C,"2023-06-15, 14:54:08",-1,6.52,6.2717,652,-0.656706,-651.343294,0,24.83,CP;O
-Trades,SubTotal,,Equity and Index Options,USD,NTR 28JUL23 54 C,,-1,,,652,-0.656706,-651.343294,0,24.83,
-Trades,Data,Order,Equity and Index Options,USD,OVV 16JUN23 44 P,"2023-06-15, 15:52:15",-1,6.52,6.46,652,-0.656706,-985.64905,-334.305756,6,C
-Trades,SubTotal,,Equity and Index Options,USD,OVV 16JUN23 44 P,,-1,,,652,-0.656706,-985.64905,-334.305756,6,
-Trades,Data,Order,Equity and Index Options,USD,OVV 21JUL23 44 P,"2023-06-15, 15:52:15",1,6.75,6.6173,-675,-0.64905,675.64905,0,-13.27,O
-Trades,SubTotal,,Equity and Index Options,USD,OVV 21JUL23 44 P,,1,,,-675,-0.64905,675.64905,0,-13.27,
-Trades,Data,Order,Equity and Index Options,USD,VLO 16JUN23 105 C,"2023-06-15, 14:41:58",1,8.98,9.0683,-898,-0.69905,785.292222,-113.406828,8.83,C
-Trades,SubTotal,,Equity and Index Options,USD,VLO 16JUN23 105 C,,1,,,-898,-0.69905,785.292222,-113.406828,8.83,
-Trades,Data,Order,Equity and Index Options,USD,VLO 16JUN23 120 P,"2023-06-15, 14:41:58",-1,6.09,6.0143,609,-0.706362,-1141.69905,-533.405412,7.57,C
-Trades,SubTotal,,Equity and Index Options,USD,VLO 16JUN23 120 P,,-1,,,609,-0.706362,-1141.69905,-533.405412,7.57,
-Trades,Data,Order,Equity and Index Options,USD,VLO 21JUL23 105 C,"2023-06-15, 14:41:58",-1,11.03,11.1226,1103,-0.710314,-1102.289686,0,-9.26,O
-Trades,SubTotal,,Equity and Index Options,USD,VLO 21JUL23 105 C,,-1,,,1103,-0.710314,-1102.289686,0,-9.26,
-Trades,Data,Order,Equity and Index Options,USD,VLO 21JUL23 120 P,"2023-06-15, 14:41:58",1,8.1,8.0125,-810,-0.69905,810.69905,0,-8.75,O
-Trades,SubTotal,,Equity and Index Options,USD,VLO 21JUL23 120 P,,1,,,-810,-0.69905,810.69905,0,-8.75,
 Trades,Total,,Equity and Index Options,USD,,,,,,252,-8.07892,2216.49313,-1351.903796,2465.43,
 Dividends,Header,Currency,Date,Description,Amount
 Dividends,Data,USD,2023-06-15,MOS(US61945C1036) Cash Dividend USD 0.20 per Share (Ordinary Dividend),40
