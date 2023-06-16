@@ -23,6 +23,7 @@ type Transaction struct {
 	shares          string
 	buySell         string // buy / sell / transfer
 	action          string // trade / trade-option / dividend
+	actionModified  string // e.g. "Trade" -> "Trade - Close" (option assignment), "Trade - Option" -> "Trade - Option - Assignment" (option assignment)
 
 	proceeds             string // will be calculated, not imported
 	costBasisShare       string // will be calculated, not imported
@@ -225,7 +226,7 @@ func (j *Journal) ReadTransactions(csvPath string) []Transaction {
 					}
 
 					// update that stock trade transaction with option contract name
-					singleTransaction.action = "Trade - Option - Assignment"
+					singleTransaction.actionModified = "Trade - Option - Assignment"
 					singleTransaction.costBasisBuyOrOption = ""
 					singleTransaction.optionContract = transaction.optionContract
 					costBasisTotal, err := strconv.ParseFloat(singleTransaction.costBasisTotal, 64)
@@ -253,7 +254,7 @@ func (j *Journal) ReadTransactions(csvPath string) []Transaction {
 				if transaction.buySell == "Buy" && lastLetter == "C" {
 					singleTransaction := j.findSingleTransaction(transaction.ticker, "Trade")
 					if singleTransaction != nil {
-						singleTransaction.action = "Trade - Close"
+						singleTransaction.actionModified = "Trade - Close"
 						singleTransaction.costBasisBuyOrOption = ""
 
 						costBasisTotal, err := strconv.ParseFloat(singleTransaction.costBasisTotal, 64)
@@ -363,16 +364,30 @@ func (j *Journal) findSingleTransaction(ticker string, action string) *Transacti
 		// when rolling a call / put there won't be an existing stock transaction so return nil
 		return nil
 	}
-	if len(transactions) > 1 {
-		return nil
+
+	// loop over transactions and find the one with the action
+	matchedTransactions := make([]Transaction, 0)
+	for i, v := range transactions {
+		if v.action == action {
+			matchedTransactions = append(matchedTransactions, transactions[i])
+		}
 	}
-	if (transactions)[0].action != action {
+
+	if len(matchedTransactions) == 0 {
 		// when rolling an option, there won't be a transaction action to match so return nil
 		return nil
 	}
-	return &(transactions)[0]
+
+	// if there is more than 1 transaction with the same action, panic
+	if len(matchedTransactions) > 1 {
+		panic(fmt.Sprintf("expected only 1 transaction for ticker %s with action %s but have %d", ticker, action, len(matchedTransactions)))
+	}
+
+	// return the single matched transaction
+	return &(matchedTransactions)[0]
 }
 
+// update updateSingleTransaction to take another parameter of the Action to match so that can have multiple transactions for the same ticker
 func (j *Journal) updateSingleTransaction(ticker string, transaction Transaction) {
 	if j.trades == nil {
 		panic("No transactions in journal")
@@ -382,10 +397,31 @@ func (j *Journal) updateSingleTransaction(ticker string, transaction Transaction
 	if transactions == nil {
 		panic(fmt.Sprintf("no transactions for ticker %s", ticker))
 	}
-	if len(transactions) > 1 {
-		panic(fmt.Sprintf("expected only 1 transaction for ticker %s but have %d", ticker, len(transactions)))
+	//if len(transactions) > 1 {
+	//	panic(fmt.Sprintf("expected only 1 transaction for ticker %s but have %d", ticker, len(transactions)))
+	//}
+
+	// loop over transactions and find the one with the action
+	matchedTransactions := make([]Transaction, 0)
+	matchedTransactionIndex := -1
+	for i, v := range transactions {
+		if v.action == transaction.action {
+			matchedTransactions = append(matchedTransactions, transactions[i])
+			matchedTransactionIndex = i
+		}
 	}
-	j.trades[ticker] = []Transaction{transaction}
+
+	// should only have 1 matched transaction
+	if len(matchedTransactions) == 0 || len(matchedTransactions) > 1 {
+		panic(fmt.Sprintf("expected 1 transaction for ticker %s with action %s but have %d", ticker, transaction.action, len(matchedTransactions)))
+	}
+
+	// update the single matched transaction
+	if transaction.actionModified != "" {
+		transaction.action = transaction.actionModified
+	}
+
+	j.trades[ticker][matchedTransactionIndex] = transaction
 }
 
 func (j *Journal) ToCsv(txs []Transaction) {
