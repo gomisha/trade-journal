@@ -233,6 +233,47 @@ func TestReadTransactions(t *testing.T) {
 		},
 	}
 
+	expectedTransactions8 := []Transaction{
+		{
+			date:                 "2023-06-15",
+			account:              "TFSA",
+			action:               "Trade - Option",
+			ticker:               "MOS",
+			optionContract:       "16JUN23 32.5 C",
+			buySell:              "Buy",
+			optionContracts:      "2",
+			price:                "3.125",
+			proceeds:             "-625.00",
+			costBasisShare:       "0",
+			costBasisBuyOrOption: "-625.6581",
+			commission:           "-0.6581",
+		},
+
+		{
+			date:                 "2023-06-15",
+			account:              "TFSA",
+			action:               "Trade - Option",
+			ticker:               "MOS",
+			optionContract:       "21JUL23 32.5 C",
+			buySell:              "Sell",
+			optionContracts:      "-2",
+			price:                "3.825",
+			proceeds:             "765.00",
+			costBasisShare:       "0",
+			costBasisBuyOrOption: "764.3309",
+			commission:           "-0.6691",
+		},
+		{
+			date:     "2023-06-15",
+			account:  "TFSA",
+			action:   "Dividend",
+			ticker:   "MOS",
+			dividend: "40",
+			fee:      "-6",
+			notes:    "MOS(US61945C1036) Cash Dividend USD 0.20 per Share (Ordinary Dividend)\n15% tax withdrawn",
+		},
+	}
+
 	testDataMap := map[string]TestData{
 		"stock, short call, long put": {
 			expectedTransactions: expectedTransactions1,
@@ -261,6 +302,10 @@ func TestReadTransactions(t *testing.T) {
 		"roll out call, roll down call": {
 			expectedTransactions: expectedTransactions7,
 			filePath:             "../testdata/input/7-call-roll-out-roll-down.csv",
+		},
+		"dividend - withholding tax + other transactions same ticker": {
+			expectedTransactions: expectedTransactions8,
+			filePath:             "../testdata/input/8-dividend-withholding-tax-other-tx.csv",
 		},
 	}
 
