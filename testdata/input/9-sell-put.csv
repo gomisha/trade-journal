@@ -649,7 +649,6 @@ Trades,Data,Order,Equity and Index Options,USD,CVE 16JUN23 15 P,"2023-06-16, 16:
 Trades,SubTotal,,Equity and Index Options,USD,CVE 16JUN23 15 P,,-1,,,0,0,-137.24905,-137.24905,0,
 Trades,Total,,Equity and Index Options,USD,,,,,,-1277,-6.695258,3615.550298,-3285.940034,8787.89,
 Dividends,Header,Currency,Date,Description,Amount
-Dividends,Data,USD,2023-06-16,EBAY(US2786421030) Cash Dividend USD 0.25 per Share (Ordinary Dividend),25
 Dividends,Data,Total,,,25
 Interest Accruals,Header,Currency,Field Name,Field Value
 Interest Accruals,Data,Base Currency Summary,Starting Accrual Balance,1.91
