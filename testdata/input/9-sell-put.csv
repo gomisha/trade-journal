@@ -1,0 +1,915 @@
+Statement,Header,Field Name,Field Value
+Statement,Data,BrokerName,Interactive Brokers Canada Inc.
+Statement,Data,BrokerAddress,"1800 McGill College Avenue, Suite 2106, Montreal, Quebec, Canada  H3A 3J6"
+Statement,Data,Title,Activity Statement
+Statement,Data,Period,"June 16, 2023"
+Statement,Data,WhenGenerated,"2023-06-17, 10:04:07 EDT"
+Account Information,Header,Field Name,Field Value
+Account Information,Data,Name,John Smith
+Account Information,Data,Account Alias,RRSP
+Account Information,Data,Account,U1234567
+Account Information,Data,Account Type,Individual
+Account Information,Data,Customer Type,Registered Retirement Savings Plan
+Account Information,Data,Account Capabilities,Cash
+Account Information,Data,Base Currency,USD
+Net Asset Value,Header,Asset Class,Prior Total,Current Long,Current Short,Current Total,Change
+Net Asset Value,Data,Cash ,18108.162634954,45248.856248142,0,45248.856248142,27140.693613188
+Net Asset Value,Data,Stock,317148,276854,0,276854,-40294
+Net Asset Value,Data,Options,-61551.99,4049.73,-52220.32,-48170.59,13381.4
+Net Asset Value,Data,Interest Accruals,1.91,1.91,0,1.91,0
+Net Asset Value,Data,Dividend Accruals,534.72,525.63,0,525.63,-9.09
+Net Asset Value,Data,Total,274240.802634954,326680.126248142,-52220.32,274459.806248142,219.003613188
+Net Asset Value,Header,Time Weighted Rate of Return
+Net Asset Value,Data,0.079858143%
+Change in NAV,Header,Field Name,Field Value
+Change in NAV,Data,Starting Value,274240.802634954
+Change in NAV,Data,Mark-to-Market,212.40000544
+Change in NAV,Data,Dividends,25
+Change in NAV,Data,Change in Dividend Accruals,-9.09
+Change in NAV,Data,Commissions,-9.30639225
+Change in NAV,Data,Ending Value,274459.806248142
+Mark-to-Market Performance Summary,Header,Asset Category,Symbol,Prior Quantity,Current Quantity,Prior Price,Current Price,Mark-to-Market P/L Position,Mark-to-Market P/L Transaction,Mark-to-Market P/L Commissions,Mark-to-Market P/L Other,Mark-to-Market P/L Total,Code
+Mark-to-Market Performance Summary,Data,Stocks,APA,100,100,34.6700,34.3800,-29,0,0,0,-29,
+Mark-to-Market Performance Summary,Data,Stocks,BX,100,100,92.6500,91.1300,-152,0,0,0,-152,CP
+Mark-to-Market Performance Summary,Data,Stocks,C,100,0,48.5600,48.1900,-37,-819,-0.0465,0,-856.0465,CP
+Mark-to-Market Performance Summary,Data,Stocks,CMA,100,100,42.8800,42.4200,-46,0,0,0,-46,CP
+Mark-to-Market Performance Summary,Data,Stocks,CWH,100,100,28.8600,28.0700,-79,0,0,0,-79,CP
+Mark-to-Market Performance Summary,Data,Stocks,DKS,100,100,135.0700,135.1000,3,0,0,0,3,CP
+Mark-to-Market Performance Summary,Data,Stocks,EBAY,100,100,45.6200,45.0600,-56,0,0,25,-31,CP
+Mark-to-Market Performance Summary,Data,Stocks,EQT,100,0,38.9500,39.6400,69,-1264,-0.0361,0,-1195.0361,CP
+Mark-to-Market Performance Summary,Data,Stocks,HAS,100,100,61.6300,61.4500,-18,0,0,0,-18,
+Mark-to-Market Performance Summary,Data,Stocks,HP,200,200,35.2500,34.6100,-128,0,0,0,-128,
+Mark-to-Market Performance Summary,Data,Stocks,HPQ,200,200,31.1000,31.0000,-20,0,0,0,-20,
+Mark-to-Market Performance Summary,Data,Stocks,JWN,200,0,19.3700,19.0600,-62,-912,-0.0522,0,-974.0522,CP
+Mark-to-Market Performance Summary,Data,Stocks,M,200,200,15.9900,15.8500,-28,0,0,0,-28,CP
+Mark-to-Market Performance Summary,Data,Stocks,MSFT,200,200,348.1000,342.3300,-1154,0,0,0,-1154,CP
+Mark-to-Market Performance Summary,Data,Stocks,NKE,100,100,112.4100,113.5900,118,0,0,0,118,CP
+Mark-to-Market Performance Summary,Data,Stocks,NUE,100,100,151.1800,151.4100,23,0,0,0,23,
+Mark-to-Market Performance Summary,Data,Stocks,NXPI,100,0,195.7500,197.8500,210,-5785,-0.1265,0,-5575.1265,
+Mark-to-Market Performance Summary,Data,Stocks,PARA,200,200,16.5300,16.2800,-50,0,0,0,-50,
+Mark-to-Market Performance Summary,Data,Stocks,PHM,100,100,73.9600,73.5100,-45,0,0,0,-45,CP
+Mark-to-Market Performance Summary,Data,Stocks,QQQM,100,100,152.2900,151.3200,-97,0,0,0,-97,
+Mark-to-Market Performance Summary,Data,Stocks,SCHW,100,100,55.5100,54.4000,-111,0,0,0,-111,
+Mark-to-Market Performance Summary,Data,Stocks,STLD,200,200,105.9600,102.5300,-686,0,0,0,-686,
+Mark-to-Market Performance Summary,Data,Stocks,STNG,100,100,45.4900,46.1000,61,0,0,0,61,CP
+Mark-to-Market Performance Summary,Data,Stocks,STX,100,100,66.1400,64.3000,-184,0,0,0,-184,CP
+Mark-to-Market Performance Summary,Data,Stocks,TD,100,100,60.9800,61.1600,18,0,0,0,18,CP
+Mark-to-Market Performance Summary,Data,Stocks,TGT,100,100,137.8400,133.8100,-403,0,0,0,-403,CP
+Mark-to-Market Performance Summary,Data,Stocks,TSM,100,0,105.1800,104.5700,-61,49,-0.46880525,0,-12.46880525,CP
+Mark-to-Market Performance Summary,Data,Stocks,WWW,0,400,--,14.1400,0,-48,-1.881029,0,-49.881029,CP
+Mark-to-Market Performance Summary,Data,Stocks,XLK,100,100,174.6300,173.1900,-144,0,0,0,-144,
+Mark-to-Market Performance Summary,Data,Stocks,XLY,100,100,166.6300,166.3800,-25,0,0,0,-25,
+Mark-to-Market Performance Summary,Data,Total,,,,,,-3113,-8779,-2.61113425,25,-11869.61113425,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,APA 16JUN23 35 P,1,0,0.5660,0.6200,5.4,13,-0.70209,0,17.69791,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,APA 28JUL23 31 C,-1,-1,4.3565,4.1006,25.59,0,0,0,25.59,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,APA 28JUL23 35 P,0,1,--,2.2159,0,-10.41,-0.69905,0,-11.10905,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,BX 21JUL23 70 C,-1,-1,23.0584,21.6348,142.36,0,0,0,142.36,CP
+Mark-to-Market Performance Summary,Data,Equity and Index Options,C 16JUN23 40 C,-1,0,8.5663,8.1900,37.63,819,0,0,856.63,CP
+Mark-to-Market Performance Summary,Data,Equity and Index Options,CMA 21JUL23 35 C,-1,-1,8.8317,8.3833,44.84,0,0,0,44.84,CP
+Mark-to-Market Performance Summary,Data,Equity and Index Options,CVE 16JUN23 15 P,1,0,0.0001,--,-0.01,0,0,0,-0.01,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,CWH 15SEP23 26 C,-1,-1,4.1799,3.5312,64.87,0,0,0,64.87,CP
+Mark-to-Market Performance Summary,Data,Equity and Index Options,DKS 16JUN23 130 P,1,0,0.0768,--,-7.68,0,0,0,-7.68,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,DKS 28JUL23 123 C,-1,-1,14.1111,13.9749,13.62,0,0,0,13.62,CP
+Mark-to-Market Performance Summary,Data,Equity and Index Options,EBAY 21JUL23 40 C,-1,-1,5.9373,5.3512,58.61,0,0,0,58.61,CP
+Mark-to-Market Performance Summary,Data,Equity and Index Options,EQT 16JUN23 27 C,-1,0,11.9540,12.6400,-68.6,1264,0,0,1195.4,CP
+Mark-to-Market Performance Summary,Data,Equity and Index Options,HAS 21JUL23 50 C,-1,-1,12.0958,11.7476,34.82,0,0,0,34.82,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,HP 16JUN23 35 P,2,0,0.2500,--,28,38,-0.253908,0,65.746092,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,HP 21JUL23 32.5 C,-2,-2,3.6598,3.0736,117.24,0,0,0,117.24,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,HP 21JUL23 35 P,0,2,--,1.8237,0,-27.26,-0.2481,0,-27.5081,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,HPQ 16JUN23 30 P,2,0,0.0200,--,-4,0,0,0,-4,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,HPQ 18AUG23 27 C,-2,-2,4.5449,4.4483,19.32,0,0,0,19.32,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,JWN 16JUN23 14.5 C,-2,0,4.8700,4.5600,62,912,0,0,974,CP
+Mark-to-Market Performance Summary,Data,Equity and Index Options,M 21JUL23 14 C,-2,-2,2.2622,2.1271,27.02,0,0,0,27.02,CP
+Mark-to-Market Performance Summary,Data,Equity and Index Options,MSFT 21JUL23 205 C,-1,-1,143.7354,139.4004,433.5,0,0,0,433.5,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,MSFT 21JUL23 245 C,-1,-1,104.0505,99.6948,435.57,0,0,0,435.57,CP
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NKE 30JUN23 100 C,-1,-1,13.3754,14.4216,-104.62,0,0,0,-104.62,CP
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NUE 21JUL23 130 C,-1,-1,22.1647,22.2348,-7.01,0,0,0,-7.01,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NUE 21JUL23 135 P,1,1,1.4200,1.1750,-24.5,0,0,0,-24.5,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NXPI 16JUN23 140 C,-1,0,55.7622,57.8500,-208.78,5785,0,0,5576.22,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,PARA 16JUN23 17.5 P,2,0,0.9837,1.2200,47.26,23,-0.665116,0,69.594884,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,PARA 28JUL23 14 C,-2,-2,2.8623,2.5817,56.12,0,0,0,56.12,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,PARA 28JUL23 17.5 P,0,2,--,1.6850,0,-23,-0.6581,0,-23.6581,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,PHM 21JUL23 65 C,-1,-1,9.4174,9.0814,33.6,0,0,0,33.6,CP
+Mark-to-Market Performance Summary,Data,Equity and Index Options,QQQM 21JUL23 125 C,-1,-1,28.4346,26.7858,164.88,0,0,0,164.88,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,SCHW 21JUL23 47.5 C,-1,-1,8.6620,7.5944,106.76,0,0,0,106.76,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,SCHW 21JUL23 57.5 P,1,1,3.4775,4.0349,55.74,0,0,0,55.74,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,STLD 16JUN23 100 P,1,0,0.0752,--,-7.52,0,0,0,-7.52,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,STLD 21JUL23 95 C,-2,-2,12.3630,9.4185,588.9,0,0,0,588.9,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,STLD 21JUL23 115 P,1,1,10.6039,13.3399,273.6,0,0,0,273.6,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,STNG 21JUL23 44 C,-1,-1,3.4487,3.7477,-29.9,0,0,0,-29.9,CP
+Mark-to-Market Performance Summary,Data,Equity and Index Options,STNG 21JUL23 50 P,1,1,5.3596,4.8078,-55.18,0,0,0,-55.18,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,STX 21JUL23 55 C,-1,-1,11.2140,9.3704,184.36,0,0,0,184.36,CP
+Mark-to-Market Performance Summary,Data,Equity and Index Options,TD 21JUL23 50 C,-1,-1,11.1585,11.3540,-19.55,0,0,0,-19.55,CP
+Mark-to-Market Performance Summary,Data,Equity and Index Options,TGT 21JUL23 130 C,-1,-1,10.2906,7.1609,312.97,0,0,0,312.97,CP
+Mark-to-Market Performance Summary,Data,Equity and Index Options,TGT 21JUL23 140 P,1,1,5.5432,7.9064,236.32,0,0,0,236.32,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,TSM 07JUL23 90 C,-1,0,15.6792,15.0584,62.08,-43.16,-1.04905,0,17.87095,CP
+Mark-to-Market Performance Summary,Data,Equity and Index Options,WWW 21JUL23 12.5 C,0,-4,--,1.9007,0,37.72,-2.419844,0,35.300156,CP
+Mark-to-Market Performance Summary,Data,Equity and Index Options,XLK 21JUL23 139 C,-1,-1,36.0342,34.5475,148.67,0,0,0,148.67,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,XLY 21JUL23 150 C,-1,-1,17.5068,17.1847,32.21,0,0,0,32.21,
+Mark-to-Market Performance Summary,Data,Total,,,,,,3316.51,8787.89,-6.695258,0,12097.704742,
+Mark-to-Market Performance Summary,Data,Forex,CAD,0.0042153,0.0042153,0.75636,0.75765,0.00000544,0,0,0,0.00000544,
+Mark-to-Market Performance Summary,Data,Forex,USD,18108.15944667,45248.85305442,1.0000,1.0000,0,0,0,0,0,
+Mark-to-Market Performance Summary,Data,Total,,,,,,0.00000544,0,0,0,0.00000544,
+Mark-to-Market Performance Summary,Data,Total (All Assets),,,,,,203.51000544,8.89,-9.30639225,25,228.09361319,
+Realized & Unrealized Performance Summary,Header,Asset Category,Symbol,Cost Adj.,Realized S/T Profit,Realized S/T Loss,Realized L/T Profit,Realized L/T Loss,Realized Total,Unrealized S/T Profit,Unrealized S/T Loss,Unrealized L/T Profit,Unrealized L/T Loss,Unrealized Total,Total,Code
+Realized & Unrealized Performance Summary,Data,Stocks,APA,0,0,0,0,0,0,0,-1093.370257,0,0,-1093.370257,-1093.370257,
+Realized & Unrealized Performance Summary,Data,Stocks,BX,0,0,0,0,0,0,362.629743,0,0,0,362.629743,362.629743,CP
+Realized & Unrealized Performance Summary,Data,Stocks,C,0,92.526225,0,0,0,92.526225,0,0,0,0,0,92.526225,CP
+Realized & Unrealized Performance Summary,Data,Stocks,CMA,0,0,0,0,0,0,48.629743,0,0,0,48.629743,48.629743,CP
+Realized & Unrealized Performance Summary,Data,Stocks,CWH,0,0,0,0,0,0,0,-102.370257,0,0,-102.370257,-102.370257,CP
+Realized & Unrealized Performance Summary,Data,Stocks,DKS,0,0,0,0,0,0,0,-1413.370257,0,0,-1413.370257,-1413.370257,CP
+Realized & Unrealized Performance Summary,Data,Stocks,EBAY,0,0,0,0,0,0,76.629743,0,0,0,76.629743,76.629743,CP
+Realized & Unrealized Performance Summary,Data,Stocks,EQT,0,66.536769,0,0,0,66.536769,0,0,0,0,0,66.536769,CP
+Realized & Unrealized Performance Summary,Data,Stocks,HAS,0,0,0,0,0,0,0,-370.370257,0,0,-370.370257,-370.370257,
+Realized & Unrealized Performance Summary,Data,Stocks,HP,0,0,0,0,0,0,0,-2599.840514,0,0,-2599.840514,-2599.840514,
+Realized & Unrealized Performance Summary,Data,Stocks,HPQ,0,0,0,0,0,0,0,0,0,-1715.840514,-1715.840514,-1715.840514,
+Realized & Unrealized Performance Summary,Data,Stocks,JWN,0,91.698382,0,0,0,91.698382,0,0,0,0,0,91.698382,CP
+Realized & Unrealized Performance Summary,Data,Stocks,M,0,0,0,0,0,0,10.159486,0,0,0,10.159486,10.159486,CP
+Realized & Unrealized Performance Summary,Data,Stocks,MSFT,0,0,0,0,0,0,16765.259486,0,0,0,16765.259486,16765.259486,CP
+Realized & Unrealized Performance Summary,Data,Stocks,NKE,0,0,0,0,0,0,447.629743,0,0,0,447.629743,447.629743,CP
+Realized & Unrealized Performance Summary,Data,Stocks,NUE,0,0,0,0,0,0,0,0,5034.749743,0,5034.749743,5034.749743,
+Realized & Unrealized Performance Summary,Data,Stocks,NXPI,0,326.821113,0,0,0,326.821113,0,0,0,0,0,326.821113,
+Realized & Unrealized Performance Summary,Data,Stocks,PARA,0,0,0,0,0,0,0,0,0,-3520.840514,-3520.840514,-3520.840514,
+Realized & Unrealized Performance Summary,Data,Stocks,PHM,0,0,0,0,0,0,148.629743,0,0,0,148.629743,148.629743,CP
+Realized & Unrealized Performance Summary,Data,Stocks,QQQM,0,0,0,0,0,0,0,0,0,-1168.060257,-1168.060257,-1168.060257,
+Realized & Unrealized Performance Summary,Data,Stocks,SCHW,0,0,0,0,0,0,0,-2797.370257,0,0,-2797.370257,-2797.370257,
+Realized & Unrealized Performance Summary,Data,Stocks,STLD,0,0,0,0,0,0,0,-5356.740514,0,0,-5356.740514,-5356.740514,
+Realized & Unrealized Performance Summary,Data,Stocks,STNG,0,0,0,0,0,0,0,-1651.370257,0,0,-1651.370257,-1651.370257,CP
+Realized & Unrealized Performance Summary,Data,Stocks,STX,0,0,0,0,0,0,374.629743,0,0,0,374.629743,374.629743,CP
+Realized & Unrealized Performance Summary,Data,Stocks,TD,0,0,0,0,0,0,40.629743,0,0,0,40.629743,40.629743,CP
+Realized & Unrealized Performance Summary,Data,Stocks,TGT,0,0,0,0,0,0,0,-2979.370257,0,0,-2979.370257,-2979.370257,CP
+Realized & Unrealized Performance Summary,Data,Stocks,TSM,0,639.16093775,0,0,0,639.16093775,0,0,0,0,0,639.16093775,CP
+Realized & Unrealized Performance Summary,Data,Stocks,WWW,0,0,0,0,0,0,0,-49.881029,0,0,-49.881029,-49.881029,CP
+Realized & Unrealized Performance Summary,Data,Stocks,XLK,0,0,0,0,0,0,0,0,448.829743,0,448.829743,448.829743,
+Realized & Unrealized Performance Summary,Data,Stocks,XLY,0,0,0,0,0,0,0,0,0,-3122.170257,-3122.170257,-3122.170257,
+Realized & Unrealized Performance Summary,Data,Total,,0,1216.74342675,0,0,0,1216.74342675,18274.827173,-18414.053856,5483.579486,-9526.911542,-4182.558739,-2965.81531225,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,APA 16JUN23 35 P,0,0,-271.40114,0,0,-271.40114,0,0,0,0,0,-271.40114,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,APA 28JUL23 31 C,0,0,0,0,0,0,26.235014,0,0,0,26.235014,26.235014,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,APA 28JUL23 35 P,0,0,0,0,0,0,0,-11.10905,0,0,-11.10905,-11.10905,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,BX 21JUL23 70 C,0,0,0,0,0,0,0,-283.546538,0,0,-283.546538,-283.546538,CP
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,CMA 21JUL23 35 C,0,0,0,0,0,0,0,-85.387522,0,0,-85.387522,-85.387522,CP
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,CVE 16JUN23 15 P,0,0,-137.24905,0,0,-137.24905,0,0,0,0,0,-137.24905,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,CWH 15SEP23 26 C,0,0,0,0,0,0,35.82539,0,0,0,35.82539,35.82539,CP
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,DKS 16JUN23 130 P,0,0,-850.29905,0,0,-850.29905,0,0,0,0,0,-850.29905,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,DKS 28JUL23 123 C,0,0,0,0,0,0,0,-84.152002,0,0,-84.152002,-84.152002,CP
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,EBAY 21JUL23 40 C,0,0,0,0,0,0,0,-47.175402,0,0,-47.175402,-47.175402,CP
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,HAS 21JUL23 50 C,0,0,0,0,0,0,0,-372.417914,0,0,-372.417914,-372.417914,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,HP 16JUN23 35 P,0,0,-486.252008,0,0,-486.252008,0,0,0,0,0,-486.252008,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,HP 21JUL23 32.5 C,0,0,0,0,0,0,28.371876,0,0,0,28.371876,28.371876,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,HP 21JUL23 35 P,0,0,0,0,0,0,0,-27.5081,0,0,-27.5081,-27.5081,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,HPQ 16JUN23 30 P,0,0,-218.6581,0,0,-218.6581,0,0,0,0,0,-218.6581,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,HPQ 18AUG23 27 C,0,0,0,0,0,0,0,-166.328772,0,0,-166.328772,-166.328772,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,M 21JUL23 14 C,0,0,0,0,0,0,0,-9.828816,0,0,-9.828816,-9.828816,CP
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,MSFT 21JUL23 205 C,0,0,0,0,0,0,0,-7647.8856,0,0,-7647.8856,-7647.8856,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,MSFT 21JUL23 245 C,0,0,0,0,0,0,0,-5797.564874,0,0,-5797.564874,-5797.564874,CP
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NKE 30JUN23 100 C,0,0,0,0,0,0,0,-311.220546,0,0,-311.220546,-311.220546,CP
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NUE 21JUL23 130 C,0,0,0,0,0,0,0,-1463.187578,0,0,-1463.187578,-1463.187578,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NUE 21JUL23 135 P,0,0,0,0,0,0,0,-871.19905,0,0,-871.19905,-871.19905,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,PARA 16JUN23 17.5 P,0,0,-164.323216,0,0,-164.323216,0,0,0,0,0,-164.323216,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,PARA 28JUL23 14 C,0,0,0,0,0,0,85.992196,0,0,0,85.992196,85.992196,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,PARA 28JUL23 17.5 P,0,0,0,0,0,0,0,-23.6581,0,0,-23.6581,-23.6581,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,PHM 21JUL23 65 C,0,0,0,0,0,0,0,-138.197658,0,0,-138.197658,-138.197658,CP
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,QQQM 21JUL23 125 C,0,0,0,0,0,0,0,-133.651858,0,0,-133.651858,-133.651858,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,SCHW 21JUL23 47.5 C,0,0,0,0,0,0,32.852166,0,0,0,32.852166,32.852166,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,SCHW 21JUL23 57.5 P,0,0,0,0,0,0,8.79095,0,0,0,8.79095,8.79095,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,STLD 16JUN23 100 P,0,0,-591.64905,0,0,-591.64905,0,0,0,0,0,-591.64905,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,STLD 21JUL23 95 C,0,0,0,0,0,0,419.97858,0,0,0,419.97858,419.97858,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,STLD 21JUL23 115 P,0,0,0,0,0,0,200.34095,0,0,0,200.34095,200.34095,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,STNG 21JUL23 44 C,0,0,0,0,0,0,0,-96.423722,0,0,-96.423722,-96.423722,CP
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,STNG 21JUL23 50 P,0,0,0,0,0,0,0,-49.46905,0,0,-49.46905,-49.46905,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,STX 21JUL23 55 C,0,0,0,0,0,0,0,-315.096474,0,0,-315.096474,-315.096474,CP
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,TD 21JUL23 50 C,0,0,0,0,0,0,29.539182,0,0,0,29.539182,29.539182,CP
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,TGT 21JUL23 130 C,0,0,0,0,0,0,0,-164.795906,0,0,-164.795906,-164.795906,CP
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,TGT 21JUL23 140 P,0,0,0,0,0,0,139.60095,0,0,0,139.60095,139.60095,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,TSM 07JUL23 90 C,0,0,-566.10842,0,0,-566.10842,0,0,0,0,0,-566.10842,CP
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,WWW 21JUL23 12.5 C,0,0,0,0,0,0,35.300156,0,0,0,35.300156,35.300156,CP
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,XLK 21JUL23 139 C,0,0,0,0,0,0,0,-657.473874,0,0,-657.473874,-657.473874,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,XLY 21JUL23 150 C,0,0,0,0,0,0,0,-56.184794,0,0,-56.184794,-56.184794,
+Realized & Unrealized Performance Summary,Data,Total,,0,0,-3285.940034,0,0,-3285.940034,1042.82741,-18813.4632,0,0,-17770.63579,-21056.575824,
+Realized & Unrealized Performance Summary,Data,Forex,CAD,0,0,0,0,0,0,0.000061,0,0,0,0.000061,0.000061,
+Realized & Unrealized Performance Summary,Data,Total,,0,0,0,0,0,0,0.000061,0,0,0,0.000061,0.000061,
+Realized & Unrealized Performance Summary,Data,Total (All Assets),,0,1216.74342675,-3285.940034,0,0,-2069.19660725,19317.654644,-37227.517056,5483.579486,-9526.911542,-21953.194468,-24022.39107525,
+Month & Year to Date Performance Summary,Header,Asset Category,Symbol,Description,Mark-to-Market MTD,Mark-to-Market YTD,Realized S/T MTD,Realized S/T YTD,Realized L/T MTD,Realized L/T YTD
+Month & Year to Date Performance Summary,Data,Stocks,ACI,ALBERTSONS COS INC - CLASS A,0,1244.1984935,0,-3075.7420205,0,0
+Month & Year to Date Performance Summary,Data,Stocks,AEM,AGNICO EAGLE MINES LTD,0,-1199.1061,0,71.463001,0,0
+Month & Year to Date Performance Summary,Data,Stocks,ALL,ALLSTATE CORP,0,-975.30075,0,0,0,-391.122176
+Month & Year to Date Performance Summary,Data,Stocks,APA,APA CORP,260,-1043.37025725,0,0,0,0
+Month & Year to Date Performance Summary,Data,Stocks,BBY,BEST BUY CO INC,0,-979.43875725,0,77.500553,0,0
+Month & Year to Date Performance Summary,Data,Stocks,BOH,BANK OF HAWAII CORP,737.47857875,518.1083215,448.10832175,448.10832175,0,0
+Month & Year to Date Performance Summary,Data,Stocks,BX,BLACKSTONE INC,549,444.62974275,0,0,0,0
+Month & Year to Date Performance Summary,Data,Stocks,C,CITIGROUP INC,-432.0465,-546.41675725,92.526225,92.526225,0,0
+Month & Year to Date Performance Summary,Data,Stocks,CF,CF INDUSTRIES HOLDINGS INC,0,-580.0777,0,-2892.637007,0,0
+Month & Year to Date Performance Summary,Data,Stocks,CMA,COMERICA INC,48.62974275,48.62974275,0,0,0,0
+Month & Year to Date Performance Summary,Data,Stocks,CMRE,COSTAMARE INC,0,109.818725,0,-3248.843164,0,0
+Month & Year to Date Performance Summary,Data,Stocks,CPG,CRESCENT POINT ENERGY CORP,0,267.7057285,0,-482.8458155,0,0
+Month & Year to Date Performance Summary,Data,Stocks,CSCO,CISCO SYSTEMS INC,0,-290.42075725,0,399.871913,0,0
+Month & Year to Date Performance Summary,Data,Stocks,CVE,CENOVUS ENERGY INC,-196.053,-866.813,-78.251926,-78.251926,0,0
+Month & Year to Date Performance Summary,Data,Stocks,CWH,CAMPING WORLD HOLDINGS INC-A,-102.37025725,-102.37025725,0,0,0,0
+Month & Year to Date Performance Summary,Data,Stocks,DKS,DICK'S SPORTING GOODS INC,-992.1025,-3686.8430145,458.453089,458.453089,0,0
+Month & Year to Date Performance Summary,Data,Stocks,EBAY,EBAY INC,277,101.62974275,0,0,0,0
+Month & Year to Date Performance Summary,Data,Stocks,EGY,VAALCO ENERGY INC,0,-447.9093,0,-3832.80677,0,0
+Month & Year to Date Performance Summary,Data,Stocks,EOG,EOG RESOURCES INC,0,-932.289758,0,118.241329,0,0
+Month & Year to Date Performance Summary,Data,Stocks,EQT,EQT CORP,-762.0361,-590.40635725,66.536769,66.536769,0,0
+Month & Year to Date Performance Summary,Data,Stocks,FDX,FEDEX CORPORATION,-6298.1385,-1705.1385,3873.744617,3873.744617,0,0
+Month & Year to Date Performance Summary,Data,Stocks,FL,FOOT LOCKER INC,0,-1215.0215145,0,315.557224,0,0
+Month & Year to Date Performance Summary,Data,Stocks,GM,GENERAL MOTORS CO,0,-620.40875725,0,59.534305,0,0
+Month & Year to Date Performance Summary,Data,Stocks,HAS,HASBRO INC,210,-230.37025725,0,0,0,0
+Month & Year to Date Performance Summary,Data,Stocks,HP,HELMERICH & PAYNE,843,-2405.8405145,0,0,0,0
+Month & Year to Date Performance Summary,Data,Stocks,HPQ,HP INC,388,931,0,0,0,0
+Month & Year to Date Performance Summary,Data,Stocks,JWN,NORDSTROM INC,-122.0522,-296.8927145,91.698382,91.698382,0,0
+Month & Year to Date Performance Summary,Data,Stocks,KLIC,KULICKE & SOFFA INDUSTRIES,0,-7.11526,0,-1003.139358,0,0
+Month & Year to Date Performance Summary,Data,Stocks,KSS,KOHLS CORP,-32.0289,-171.39915725,71.547401,71.547401,0,0
+Month & Year to Date Performance Summary,Data,Stocks,M,MACYS INC,10.1594855,10.1594855,0,0,0,0
+Month & Year to Date Performance Summary,Data,Stocks,METC,RAMACO RESOURCES INC,0,-14.726645,0,-4506.407673,0,0
+Month & Year to Date Performance Summary,Data,Stocks,MOS,MOSAIC CO/THE,0,-369.41855725,0,759.870553,0,0
+Month & Year to Date Performance Summary,Data,Stocks,MRK,MERCK & CO INC,0,-1199.0925,0,-170.188338,0,0
+Month & Year to Date Performance Summary,Data,Stocks,MRO,MARATHON OIL CORP,0,-1152.9039145,0,-895.469118,0,0
+Month & Year to Date Performance Summary,Data,Stocks,MSFT,MICROSOFT CORP,2924,16610.62974275,0,0,0,0
+Month & Year to Date Performance Summary,Data,Stocks,NEE,NEXTERA ENERGY INC,0,-2673.60583225,0,310.884563,0,0
+Month & Year to Date Performance Summary,Data,Stocks,NKE,NIKE INC -CL B,833,447.62974275,0,0,0,0
+Month & Year to Date Performance Summary,Data,Stocks,NTES,NETEASE INC-ADR,0,-1263.0625,0,260.493845,0,0
+Month & Year to Date Performance Summary,Data,Stocks,NUE,NUCOR CORP,1935,2062,0,0,0,0
+Month & Year to Date Performance Summary,Data,Stocks,NXPI,NXP SEMICONDUCTORS NV,-3910.1265,-3416.30675725,326.821113,326.821113,0,0
+Month & Year to Date Performance Summary,Data,Stocks,ORCL,ORACLE CORP,0,-1424.169075,0,594.735301,0,0
+Month & Year to Date Performance Summary,Data,Stocks,PARA,PARAMOUNT GLOBAL-CLASS B,214,-24,0,0,0,0
+Month & Year to Date Performance Summary,Data,Stocks,PHM,PULTE GROUP INC,148.62974275,148.62974275,0,0,0,0
+Month & Year to Date Performance Summary,Data,Stocks,QCOM,QUALCOMM INC,0,-3957.9255145,0,249.899358,0,0
+Month & Year to Date Performance Summary,Data,Stocks,QQQM,INVESCO NASDAQ 100 ETF,823,4204.43,0,0,0,0
+Month & Year to Date Performance Summary,Data,Stocks,SBNY,SIGNATURE BANK,0,-4436.45275725,0,-6046.751807,0,0
+Month & Year to Date Performance Summary,Data,Stocks,SCHW,SCHWAB (CHARLES) CORP,171,-2836,0,0,0,0
+Month & Year to Date Performance Summary,Data,Stocks,SIG,SIGNET JEWELERS LTD,0,-1214.43275725,0,323.490952,0,0
+Month & Year to Date Performance Summary,Data,Stocks,SQM,QUIMICA Y MINERA CHIL-SP ADR,0,-1318.44075725,0,-1510.689807,0,0
+Month & Year to Date Performance Summary,Data,Stocks,STLD,STEEL DYNAMICS INC,2126,-8562.92187175,0,-2018.685786,0,0
+Month & Year to Date Performance Summary,Data,Stocks,STNG,SCORPIO TANKERS INC,33,-1651.37025725,0,0,0,0
+Month & Year to Date Performance Summary,Data,Stocks,STX,SEAGATE TECHNOLOGY HOLDINGS,374.62974275,374.62974275,0,0,0,0
+Month & Year to Date Performance Summary,Data,Stocks,SWKS,SKYWORKS SOLUTIONS INC,0,-1113.1977,0,-366.292729,0,0
+Month & Year to Date Performance Summary,Data,Stocks,TD,TORONTO-DOMINION BANK,456,40.62974275,0,0,0,0
+Month & Year to Date Performance Summary,Data,Stocks,TGT,TARGET CORP,396,-2871.37025725,0,0,0,0
+Month & Year to Date Performance Summary,Data,Stocks,TROX,TRONOX HOLDINGS PLC,0,-142.08854,0,-341.067408,0,0
+Month & Year to Date Performance Summary,Data,Stocks,TSM,TAIWAN SEMICONDUCTOR-SP ADR,646.53119475,-1084.48861975,639.16093775,966.01167975,0,0
+Month & Year to Date Performance Summary,Data,Stocks,TXN,TEXAS INSTRUMENTS INC,0,-1022.36945,0,368.155477,0,0
+Month & Year to Date Performance Summary,Data,Stocks,VALE,VALE SA-SP ADR,0,-961.68425,0,149.801478,0,0
+Month & Year to Date Performance Summary,Data,Stocks,WWW,WOLVERINE WORLD WIDE INC,-49.881029,-49.881029,0,0,0,0
+Month & Year to Date Performance Summary,Data,Stocks,XLK,TECHNOLOGY SELECT SECT SPDR,891,4906.55,0,0,0,0
+Month & Year to Date Performance Summary,Data,Stocks,XLY,CONSUMER DISCRETIONARY SELT,1477,3765.02,0,0,0,0
+Month & Year to Date Performance Summary,Data,Total,,,3875.223001,-25416.83028775,5990.3449295,-20014.8712775,0,-391.122176
+Month & Year to Date Performance Summary,Data,Equity and Index Options,ACI   230120P00020000,ACI 20JAN23 20 P,0,-15,0,-53.0763,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,ACI   230217P00020000,ACI 17FEB23 20 P,0,-26.3263,0,-26.3263,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,ACI   230421C00022000,ACI 21APR23 22 C,0,17.197317,0,17.197317,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,AEM   230120P00030000,AEM 20JAN23 30 P,0,-0.01,0,-11.03815,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,AEM   230120C00040000,AEM 20JAN23 40 C,0,1212.97,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,ALL   230120C00125000,ALL 20JAN23 125 C,0,1132.84,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,APA   230421P00027500,APA 21APR23 27.5 P,0,-119.8781106,0,-119.8781106,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,APA   230421C00032500,APA 21APR23 32.5 C,0,-349.402476,0,-349.402476,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,APA   230421C00035000,APA 21APR23 35 C,0,120.597412,0,120.597412,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,APA   230421C00037500,APA 21APR23 37.5 C,0,815.2383073,0,815.238307,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,APA   230519C00032500,APA 19MAY23 32.5 C,0,581.594556,0,581.594556,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,APA   230519P00034500,APA 19MAY23 34.5 P,0,-21.332452,0,-21.332452,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,APA   230616C00031000,APA 16JUN23 31 C,-189.66905,-242.40158,-242.40158,-242.40158,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,APA   230616C00032500,APA 16JUN23 32.5 C,0,79.598236,0,79.598236,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,APA   230616P00035000,APA 16JUN23 35 P,-272.86209,-271.40114,-271.40114,-271.40114,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,APA   230728C00031000,APA 28JUL23 31 C,26.235014,26.235014,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,APA   230728P00035000,APA 28JUL23 35 P,-11.10905,-11.10905,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,BBY   230519C00067500,BBY 19MAY23 67.5 C,0,1148.93931,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,BOH   230616C00030000,BOH 16JUN23 30 C,-620.94155,-395.112672,-395.112672,-395.112672,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,BX    230721C00070000,BX 21JUL23 70 C,-457.47,-283.546538,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,C     230616C00040000,C 16JUN23 40 C,458.83,689.942982,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,CF    230120P00085000,CF 20JAN23 85 P,0,-198.6437273,0,-122.6928773,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,CF    230120C00090000,CF 20JAN23 90 C,0,165,0,1955.903855,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,CF    230217P00080000,CF 17FEB23 80 P,0,-44.2831826,0,-44.2831826,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,CF    230217C00083000,CF 17FEB23 83 C,0,-241.2970825,0,-241.297082,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,CF    230217C00090000,CF 17FEB23 90 C,0,93.067138,0,93.067138,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,CF    230331C00071000,CF 31MAR23 71 C,0,108.097068,0,108.097068,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,CF    230331C00073000,CF 31MAR23 73 C,0,83.697124,0,83.697124,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,CF    230331C00076000,CF 31MAR23 76 C,0,162.696796,0,162.696796,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,CF    230331C00079000,CF 31MAR23 79 C,0,120.6969,0,120.6969,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,CF    230331P00079000,CF 31MAR23 79 P,0,-245.18905,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,CF    230331C00081000,CF 31MAR23 81 C,0,290.6874833,0,290.687483,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,CF    230331C00083000,CF 31MAR23 83 C,0,0.689842,0,0.689842,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,CF    230331C00085000,CF 31MAR23 85 C,0,358.683659,0,358.683659,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,CMA   230721C00035000,CMA 21JUL23 35 C,-85.387522,-85.387522,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,CMRE  230120P00007500,CMRE 20JAN23 7.5 P,0,-2.3,0,-49.69075,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,CMRE  230120C00009500,CMRE 20JAN23 9.5 C,0,125.15,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,CPG   230120P00005000,CPG 20JAN23 5 P,0,-0.12,0,-59.1789,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,CPG   230120C00007500,CPG 20JAN23 7.5 C,0,98.1211,0,597.764921,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,CPG   230217P00005000,CPG 17FEB23 5 P,0,-51.1289,0,-51.1289,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,CPG   230217C00007500,CPG 17FEB23 7.5 C,0,162.9527044,0,162.952706,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,CPG   230421C00007500,CPG 21APR23 7.5 C,0,93.2431876,0,93.243188,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,CPG   230421P00007500,CPG 21APR23 7.5 P,0,-215.851192,0,-215.851192,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,CSCO  230421C00042500,CSCO 21APR23 42.5 C,0,-309.7547311,0,-309.754731,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,CSCO  230519C00045000,CSCO 19MAY23 45 C,0,729.29267,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,CVE   230317P00011000,CVE 17MAR23 11 P,0,-12.94,0,-19.0813,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,CVE   230317C00015000,CVE 17MAR23 15 C,0,407.5719,0,289.346592,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,CVE   230616C00015000,CVE 16JUN23 15 C,242.5,678.741588,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,CVE   230616P00015000,CVE 16JUN23 15 P,-25,-137.24905,-137.24905,-137.24905,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,CWH   230915C00026000,CWH 15SEP23 26 C,35.82539,35.82539,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,DKS   230616C00110000,DKS 16JUN23 110 C,1796.81,2831.925846,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,DKS   230616C00122000,DKS 16JUN23 122 C,-556.50905,-884.30374,-884.30374,-884.30374,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,DKS   230616C00125000,DKS 16JUN23 125 C,0,179.695884,0,179.695884,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,DKS   230616C00130000,DKS 16JUN23 130 C,0,1987.281676,0,1987.281676,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,DKS   230616P00130000,DKS 16JUN23 130 P,-540.51,-850.29905,-850.29905,-850.29905,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,DKS   230728C00123000,DKS 28JUL23 123 C,-84.152002,-84.152002,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,EBAY  230721C00040000,EBAY 21JUL23 40 C,-170.6,-47.175402,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,EGY   230120C00005000,EGY 20JAN23 5 C,0,-25.09335,0,630.725978,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,EGY   230217C00005000,EGY 17FEB23 5 C,0,285.3780948,0,285.378095,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,EGY   230421C00004000,EGY 21APR23 4 C,0,215.484846,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,EGY   230421P00004000,EGY 21APR23 4 P,0,-358.49145,0,-358.49145,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,EGY   230421C00005000,EGY 21APR23 5 C,0,60.3920485,0,60.392049,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,EOG   230120P00110200,EOG 20JAN23 110.2 P,0,-37.79,0,-114.03815,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,EOG   230120C00120200,EOG 20JAN23 120.2 C,0,1071.41,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,EQT   230616C00027000,EQT 16JUN23 27 C,787.48,671.943126,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,FDX   230317P00140000,FDX 17MAR23 140 P,0,-190.7915289,0,-200.8296789,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,FDX   230317C00150000,FDX 17MAR23 150 C,0,-3088.09905,0,-3118.802561,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,FDX   230616C00155000,FDX 16JUN23 155 C,6319.84,5641.253374,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,FL    230519P00027500,FL 19MAY23 27.5 P,0,-40.7641746,0,-40.7641746,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,FL    230519C00032500,FL 19MAY23 32.5 C,0,1530.5787372,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,GM    230519C00030000,GM 19MAY23 30 C,0,679.943062,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,HAS   230421P00045000,HAS 21APR23 45 P,0,-115.24905,0,-115.24905,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,HAS   230421C00047500,HAS 21APR23 47.5 C,0,-186.302908,0,-186.302908,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,HAS   230421C00050000,HAS 21APR23 50 C,0,80.697292,0,80.697292,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,HAS   230421C00052500,HAS 21APR23 52.5 C,0,120.697164,0,120.697164,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,HAS   230421C00055000,HAS 21APR23 55 C,0,946.2845746,0,946.284575,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,HAS   230519C00047500,HAS 19MAY23 47.5 C,0,-402.304836,0,-402.304836,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,HAS   230519P00050000,HAS 19MAY23 50 P,0,-168.64905,0,-168.64905,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,HAS   230721C00050000,HAS 21JUL23 50 C,-150.58,-372.417914,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,HP    230317C00035000,HP 17MAR23 35 C,0,-6.502392,0,-6.502392,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,HP    230317P00035000,HP 17MAR23 35 P,0,44.236691,0,44.236691,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,HP    230317C00037500,HP 17MAR23 37.5 C,0,183.497128,0,183.497128,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,HP    230317C00040000,HP 17MAR23 40 C,0,1620.3296106,0,1620.32961,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,HP    230421P00032500,HP 21APR23 32.5 P,0,-305.2481,0,-305.2481,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,HP    230421C00035000,HP 21APR23 35 C,0,60.445104,0,60.445104,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,HP    230519C00032500,HP 19MAY23 32.5 C,0,274.746304,0,274.746304,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,HP    230519C00035000,HP 19MAY23 35 C,0,481.444,0,481.444,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,HP    230519P00035000,HP 19MAY23 35 P,0,222.69516,0,222.69516,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,HP    230616C00032500,HP 16JUN23 32.5 C,-332.8981,-114.903792,-114.903792,-114.903792,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,HP    230616P00035000,HP 16JUN23 35 P,-719.653908,-486.252008,-486.252008,-486.252008,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,HP    230721C00032500,HP 21JUL23 32.5 C,28.371876,28.371876,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,HP    230721P00035000,HP 21JUL23 35 P,-27.5081,-27.5081,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,HPQ   230120P00023000,HPQ 20JAN23 23 P,0,-12,0,-36.0763,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,HPQ   230120C00025000,HPQ 20JAN23 25 C,0,-97.8763,0,288.704124,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,HPQ   230217C00025000,HPQ 17FEB23 25 C,0,-521.3126536,0,-521.312654,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,HPQ   230519C00027000,HPQ 19MAY23 27 C,0,200.6597298,0,200.65973,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,HPQ   230519P00027000,HPQ 19MAY23 27 P,0,-154.5581,0,-154.5581,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,HPQ   230616C00027000,HPQ 16JUN23 27 C,-226.6581,20.673432,20.673432,20.673432,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,HPQ   230616P00030000,HPQ 16JUN23 30 P,-272.5,-218.6581,-218.6581,-218.6581,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,HPQ   230818C00027000,HPQ 18AUG23 27 C,-166.328772,-166.328772,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,JWN   230616C00014500,JWN 16JUN23 14.5 C,344.34,426.591096,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,KLIC  230120C00044000,KLIC 20JAN23 44 C,0,205.11,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,KSS   230616C00018000,KSS 16JUN23 18 C,93.4,242.946558,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,M     230721C00014000,M 21JUL23 14 C,-9.828816,-9.828816,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,METC  230120P00007500,METC 20JAN23 7.5 P,0,-60,0,-91.4526,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,METC  230120C00010000,METC 20JAN23 10 C,0,-23.7526,0,43.783148,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,METC  230217P00007500,METC 17FEB23 7.5 P,0,-31.1526,0,-31.1526,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,METC  230217C00010000,METC 17FEB23 10 C,0,-75.9146056,0,-75.914606,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,METC  230317C00010000,METC 17MAR23 10 C,0,437.8340098,0,437.83401,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,MOS   230317P00029750,MOS 17MAR23 29.75 P,0,-17.03815,0,-17.03815,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,MOS   230317C00040000,MOS 17MAR23 40 C,0,-622.7572272,0,-622.757227,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,MOS   230421P00042250,MOS 21APR23 42.25 P,0,-173.62905,0,-173.62905,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,MOS   230421C00042500,MOS 21APR23 42.5 C,0,1174.28911,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,MRK   230217P00090000,MRK 17FEB23 90 P,0,-9.3407503,0,-26.8789003,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,MRK   230217C00097500,MRK 17FEB23 97.5 C,0,496.54095,0,362.230438,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,MRK   230421C00097500,MRK 21APR23 97.5 C,0,1051.2744192,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,MRO   230317P00021000,MRO 17MAR23 21 P,0,-16.8506,0,-16.8506,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,MRO   230317C00021500,MRO 17MAR23 21.5 C,0,119.33606,0,119.33606,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,MRO   230317C00023000,MRO 17MAR23 23 C,0,94.677976,0,94.677976,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,MRO   230317C00024000,MRO 17MAR23 24 C,0,731.9404038,0,731.940404,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,MRO   230421C00021500,MRO 21APR23 21.5 C,0,277.434796,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,MSFT  230317P00190000,MSFT 17MAR23 190 P,0,-159.041506,0,-228.079656,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,MSFT  230317C00200000,MSFT 17MAR23 200 C,0,-1731.43905,0,-2001.834484,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,MSFT  230721C00205000,MSFT 21JUL23 205 C,-1333.94,-7647.8855997,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,MSFT  230721C00245000,MSFT 21JUL23 245 C,-1305.7,-5797.564874,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,NEE   230120P00062500,NEE 20JAN23 62.5 P,0,-2.75,0,-86.04915,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,NEE   230120C00067500,NEE 20JAN23 67.5 C,0,1630.16,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,NEE   230616C00065000,NEE 16JUN23 65 C,0,1212.938798,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,NKE   230630C00100000,NKE 30JUN23 100 C,-629.36,-311.220546,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,NTES  230317P00050000,NTES 17MAR23 50 P,0,-62.801719,0,-69.339869,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,NTES  230317C00060000,NTES 17MAR23 60 C,0,1508.65,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,NUE   230120C00130000,NUE 20JAN23 130 C,0,-2287.46815,0,-552.431631,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,NUE   230217C00130000,NUE 17FEB23 130 C,0,-1008.4577904,0,-1008.45779,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,NUE   230721C00130000,NUE 21JUL23 130 C,-1345.93,-1463.187578,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,NUE   230721C00135000,NUE 21JUL23 135 C,0,3490.507402,0,3490.507402,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,NUE   230721P00135000,NUE 21JUL23 135 P,-740.04,-871.19905,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,NXPI  230421P00130000,NXPI 21APR23 130 P,0,-44.3306865,0,-44.3306865,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,NXPI  230421C00140000,NXPI 21APR23 140 C,0,270.2234316,0,270.223432,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,NXPI  230616C00140000,NXPI 16JUN23 140 C,3927.93,3829.31787,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,ORCL  230120C00067500,ORCL 20JAN23 67.5 C,0,1433.57,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,PARA  230120P00015000,PARA 20JAN23 15 P,0,-44,0,-76.6363,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,PARA  230120C00017000,PARA 20JAN23 17 C,0,-300.6363,0,-266.281356,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,PARA  230224P00015000,PARA 24FEB23 15 P,0,-34.6363,0,-34.6363,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,PARA  230224C00017000,PARA 24FEB23 17 C,0,-728.3120353,0,-728.312035,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,PARA  230519C00015000,PARA 19MAY23 15 C,0,-48.061768,0,-48.061768,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,PARA  230519C00016500,PARA 19MAY23 16.5 C,0,159.492496,0,159.492496,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,PARA  230519C00017500,PARA 19MAY23 17.5 C,0,1161.905066,0,1161.905066,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,PARA  230519P00017500,PARA 19MAY23 17.5 P,0,272.77588,0,272.77588,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,PARA  230616C00014000,PARA 16JUN23 14 C,-259.8381,-410.062248,-410.062248,-410.062248,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,PARA  230616C00015000,PARA 16JUN23 15 C,0,161.937,0,161.937,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,PARA  230616P00017500,PARA 16JUN23 17.5 P,-215.005116,-164.323216,-164.323216,-164.323216,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,PARA  230728C00014000,PARA 28JUL23 14 C,85.992196,85.992196,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,PARA  230728P00017500,PARA 28JUL23 17.5 P,-23.6581,-23.6581,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,PHM   230721C00065000,PHM 21JUL23 65 C,-138.197658,-138.197658,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,QCOM  230421P00095000,QCOM 21APR23 95 P,0,-8.5403888,0,-8.5403888,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,QCOM  230421C00100000,QCOM 21APR23 100 C,0,3271.8844583,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,QCOM  230630C00095000,QCOM 30JUN23 95 C,0,1010.940414,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,QQQM  230120C00117000,QQQM 20JAN23 117 C,0,-29.08815,0,43.718886,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,QQQM  230217C00118000,QQQM 17FEB23 118 C,0,-555.0948841,0,-555.094884,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,QQQM  230317C00119000,QQQM 17MAR23 119 C,0,491.8802469,0,491.880247,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,QQQM  230421C00119000,QQQM 21APR23 119 C,0,-623.105468,0,-623.105468,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,QQQM  230616C00120000,QQQM 16JUN23 120 C,-655.44905,-1653.111292,-1653.111292,-1653.111292,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,QQQM  230721C00125000,QQQM 21JUL23 125 C,-133.651858,-133.651858,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,SBNY  230317P00085000,SBNY 17MAR23 85 P,0,-1540.29905,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,SBNY  230616C00095000,SBNY 16JUN23 95 C,0,1584.03586,0,1584.03586,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,SBNY  230616P00095000,SBNY 16JUN23 95 P,0,33.661871,0,33.661871,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,SBNY  230616C00100000,SBNY 16JUN23 100 C,0,2030.2301413,0,2030.230141,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,SCHW  230317C00052500,SCHW 17MAR23 52.5 C,0,-266.40346,0,-266.40346,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,SCHW  230317C00060000,SCHW 17MAR23 60 C,0,157.597124,0,157.597124,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,SCHW  230317C00062500,SCHW 17MAR23 62.5 C,0,51.59766,0,51.59766,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,SCHW  230317P00062500,SCHW 17MAR23 62.5 P,0,-7.1951039,0,-12.2332539,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,SCHW  230317C00066000,SCHW 17MAR23 66 C,0,93.59786,0,93.59786,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,SCHW  230317C00068000,SCHW 17MAR23 68 C,0,52.598156,0,52.598156,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,SCHW  230317C00069000,SCHW 17MAR23 69 C,0,30.778292,0,30.778292,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,SCHW  230317C00071000,SCHW 17MAR23 71 C,0,70.778316,0,70.778316,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,SCHW  230317C00072000,SCHW 17MAR23 72 C,0,33.598388,0,33.598388,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,SCHW  230317C00072500,SCHW 17MAR23 72.5 C,0,1143.79095,0,1078.233323,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,SCHW  230421C00050000,SCHW 21APR23 50 C,0,-232.402356,0,-232.402356,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,SCHW  230421C00052500,SCHW 21APR23 52.5 C,0,311.5959,0,311.5959,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,SCHW  230421C00055000,SCHW 21APR23 55 C,0,437.593348,0,437.593348,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,SCHW  230421P00057500,SCHW 21APR23 57.5 P,0,-168.4029,0,-168.4029,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,SCHW  230616C00047500,SCHW 16JUN23 47.5 C,-165.26905,-409.7531,-409.7531,-409.7531,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,SCHW  230616C00050000,SCHW 16JUN23 50 C,0,402.244588,0,402.244588,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,SCHW  230616P00057500,SCHW 16JUN23 57.5 P,-228.90369,-192.40274,-192.40274,-192.40274,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,SCHW  230721C00047500,SCHW 21JUL23 47.5 C,32.852166,32.852166,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,SCHW  230721P00057500,SCHW 21JUL23 57.5 P,8.79095,8.79095,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,SIG   230421P00050000,SIG 21APR23 50 P,0,-56.2802285,0,-56.2802285,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,SIG   230421C00060000,SIG 21APR23 60 C,0,1557.9237089,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,SQM   230421P00060000,SQM 21APR23 60 P,0,-78.2796102,0,-78.2796102,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,SQM   230421C00070000,SQM 21APR23 70 C,0,1641.8725979,0,1641.872598,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,SQM   230421P00070000,SQM 21APR23 70 P,0,-192.24905,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,STLD  230120P00080000,STLD 20JAN23 80 P,0,-25,0,-91.03815,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,STLD  230120C00090000,STLD 20JAN23 90 C,0,-751.77815,0,-4.716517,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,STLD  230217P00080000,STLD 17FEB23 80 P,0,-20.63815,0,-20.63815,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,STLD  230217C00090000,STLD 17FEB23 90 C,0,1748.3193579,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,STLD  230421P00095000,STLD 21APR23 95 P,0,-959.84715,0,-959.84715,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,STLD  230421C00100000,STLD 21APR23 100 C,0,1080.2413398,0,1080.24134,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,STLD  230519C00095000,STLD 19MAY23 95 C,0,2879.9882762,0,2624.941806,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,STLD  230519C00100000,STLD 19MAY23 100 C,0,1692.084192,0,1692.084192,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,STLD  230519P00100000,STLD 19MAY23 100 P,0,-124.705672,0,-124.705672,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,STLD  230519C00105000,STLD 19MAY23 105 C,0,741.69266,0,741.69266,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,STLD  230519C00115000,STLD 19MAY23 115 C,0,1847.280988,0,1847.280988,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,STLD  230519P00115000,STLD 19MAY23 115 P,0,1089.0851,0,1089.0851,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,STLD  230616C00095000,STLD 16JUN23 95 C,-1605.2981,-862.610272,-862.610272,-862.610272,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,STLD  230616P00100000,STLD 16JUN23 100 P,-861.06,-591.64905,-591.64905,-591.64905,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,STLD  230616P00115000,STLD 16JUN23 115 P,-1320.65941,-825.30846,-825.30846,-825.30846,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,STLD  230721C00095000,STLD 21JUL23 95 C,419.97858,419.97858,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,STLD  230721P00115000,STLD 21JUL23 115 P,200.34095,200.34095,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,STNG  230721C00044000,STNG 21JUL23 44 C,-96.423722,-96.423722,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,STNG  230721C00046000,STNG 21JUL23 46 C,112.61095,246.6959,246.6959,246.6959,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,STNG  230721C00048000,STNG 21JUL23 48 C,0,90.695876,0,90.695876,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,STNG  230721C00050000,STNG 21JUL23 50 C,0,1240.28662,0,1240.28662,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,STNG  230721P00050000,STNG 21JUL23 50 P,-88.96,-49.46905,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,STX   230721C00055000,STX 21JUL23 55 C,-315.096474,-315.096474,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,SWKS  230120C00080000,SWKS 20JAN23 80 C,0,1184.5,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,TD    230721C00050000,TD 21JUL23 50 C,-421.89,29.539182,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,TGT   230721C00130000,TGT 21JUL23 130 C,-164.795906,-164.795906,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,TGT   230721C00135000,TGT 21JUL23 135 C,122.80095,356.593924,356.593924,356.593924,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,TGT   230721C00140000,TGT 21JUL23 140 C,0,2208.22822,0,2208.22822,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,TGT   230721P00140000,TGT 21JUL23 140 P,-297.47,139.60095,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,TROX  230120P00012000,TROX 20JAN23 12 P,0,-19.34,0,-59.8763,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,TROX  230120C00013000,TROX 20JAN23 13 C,0,213.68,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,TSM   230217P00060000,TSM 17FEB23 60 P,0,-54.5,0,-55.03815,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,TSM   230217C00070000,TSM 17FEB23 70 C,0,717.24,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,TSM   230421C00075000,TSM 21APR23 75 C,0,1477.9146409,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,TSM   230707C00090000,TSM 07JUL23 90 C,-566.94905,-566.10842,-566.10842,-566.10842,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,TXN   230217P00145000,TXN 17FEB23 145 P,0,-210.5407961,0,-166.0789461,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,TXN   230217C00155000,TXN 17FEB23 155 C,0,1448.67,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,VALE  230120P00012000,VALE 20JAN23 12 P,0,-13.1,0,-26.91575,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,VALE  230120C00015000,VALE 20JAN23 15 C,0,1064.15,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,WWW   230721C00012500,WWW 21JUL23 12.5 C,35.300156,35.300156,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,XLK   230120C00129000,XLK 20JAN23 129 C,0,-176.52815,0,645.599353,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,XLK   230203C00130000,XLK 03FEB23 130 C,0,-288.3990519,0,-288.399052,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,XLK   230224C00131000,XLK 24FEB23 131 C,0,192.582514,0,192.582514,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,XLK   230317C00132000,XLK 17MAR23 132 C,0,-16.4156998,0,-16.4157,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,XLK   230421C00133000,XLK 21APR23 133 C,0,-746.407572,0,-746.407572,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,XLK   230602C00134000,XLK 02JUN23 134 C,0,-1538.413828,0,-1538.413828,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,XLK   230721C00139000,XLK 21JUL23 139 C,-817.31,-657.473874,0,0,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,XLY   230120C00139000,XLY 20JAN23 139 C,0,-209.43815,0,-142.481274,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,XLY   230203C00140000,XLY 03FEB23 140 C,0,-449.3987313,0,-449.398731,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,XLY   230317C00143000,XLY 17MAR23 143 C,0,882.2782893,0,882.278289,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,XLY   230421C00145000,XLY 21APR23 145 C,0,-95.502876,0,-95.502876,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,XLY   230519C00145000,XLY 19MAY23 145 C,0,153.594396,0,153.594396,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,XLY   230616C00146000,XLY 16JUN23 146 C,-1270.16905,-1358.405468,-1358.405468,-1358.405468,0,0
+Month & Year to Date Performance Summary,Data,Equity and Index Options,XLY   230721C00150000,XLY 21JUL23 150 C,-56.184794,-56.184794,0,0,0,0
+Month & Year to Date Performance Summary,Data,Total,,,-4897.14606,33333.3488121,-10010.352142,13520.2755117,0,0
+Month & Year to Date Performance Summary,Data,Total (All Assets),,,-1021.923059,7916.51852435,-4020.0072125,-6494.5957658,0,-391.122176
+Cash Report,Header,Currency Summary,Currency,Total,Month to Date,Year to Date,
+Cash Report,Data,Starting Cash,Base Currency Summary,18108.162634954,,,
+Cash Report,Data,Commissions,Base Currency Summary,-9.30639225,-37.313059,-306.19147565,
+Cash Report,Data,Deposits,Base Currency Summary,0,0,22422.9812,
+Cash Report,Data,Dividends,Base Currency Summary,25,489,4285.67,
+Cash Report,Data,Broker Interest Paid and Received,Base Currency Summary,0,5.22,58.35,
+Cash Report,Data,Trades (Sales),Base Currency Summary,35362,87324,476085.1664,
+Cash Report,Data,Trades (Purchase),Base Currency Summary,-8237,-46440,-459940.7761544,
+Cash Report,Data,Withholding Tax,Base Currency Summary,0,0,-38.23,
+Cash Report,Data,Cash FX Translation Gain/Loss,Base Currency Summary,0.00000544,,,
+Cash Report,Data,Ending Cash,Base Currency Summary,45248.856248142,,,
+Cash Report,Data,Ending Settled Cash,Base Currency Summary,18123.856248142,,,
+Cash Report,Data,Starting Cash,CAD,0.0042153,,,
+Cash Report,Data,Deposits,CAD,0,0,30460,
+Cash Report,Data,Trades (Purchase),CAD,0,0,-30459.99580588,
+Cash Report,Data,Ending Cash,CAD,0.0042153,,,
+Cash Report,Data,Ending Settled Cash,CAD,0.0042153,,,
+Cash Report,Data,Starting Cash,USD,18108.15944667,,,
+Cash Report,Data,Commissions,USD,-9.30639225,-37.313059,-306.19147565,
+Cash Report,Data,Dividends,USD,25,489,4285.67,
+Cash Report,Data,Broker Interest Paid and Received,USD,0,5.22,58.35,
+Cash Report,Data,Trades (Sales),USD,35362,87324,476085.1664,
+Cash Report,Data,Trades (Purchase),USD,-8237,-46440,-437532,
+Cash Report,Data,Withholding Tax,USD,0,0,-38.23,
+Cash Report,Data,Ending Cash,USD,45248.85305442,,,
+Cash Report,Data,Ending Settled Cash,USD,18123.85305442,,,
+Open Positions,Header,DataDiscriminator,Asset Category,Currency,Symbol,Quantity,Mult,Cost Price,Cost Basis,Close Price,Value,Unrealized P/L,Code
+Open Positions,Data,Summary,Stocks,USD,APA,100,1,45.31370257,4531.370257,34.38,3438,-1093.370257,
+Open Positions,Data,Summary,Stocks,USD,BX,100,1,87.50370257,8750.370257,91.13,9113,362.629743,CP
+Open Positions,Data,Summary,Stocks,USD,CMA,100,1,41.93370257,4193.370257,42.42,4242,48.629743,CP
+Open Positions,Data,Summary,Stocks,USD,CWH,100,1,29.09370257,2909.370257,28.07,2807,-102.370257,CP
+Open Positions,Data,Summary,Stocks,USD,DKS,100,1,149.23370257,14923.370257,135.1,13510,-1413.370257,CP
+Open Positions,Data,Summary,Stocks,USD,EBAY,100,1,44.29370257,4429.370257,45.06,4506,76.629743,CP
+Open Positions,Data,Summary,Stocks,USD,HAS,100,1,65.15370257,6515.370257,61.45,6145,-370.370257,
+Open Positions,Data,Summary,Stocks,USD,HP,200,1,47.60920257,9521.840514,34.61,6922,-2599.840514,
+Open Positions,Data,Summary,Stocks,USD,HPQ,200,1,39.57920257,7915.840514,31,6200,-1715.840514,
+Open Positions,Data,Summary,Stocks,USD,M,200,1,15.79920257,3159.840514,15.85,3170,10.159486,CP
+Open Positions,Data,Summary,Stocks,USD,MSFT,200,1,258.50370257,51700.740514,342.33,68466,16765.259486,CP
+Open Positions,Data,Summary,Stocks,USD,NKE,100,1,109.11370257,10911.370257,113.59,11359,447.629743,CP
+Open Positions,Data,Summary,Stocks,USD,NUE,100,1,101.06250257,10106.250257,151.41,15141,5034.749743,
+Open Positions,Data,Summary,Stocks,USD,PARA,200,1,33.88420257,6776.840514,16.28,3256,-3520.840514,
+Open Positions,Data,Summary,Stocks,USD,PHM,100,1,72.02370257,7202.370257,73.51,7351,148.629743,CP
+Open Positions,Data,Summary,Stocks,USD,QQQM,100,1,163.00060257,16300.060257,151.32,15132,-1168.060257,
+Open Positions,Data,Summary,Stocks,USD,SCHW,100,1,82.37370257,8237.370257,54.4,5440,-2797.370257,
+Open Positions,Data,Summary,Stocks,USD,STLD,200,1,129.31370257,25862.740514,102.53,20506,-5356.740514,
+Open Positions,Data,Summary,Stocks,USD,STNG,100,1,62.61370257,6261.370257,46.1,4610,-1651.370257,CP
+Open Positions,Data,Summary,Stocks,USD,STX,100,1,60.55370257,6055.370257,64.3,6430,374.629743,CP
+Open Positions,Data,Summary,Stocks,USD,TD,100,1,60.75370257,6075.370257,61.16,6116,40.629743,CP
+Open Positions,Data,Summary,Stocks,USD,TGT,100,1,163.60370257,16360.370257,133.81,13381,-2979.370257,CP
+Open Positions,Data,Summary,Stocks,USD,WWW,400,1,14.264702573,5705.881029,14.14,5656,-49.881029,CP
+Open Positions,Data,Summary,Stocks,USD,XLK,100,1,168.70170257,16870.170257,173.19,17319,448.829743,
+Open Positions,Data,Summary,Stocks,USD,XLY,100,1,197.60170257,19760.170257,166.38,16638,-3122.170257,
+Open Positions,Total,,Stocks,USD,,,,,281036.558739,,276854,-4182.558739,
+Open Positions,Header,DataDiscriminator,Asset Category,Currency,Symbol,Quantity,Mult,Cost Price,Cost Basis,Close Price,Value,Unrealized P/L,Code
+Open Positions,Data,Summary,Equity and Index Options,USD,APA 28JUL23 31 C,-1,100,4.36295014,-436.295014,4.1006,-410.06,26.235014,
+Open Positions,Data,Summary,Equity and Index Options,USD,APA 28JUL23 35 P,1,100,2.3269905,232.69905,2.2159,221.59,-11.10905,
+Open Positions,Data,Summary,Equity and Index Options,USD,BX 21JUL23 70 C,-1,100,18.79933462,-1879.933462,21.6348,-2163.48,-283.546538,CP
+Open Positions,Data,Summary,Equity and Index Options,USD,CMA 21JUL23 35 C,-1,100,7.52942478,-752.942478,8.3833,-838.33,-85.387522,CP
+Open Positions,Data,Summary,Equity and Index Options,USD,CWH 15SEP23 26 C,-1,100,3.8894539,-388.94539,3.5312,-353.12,35.82539,CP
+Open Positions,Data,Summary,Equity and Index Options,USD,DKS 28JUL23 123 C,-1,100,13.13337998,-1313.337998,13.9749,-1397.49,-84.152002,CP
+Open Positions,Data,Summary,Equity and Index Options,USD,EBAY 21JUL23 40 C,-1,100,4.87944598,-487.944598,5.3512,-535.12,-47.175402,CP
+Open Positions,Data,Summary,Equity and Index Options,USD,HAS 21JUL23 50 C,-1,100,8.02342086,-802.342086,11.7476,-1174.76,-372.417914,
+Open Positions,Data,Summary,Equity and Index Options,USD,HP 21JUL23 32.5 C,-2,100,3.21545938,-643.091876,3.0736,-614.72,28.371876,
+Open Positions,Data,Summary,Equity and Index Options,USD,HP 21JUL23 35 P,2,100,1.9612405,392.2481,1.8237,364.74,-27.5081,
+Open Positions,Data,Summary,Equity and Index Options,USD,HPQ 18AUG23 27 C,-2,100,3.61665614,-723.331228,4.4483,-889.66,-166.328772,
+Open Positions,Data,Summary,Equity and Index Options,USD,M 21JUL23 14 C,-2,100,2.07795592,-415.591184,2.1271,-425.42,-9.828816,CP
+Open Positions,Data,Summary,Equity and Index Options,USD,MSFT 21JUL23 205 C,-1,100,62.921544,-6292.1544,139.4004,-13940.04,-7647.8856,
+Open Positions,Data,Summary,Equity and Index Options,USD,MSFT 21JUL23 245 C,-1,100,41.71915126,-4171.915126,99.6948,-9969.48,-5797.564874,CP
+Open Positions,Data,Summary,Equity and Index Options,USD,NKE 30JUN23 100 C,-1,100,11.30939454,-1130.939454,14.4216,-1442.16,-311.220546,CP
+Open Positions,Data,Summary,Equity and Index Options,USD,NUE 21JUL23 130 C,-1,100,7.60292422,-760.292422,22.2348,-2223.48,-1463.187578,
+Open Positions,Data,Summary,Equity and Index Options,USD,NUE 21JUL23 135 P,1,100,9.8869905,988.69905,1.175,117.5,-871.19905,
+Open Positions,Data,Summary,Equity and Index Options,USD,PARA 28JUL23 14 C,-2,100,3.01166098,-602.332196,2.5817,-516.34,85.992196,
+Open Positions,Data,Summary,Equity and Index Options,USD,PARA 28JUL23 17.5 P,2,100,1.8032905,360.6581,1.685,337,-23.6581,
+Open Positions,Data,Summary,Equity and Index Options,USD,PHM 21JUL23 65 C,-1,100,7.69942342,-769.942342,9.0814,-908.14,-138.197658,CP
+Open Positions,Data,Summary,Equity and Index Options,USD,QQQM 21JUL23 125 C,-1,100,25.44928142,-2544.928142,26.7858,-2678.58,-133.651858,
+Open Positions,Data,Summary,Equity and Index Options,USD,SCHW 21JUL23 47.5 C,-1,100,7.92292166,-792.292166,7.5944,-759.44,32.852166,
+Open Positions,Data,Summary,Equity and Index Options,USD,SCHW 21JUL23 57.5 P,1,100,3.9469905,394.69905,4.0349,403.49,8.79095,
+Open Positions,Data,Summary,Equity and Index Options,USD,STLD 21JUL23 95 C,-2,100,11.5183929,-2303.67858,9.4185,-1883.7,419.97858,
+Open Positions,Data,Summary,Equity and Index Options,USD,STLD 21JUL23 115 P,1,100,11.3364905,1133.64905,13.3399,1333.99,200.34095,
+Open Positions,Data,Summary,Equity and Index Options,USD,STNG 21JUL23 44 C,-1,100,2.78346278,-278.346278,3.7477,-374.77,-96.423722,CP
+Open Positions,Data,Summary,Equity and Index Options,USD,STNG 21JUL23 50 P,1,100,5.3024905,530.24905,4.8078,480.78,-49.46905,
+Open Positions,Data,Summary,Equity and Index Options,USD,STX 21JUL23 55 C,-1,100,6.21943526,-621.943526,9.3704,-937.04,-315.096474,CP
+Open Positions,Data,Summary,Equity and Index Options,USD,TD 21JUL23 50 C,-1,100,11.64939182,-1164.939182,11.354,-1135.4,29.539182,CP
+Open Positions,Data,Summary,Equity and Index Options,USD,TGT 21JUL23 130 C,-1,100,5.51294094,-551.294094,7.1609,-716.09,-164.795906,CP
+Open Positions,Data,Summary,Equity and Index Options,USD,TGT 21JUL23 140 P,1,100,6.5103905,651.03905,7.9064,790.64,139.60095,
+Open Positions,Data,Summary,Equity and Index Options,USD,WWW 21JUL23 12.5 C,-4,100,1.98895039,-795.580156,1.9007,-760.28,35.300156,CP
+Open Positions,Data,Summary,Equity and Index Options,USD,XLK 21JUL23 139 C,-1,100,27.97276126,-2797.276126,34.5475,-3454.75,-657.473874,
+Open Positions,Data,Summary,Equity and Index Options,USD,XLY 21JUL23 150 C,-1,100,16.62285206,-1662.285206,17.1847,-1718.47,-56.184794,
+Open Positions,Total,,Equity and Index Options,USD,,,,,-30399.95421,,-48170.59,-17770.63579,
+Complex Positions Summary,Header,Currency,Description,Symbol,Quantity,Multiplier,Close Price,Value,MTM P/L
+Complex Positions Summary,Data,USD,BX +100xSTK  -1xJul 70 Call STK/OPT,,1,-,-,6949.52,-9.64
+Complex Positions Summary,Data,USD,BLACKSTONE INC,BX,100,1,91.13,9113,-152
+Complex Positions Summary,Data,USD,BX 21JUL23 70 C,BX    230721C00070000,-1,100,21.6348,-2163.48,142.36
+Complex Positions Summary,Data,USD,C +100xSTK  -1xJun 40 Call STK/OPT,,0,-,-,-,0.63
+Complex Positions Summary,Data,USD,CITIGROUP INC,C,0,-,-,-,-856
+Complex Positions Summary,Data,USD,C 16JUN23 40 C,C     230616C00040000,0,-,-,-,856.63
+Complex Positions Summary,Data,USD,CMA +100xSTK  -1xJul 35 Call STK/OPT,,1,-,-,3403.67,-1.16
+Complex Positions Summary,Data,USD,COMERICA INC,CMA,100,1,42.42,4242,-46
+Complex Positions Summary,Data,USD,CMA 21JUL23 35 C,CMA   230721C00035000,-1,100,8.3833,-838.33,44.84
+Complex Positions Summary,Data,USD,CWH +100xSTK  -1xSep 26 Call STK/OPT,,1,-,-,2453.88,-14.13
+Complex Positions Summary,Data,USD,CAMPING WORLD HOLDINGS INC-A,CWH,100,1,28.07,2807,-79
+Complex Positions Summary,Data,USD,CWH 15SEP23 26 C,CWH   230915C00026000,-1,100,3.5312,-353.12,64.87
+Complex Positions Summary,Data,USD,DKS +100xSTK  -1xJul28 123 Call STK/OPT,,1,-,-,12112.51,16.62
+Complex Positions Summary,Data,USD,DICK'S SPORTING GOODS INC,DKS,100,1,135.1,13510,3
+Complex Positions Summary,Data,USD,DKS 28JUL23 123 C,DKS   230728C00123000,-1,100,13.9749,-1397.49,13.62
+Complex Positions Summary,Data,USD,EBAY +100xSTK  -1xJul 40 Call STK/OPT,,1,-,-,3970.88,2.61
+Complex Positions Summary,Data,USD,EBAY INC,EBAY,100,1,45.06,4506,-56
+Complex Positions Summary,Data,USD,EBAY 21JUL23 40 C,EBAY  230721C00040000,-1,100,5.3512,-535.12,58.61
+Complex Positions Summary,Data,USD,EQT +100xSTK  -1xJun 27 Call STK/OPT,,0,-,-,-,0.4
+Complex Positions Summary,Data,USD,EQT CORP,EQT,0,-,-,-,-1195
+Complex Positions Summary,Data,USD,EQT 16JUN23 27 C,EQT   230616C00027000,0,-,-,-,1195.4
+Complex Positions Summary,Data,USD,M +100xSTK  -1xJul 14 Call STK/OPT,,2,-,-,2744.58,-0.98
+Complex Positions Summary,Data,USD,MACYS INC,M,200,1,15.85,3170,-28
+Complex Positions Summary,Data,USD,M 21JUL23 14 C,M     230721C00014000,-2,100,2.1271,-425.42,27.02
+Complex Positions Summary,Data,USD,MSFT +100xSTK  -1xJul 245 Call STK/OPT,,1,-,-,24263.52,-141.43
+Complex Positions Summary,Data,USD,MICROSOFT CORP,MSFT,100,1,342.33,34233,-577
+Complex Positions Summary,Data,USD,MSFT 21JUL23 245 C,MSFT  230721C00245000,-1,100,99.6948,-9969.48,435.57
+Complex Positions Summary,Data,USD,NKE +100xSTK  -1xJun30 100 Call STK/OPT,,1,-,-,9916.84,13.38
+Complex Positions Summary,Data,USD,NIKE INC -CL B,NKE,100,1,113.59,11359,118
+Complex Positions Summary,Data,USD,NKE 30JUN23 100 C,NKE   230630C00100000,-1,100,14.4216,-1442.16,-104.62
+Complex Positions Summary,Data,USD,PHM +100xSTK  -1xJul 65 Call STK/OPT,,1,-,-,6442.86,-11.4
+Complex Positions Summary,Data,USD,PULTE GROUP INC,PHM,100,1,73.51,7351,-45
+Complex Positions Summary,Data,USD,PHM 21JUL23 65 C,PHM   230721C00065000,-1,100,9.0814,-908.14,33.6
+Complex Positions Summary,Data,USD,STNG +100xSTK  -1xJul 44 Call STK/OPT,,1,-,-,4235.23,31.1
+Complex Positions Summary,Data,USD,SCORPIO TANKERS INC,STNG,100,1,46.1,4610,61
+Complex Positions Summary,Data,USD,STNG 21JUL23 44 C,STNG  230721C00044000,-1,100,3.7477,-374.77,-29.9
+Complex Positions Summary,Data,USD,STX +100xSTK  -1xJul 55 Call STK/OPT,,1,-,-,5492.96,0.36
+Complex Positions Summary,Data,USD,SEAGATE TECHNOLOGY HOLDINGS,STX,100,1,64.3,6430,-184
+Complex Positions Summary,Data,USD,STX 21JUL23 55 C,STX   230721C00055000,-1,100,9.3704,-937.04,184.36
+Complex Positions Summary,Data,USD,TD +100xSTK  -1xJul 50 Call STK/OPT,,1,-,-,4980.6,-1.55
+Complex Positions Summary,Data,USD,TORONTO-DOMINION BANK,TD,100,1,61.16,6116,18
+Complex Positions Summary,Data,USD,TD 21JUL23 50 C,TD    230721C00050000,-1,100,11.354,-1135.4,-19.55
+Complex Positions Summary,Data,USD,TGT +100xSTK  -1xJul 130 Call STK/OPT,,1,-,-,12664.91,-90.03
+Complex Positions Summary,Data,USD,TARGET CORP,TGT,100,1,133.81,13381,-403
+Complex Positions Summary,Data,USD,TGT 21JUL23 130 C,TGT   230721C00130000,-1,100,7.1609,-716.09,312.97
+Complex Positions Summary,Data,USD,TSM +100xSTK  -1xJul07 90 Call STK/OPT,,0,-,-,-,5.402145
+Complex Positions Summary,Data,USD,TAIWAN SEMICONDUCTOR-SP ADR,TSM,0,-,-,-,-12.468805
+Complex Positions Summary,Data,USD,TSM 07JUL23 90 C,TSM   230707C00090000,0,-,-,-,17.87095
+Complex Positions Summary,Data,USD,WWW +100xSTK  -1xJul 12.5 Call STK/OPT,,4,-,-,4895.72,-14.580873
+Complex Positions Summary,Data,USD,WOLVERINE WORLD WIDE INC,WWW,400,1,14.14,5656,-49.881029
+Complex Positions Summary,Data,USD,WWW 21JUL23 12.5 C,WWW   230721C00012500,-4,100,1.9007,-760.28,35.300156
+Complex Positions Summary,Data,Total,,,,,,104527.68,-214.398728
+Trades,Header,DataDiscriminator,Asset Category,Currency,Symbol,Date/Time,Quantity,T. Price,C. Price,Proceeds,Comm/Fee,Basis,Realized P/L,MTM P/L,Code
+Trades,Data,Order,Stocks,USD,C,"2023-06-16, 16:20:00",-100,40,48.19,4000,-0.0465,-4597.370257,92.526225,-819,A;C;CP
+Trades,SubTotal,,Stocks,USD,C,,-100,,,4000,-0.0465,-4597.370257,92.526225,-819,
+Trades,Data,Order,Stocks,USD,EQT,"2023-06-16, 16:20:00",-100,27,39.64,2700,-0.0361,-3305.370257,66.536769,-1264,A;C;CP
+Trades,SubTotal,,Stocks,USD,EQT,,-100,,,2700,-0.0361,-3305.370257,66.536769,-1264,
+Trades,Data,Order,Stocks,USD,JWN,"2023-06-16, 16:20:00",-200,14.5,19.06,2900,-0.0522,-3234.840514,91.698382,-912,A;C;CP
+Trades,SubTotal,,Stocks,USD,JWN,,-200,,,2900,-0.0522,-3234.840514,91.698382,-912,
+Trades,Data,Order,Stocks,USD,NXPI,"2023-06-16, 16:20:00",-100,140,197.85,14000,-0.1265,-17502.370257,326.821113,-5785,A;C
+Trades,SubTotal,,Stocks,USD,NXPI,,-100,,,14000,-0.1265,-17502.370257,326.821113,-5785,
+Trades,Data,Order,Stocks,USD,TSM,"2023-06-16, 13:27:38",-100,105.06,104.57,10506,-0.46880525,-9866.370257,639.160938,49,C;CP
+Trades,SubTotal,,Stocks,USD,TSM,,-100,,,10506,-0.46880525,-9866.370257,639.160938,49,
+Trades,Data,Order,Stocks,USD,WWW,"2023-06-16, 14:26:03",400,14.26,14.14,-5704,-1.881029,5705.881029,0,-48,CP;O;P
+Trades,SubTotal,,Stocks,USD,WWW,,400,,,-5704,-1.881029,5705.881029,0,-48,
+Trades,Total,,Stocks,USD,,,,,,28402,-2.61113425,-32800.440513,1216.743427,-8779, 
+Trades,Header,DataDiscriminator,Asset Category,Currency,Symbol,Date/Time,Quantity,T. Price,C. Price,Proceeds,Comm/Fee,Basis,Realized P/L,MTM P/L,Code
+Trades,Data,Order,Equity and Index Options,USD,APA 16JUN23 35 P,"2023-06-16, 11:32:10",-1,0.75,0.62,75,-0.70209,-345.69905,-271.40114,13,C
+Trades,SubTotal,,Equity and Index Options,USD,APA 16JUN23 35 P,,-1,,,75,-0.70209,-345.69905,-271.40114,13,
+Trades,Data,Order,Equity and Index Options,USD,APA 28JUL23 35 P,"2023-06-16, 11:32:10",1,2.32,2.2159,-232,-0.69905,232.69905,0,-10.41,O
+Trades,SubTotal,,Equity and Index Options,USD,APA 28JUL23 35 P,,1,,,-232,-0.69905,232.69905,0,-10.41,
+Trades,Data,Order,Equity and Index Options,USD,C 16JUN23 40 C,"2023-06-16, 16:20:00",1,0,8.19,0,0,689.942982,0,819,A;C;CP
+Trades,SubTotal,,Equity and Index Options,USD,C 16JUN23 40 C,,1,,,0,0,689.942982,0,819,
+Trades,Data,Order,Equity and Index Options,USD,CVE 16JUN23 15 P,"2023-06-16, 16:20:00",-1,0,0,0,0,-137.24905,-137.24905,0,C;Ep
+Trades,SubTotal,,Equity and Index Options,USD,CVE 16JUN23 15 P,,-1,,,0,0,-137.24905,-137.24905,0,
+Trades,Data,Order,Equity and Index Options,USD,DKS 16JUN23 130 P,"2023-06-16, 16:20:00",-1,0,0,0,0,-850.29905,-850.29905,0,C;Ep
+Trades,SubTotal,,Equity and Index Options,USD,DKS 16JUN23 130 P,,-1,,,0,0,-850.29905,-850.29905,0,
+Trades,Data,Order,Equity and Index Options,USD,EQT 16JUN23 27 C,"2023-06-16, 16:20:00",1,0,12.64,0,0,671.943126,0,1264,A;C;CP
+Trades,SubTotal,,Equity and Index Options,USD,EQT 16JUN23 27 C,,1,,,0,0,671.943126,0,1264,
+Trades,Data,Order,Equity and Index Options,USD,HP 16JUN23 35 P,"2023-06-16, 11:44:37",-2,0.58,0.39,116,-0.253908,-601.9981,-486.252008,38,C;P
+Trades,SubTotal,,Equity and Index Options,USD,HP 16JUN23 35 P,,-2,,,116,-0.253908,-601.9981,-486.252008,38,
+Trades,Data,Order,Equity and Index Options,USD,HP 21JUL23 35 P,"2023-06-16, 11:44:37",2,1.96,1.8237,-392,-0.2481,392.2481,0,-27.26,O;P
+Trades,SubTotal,,Equity and Index Options,USD,HP 21JUL23 35 P,,2,,,-392,-0.2481,392.2481,0,-27.26,
+Trades,Data,Order,Equity and Index Options,USD,HPQ 16JUN23 30 P,"2023-06-16, 16:20:00",-2,0,0,0,0,-218.6581,-218.6581,0,C;Ep
+Trades,SubTotal,,Equity and Index Options,USD,HPQ 16JUN23 30 P,,-2,,,0,0,-218.6581,-218.6581,0,
+Trades,Data,Order,Equity and Index Options,USD,JWN 16JUN23 14.5 C,"2023-06-16, 16:20:00",2,0,4.56,0,0,426.591096,0,912,A;C;CP
+Trades,SubTotal,,Equity and Index Options,USD,JWN 16JUN23 14.5 C,,2,,,0,0,426.591096,0,912,
+Trades,Data,Order,Equity and Index Options,USD,NXPI 16JUN23 140 C,"2023-06-16, 16:20:00",1,0,57.85,0,0,3829.31787,0,5785,A;C
+Trades,SubTotal,,Equity and Index Options,USD,NXPI 16JUN23 140 C,,1,,,0,0,3829.31787,0,5785,
+Trades,Data,Order,Equity and Index Options,USD,PARA 16JUN23 17.5 P,"2023-06-16, 11:27:08",-2,1.335,1.22,267,-0.665116,-430.6581,-164.323216,23,C;P
+Trades,SubTotal,,Equity and Index Options,USD,PARA 16JUN23 17.5 P,,-2,,,267,-0.665116,-430.6581,-164.323216,23,
+Trades,Data,Order,Equity and Index Options,USD,PARA 28JUL23 17.5 P,"2023-06-16, 11:27:08",2,1.8,1.685,-360,-0.6581,360.6581,0,-23,O;P
+Trades,SubTotal,,Equity and Index Options,USD,PARA 28JUL23 17.5 P,,2,,,-360,-0.6581,360.6581,0,-23,
+Trades,Data,Order,Equity and Index Options,USD,STLD 16JUN23 100 P,"2023-06-16, 16:20:00",-1,0,0,0,0,-591.64905,-591.64905,0,C;Ep
+Trades,SubTotal,,Equity and Index Options,USD,STLD 16JUN23 100 P,,-1,,,0,0,-591.64905,-591.64905,0,
+Trades,Data,Order,Equity and Index Options,USD,TSM 07JUL23 90 C,"2023-06-16, 13:27:38",1,15.49,15.0584,-1549,-1.04905,983.94063,-566.10842,-43.16,C;CP
+Trades,SubTotal,,Equity and Index Options,USD,TSM 07JUL23 90 C,,1,,,-1549,-1.04905,983.94063,-566.10842,-43.16,
+Trades,Data,Order,Equity and Index Options,USD,WWW 21JUL23 12.5 C,"2023-06-16, 14:26:03",-4,1.995,1.9007,798,-2.419844,-795.580156,0,37.72,CP;O;P
+Trades,SubTotal,,Equity and Index Options,USD,WWW 21JUL23 12.5 C,,-4,,,798,-2.419844,-795.580156,0,37.72,
+Trades,Total,,Equity and Index Options,USD,,,,,,-1277,-6.695258,3615.550298,-3285.940034,8787.89,
+Dividends,Header,Currency,Date,Description,Amount
+Dividends,Data,USD,2023-06-16,EBAY(US2786421030) Cash Dividend USD 0.25 per Share (Ordinary Dividend),25
+Dividends,Data,Total,,,25
+Interest Accruals,Header,Currency,Field Name,Field Value
+Interest Accruals,Data,Base Currency Summary,Starting Accrual Balance,1.91
+Interest Accruals,Data,Base Currency Summary,Interest Accrued,0
+Interest Accruals,Data,Base Currency Summary,Accrual Reversal,0
+Interest Accruals,Data,Base Currency Summary,Ending Accrual Balance,1.91
+Change in Dividend Accruals,Header,Asset Category,Currency,Symbol,Date,Ex Date,Pay Date,Quantity,Tax,Fee,Gross Rate,Gross Amount,Net Amount,Code
+Change in Dividend Accruals,Data,Starting Dividend Accruals in USD,,,,,,,,,,,534.72,
+Change in Dividend Accruals,Data,Stocks,USD,EBAY,2023-06-16,2023-05-31,2023-06-16,100,0,0,0.25,-25,-25,Re
+Change in Dividend Accruals,Data,Stocks,USD,PHM,2023-06-15,2023-06-16,2023-07-05,100,0,0,0.16,16,16,Po
+Change in Dividend Accruals,Data,Stocks,USD,TSM,2023-06-14,2023-06-15,2023-07-13,100,9.4,0,0.447547,44.76,35.36,Po
+Change in Dividend Accruals,Data,Stocks,USD,TSM,2023-06-14,2023-06-15,2023-07-13,100,-9.31,0,0.447547,-44.76,-35.45,Re
+Change in Dividend Accruals,Data,Total,,,,,,,0.09,0,,-9,-9.09,
+Change in Dividend Accruals,Data,Ending Dividend Accruals in USD,,,,,,,,,,,525.63,
+Financial Instrument Information,Header,Asset Category,Symbol,Description,Conid,Security ID,Listing Exch,Multiplier,Type,Code
+Financial Instrument Information,Data,Stocks,APA,APA CORP,474515500,US03743Q1085,NASDAQ,1,COMMON,
+Financial Instrument Information,Data,Stocks,BX,BLACKSTONE INC,372834689,US09260D1072,NYSE,1,COMMON,CP
+Financial Instrument Information,Data,Stocks,C,CITIGROUP INC,87335484,US1729674242,NYSE,1,COMMON,CP
+Financial Instrument Information,Data,Stocks,CMA,COMERICA INC,5800,US2003401070,NYSE,1,COMMON,CP
+Financial Instrument Information,Data,Stocks,CWH,CAMPING WORLD HOLDINGS INC-A,250142644,US13462K1097,NYSE,1,COMMON,CP
+Financial Instrument Information,Data,Stocks,DKS,DICK'S SPORTING GOODS INC,16310970,US2533931026,NYSE,1,COMMON,CP
+Financial Instrument Information,Data,Stocks,EBAY,EBAY INC,4347086,US2786421030,NASDAQ,1,COMMON,CP
+Financial Instrument Information,Data,Stocks,EQT,EQT CORP,57698865,US26884L1098,NYSE,1,COMMON,CP
+Financial Instrument Information,Data,Stocks,HAS,HASBRO INC,754956,US4180561072,NASDAQ,1,COMMON,
+Financial Instrument Information,Data,Stocks,HP,HELMERICH & PAYNE,8097,US4234521015,NYSE,1,COMMON,
+Financial Instrument Information,Data,Stocks,HPQ,HP INC,209411801,US40434L1052,NYSE,1,COMMON,
+Financial Instrument Information,Data,Stocks,JWN,NORDSTROM INC,272428,US6556641008,NYSE,1,COMMON,CP
+Financial Instrument Information,Data,Stocks,M,MACYS INC,44475946,US55616P1049,NYSE,1,COMMON,CP
+Financial Instrument Information,Data,Stocks,MSFT,MICROSOFT CORP,272093,US5949181045,NASDAQ,1,COMMON,CP
+Financial Instrument Information,Data,Stocks,NKE,NIKE INC -CL B,10291,US6541061031,NYSE,1,COMMON,CP
+Financial Instrument Information,Data,Stocks,NUE,NUCOR CORP,10557,US6703461052,NYSE,1,COMMON,
+Financial Instrument Information,Data,Stocks,NXPI,NXP SEMICONDUCTORS NV,77791077,NL0009538784,NASDAQ,1,COMMON,
+Financial Instrument Information,Data,Stocks,PARA,PARAMOUNT GLOBAL-CLASS B,393897513,US92556H2067,NASDAQ,1,COMMON,
+Financial Instrument Information,Data,Stocks,PHM,PULTE GROUP INC,11109,US7458671010,NYSE,1,COMMON,CP
+Financial Instrument Information,Data,Stocks,QQQM,INVESCO NASDAQ 100 ETF,449738108,US46138G6492,NASDAQ,1,ETF,
+Financial Instrument Information,Data,Stocks,SCHW,SCHWAB (CHARLES) CORP,11905,US8085131055,NYSE,1,COMMON,
+Financial Instrument Information,Data,Stocks,STLD,STEEL DYNAMICS INC,6478095,US8581191009,NASDAQ,1,COMMON,
+Financial Instrument Information,Data,Stocks,STNG,SCORPIO TANKERS INC,349869083,MHY7542C1306,NYSE,1,COMMON,CP
+Financial Instrument Information,Data,Stocks,STX,SEAGATE TECHNOLOGY HOLDINGS,491932113,IE00BKVD2N49,NASDAQ,1,COMMON,CP
+Financial Instrument Information,Data,Stocks,TD,TORONTO-DOMINION BANK,2009210,CA8911605092,NYSE,1,COMMON,CP
+Financial Instrument Information,Data,Stocks,TGT,TARGET CORP,6437,US87612E1064,NYSE,1,COMMON,CP
+Financial Instrument Information,Data,Stocks,TSM,TAIWAN SEMICONDUCTOR-SP ADR,6223250,US8740391003,NYSE,1,ADR,CP
+Financial Instrument Information,Data,Stocks,WWW,WOLVERINE WORLD WIDE INC,13938,US9780971035,NYSE,1,COMMON,CP
+Financial Instrument Information,Data,Stocks,XLK,TECHNOLOGY SELECT SECT SPDR,4215230,US81369Y8030,ARCA,1,ETF,
+Financial Instrument Information,Data,Stocks,XLY,CONSUMER DISCRETIONARY SELT,4215215,US81369Y4070,ARCA,1,ETF,
+Financial Instrument Information,Header,Asset Category,Symbol,Description,Conid,Listing Exch,Multiplier,Expiry,Delivery Month,Type,Strike,Code
+Financial Instrument Information,Data,Equity and Index Options,APA   230616P00035000,APA 16JUN23 35 P,626552528,CBOE,100,2023-06-16,2023-06,P,35,
+Financial Instrument Information,Data,Equity and Index Options,APA   230728C00031000,APA 28JUL23 31 C,635762933,CBOE,100,2023-07-28,2023-07,C,31,
+Financial Instrument Information,Data,Equity and Index Options,APA   230728P00035000,APA 28JUL23 35 P,635764759,CBOE,100,2023-07-28,2023-07,P,35,
+Financial Instrument Information,Data,Equity and Index Options,BX    230721C00070000,BX 21JUL23 70 C,627402706,CBOE,100,2023-07-21,2023-07,C,70,CP
+Financial Instrument Information,Data,Equity and Index Options,C     230616C00040000,C 16JUN23 40 C,559726467,CBOE,100,2023-06-16,2023-06,C,40,CP
+Financial Instrument Information,Data,Equity and Index Options,CMA   230721C00035000,CMA 21JUL23 35 C,599251292,CBOE,100,2023-07-21,2023-07,C,35,CP
+Financial Instrument Information,Data,Equity and Index Options,CVE   230616P00015000,CVE 16JUN23 15 P,538404390,CBOE,100,2023-06-16,2023-06,P,15,
+Financial Instrument Information,Data,Equity and Index Options,CWH   230915C00026000,CWH 15SEP23 26 C,608977457,CBOE,100,2023-09-15,2023-09,C,26,CP
+Financial Instrument Information,Data,Equity and Index Options,DKS   230616P00130000,DKS 16JUN23 130 P,592518098,CBOE,100,2023-06-16,2023-06,P,130,
+Financial Instrument Information,Data,Equity and Index Options,DKS   230728C00123000,DKS 28JUL23 123 C,635773424,CBOE,100,2023-07-28,2023-07,C,123,CP
+Financial Instrument Information,Data,Equity and Index Options,EBAY  230721C00040000,EBAY 21JUL23 40 C,598202587,CBOE,100,2023-07-21,2023-07,C,40,CP
+Financial Instrument Information,Data,Equity and Index Options,EQT   230616C00027000,EQT 16JUN23 27 C,540372939,CBOE,100,2023-06-16,2023-06,C,27,CP
+Financial Instrument Information,Data,Equity and Index Options,HAS   230721C00050000,HAS 21JUL23 50 C,598327592,CBOE,100,2023-07-21,2023-07,C,50,
+Financial Instrument Information,Data,Equity and Index Options,HP    230616P00035000,HP 16JUN23 35 P,592597585,CBOE,100,2023-06-16,2023-06,P,35,
+Financial Instrument Information,Data,Equity and Index Options,HP    230721C00032500,HP 21JUL23 32.5 C,631855608,CBOE,100,2023-07-21,2023-07,C,32.5,
+Financial Instrument Information,Data,Equity and Index Options,HP    230721P00035000,HP 21JUL23 35 P,631856655,CBOE,100,2023-07-21,2023-07,P,35,
+Financial Instrument Information,Data,Equity and Index Options,HPQ   230616P00030000,HPQ 16JUN23 30 P,580172414,CBOE,100,2023-06-16,2023-06,P,30,
+Financial Instrument Information,Data,Equity and Index Options,HPQ   230818C00027000,HPQ 18AUG23 27 C,603114900,CBOE,100,2023-08-18,2023-08,C,27,
+Financial Instrument Information,Data,Equity and Index Options,JWN   230616C00014500,JWN 16JUN23 14.5 C,632490351,CBOE,100,2023-06-16,2023-06,C,14.5,CP
+Financial Instrument Information,Data,Equity and Index Options,M     230721C00014000,M 21JUL23 14 C,631896775,CBOE,100,2023-07-21,2023-07,C,14,CP
+Financial Instrument Information,Data,Equity and Index Options,MSFT  230721C00205000,MSFT 21JUL23 205 C,598401494,CBOE,100,2023-07-21,2023-07,C,205,
+Financial Instrument Information,Data,Equity and Index Options,MSFT  230721C00245000,MSFT 21JUL23 245 C,598401994,CBOE,100,2023-07-21,2023-07,C,245,CP
+Financial Instrument Information,Data,Equity and Index Options,NKE   230630C00100000,NKE 30JUN23 100 C,630745533,CBOE,100,2023-06-30,2023-06,C,100,CP
+Financial Instrument Information,Data,Equity and Index Options,NUE   230721C00130000,NUE 21JUL23 130 C,598378630,CBOE,100,2023-07-21,2023-07,C,130,
+Financial Instrument Information,Data,Equity and Index Options,NUE   230721P00135000,NUE 21JUL23 135 P,598379975,CBOE,100,2023-07-21,2023-07,P,135,
+Financial Instrument Information,Data,Equity and Index Options,NXPI  230616C00140000,NXPI 16JUN23 140 C,564466254,CBOE,100,2023-06-16,2023-06,C,140,
+Financial Instrument Information,Data,Equity and Index Options,PARA  230616P00017500,PARA 16JUN23 17.5 P,580954457,CBOE,100,2023-06-16,2023-06,P,17.5,
+Financial Instrument Information,Data,Equity and Index Options,PARA  230728C00014000,PARA 28JUL23 14 C,635830539,CBOE,100,2023-07-28,2023-07,C,14,
+Financial Instrument Information,Data,Equity and Index Options,PARA  230728P00017500,PARA 28JUL23 17.5 P,635832176,CBOE,100,2023-07-28,2023-07,P,17.5,
+Financial Instrument Information,Data,Equity and Index Options,PHM   230721C00065000,PHM 21JUL23 65 C,598494303,CBOE,100,2023-07-21,2023-07,C,65,CP
+Financial Instrument Information,Data,Equity and Index Options,QQQM  230721C00125000,QQQM 21JUL23 125 C,632243134,PHLX,100,2023-07-21,2023-07,C,125,
+Financial Instrument Information,Data,Equity and Index Options,SCHW  230721C00047500,SCHW 21JUL23 47.5 C,623050164,CBOE,100,2023-07-21,2023-07,C,47.5,
+Financial Instrument Information,Data,Equity and Index Options,SCHW  230721P00057500,SCHW 21JUL23 57.5 P,623050758,CBOE,100,2023-07-21,2023-07,P,57.5,
+Financial Instrument Information,Data,Equity and Index Options,STLD  230616P00100000,STLD 16JUN23 100 P,627001515,CBOE,100,2023-06-16,2023-06,P,100,
+Financial Instrument Information,Data,Equity and Index Options,STLD  230721C00095000,STLD 21JUL23 95 C,632024730,CBOE,100,2023-07-21,2023-07,C,95,
+Financial Instrument Information,Data,Equity and Index Options,STLD  230721P00115000,STLD 21JUL23 115 P,632025038,CBOE,100,2023-07-21,2023-07,P,115,
+Financial Instrument Information,Data,Equity and Index Options,STNG  230721C00044000,STNG 21JUL23 44 C,598545689,CBOE,100,2023-07-21,2023-07,C,44,CP
+Financial Instrument Information,Data,Equity and Index Options,STNG  230721P00050000,STNG 21JUL23 50 P,598546377,CBOE,100,2023-07-21,2023-07,P,50,
+Financial Instrument Information,Data,Equity and Index Options,STX   230721C00055000,STX 21JUL23 55 C,626119147,CBOE,100,2023-07-21,2023-07,C,55,CP
+Financial Instrument Information,Data,Equity and Index Options,TD    230721C00050000,TD 21JUL23 50 C,598572500,CBOE,100,2023-07-21,2023-07,C,50,CP
+Financial Instrument Information,Data,Equity and Index Options,TGT   230721C00130000,TGT 21JUL23 130 C,598501962,CBOE,100,2023-07-21,2023-07,C,130,CP
+Financial Instrument Information,Data,Equity and Index Options,TGT   230721P00140000,TGT 21JUL23 140 P,598502927,CBOE,100,2023-07-21,2023-07,P,140,
+Financial Instrument Information,Data,Equity and Index Options,TSM   230707C00090000,TSM 07JUL23 90 C,633373083,CBOE,100,2023-07-07,2023-07,C,90,CP
+Financial Instrument Information,Data,Equity and Index Options,WWW   230721C00012500,WWW 21JUL23 12.5 C,632088764,CBOE,100,2023-07-21,2023-07,C,12.5,CP
+Financial Instrument Information,Data,Equity and Index Options,XLK   230721C00139000,XLK 21JUL23 139 C,632109856,CBOE,100,2023-07-21,2023-07,C,139,
+Financial Instrument Information,Data,Equity and Index Options,XLY   230721C00150000,XLY 21JUL23 150 C,632076793,CBOE,100,2023-07-21,2023-07,C,150,
+Base Currency Exchange Rate,Header,Currency,Rate
+Base Currency Exchange Rate,Data,AED,0.272270
+Base Currency Exchange Rate,Data,AUD,0.687690
+Base Currency Exchange Rate,Data,BGN,0.559430
+Base Currency Exchange Rate,Data,BRL,0.207370
+Base Currency Exchange Rate,Data,CAD,0.757650
+Base Currency Exchange Rate,Data,CHF,1.118700
+Base Currency Exchange Rate,Data,CNH,0.140290
+Base Currency Exchange Rate,Data,CNY,0.140320
+Base Currency Exchange Rate,Data,CZK,0.046089
+Base Currency Exchange Rate,Data,DKK,0.146890
+Base Currency Exchange Rate,Data,EUR,1.094100
+Base Currency Exchange Rate,Data,GBP,1.282300
+Base Currency Exchange Rate,Data,HKD,0.127880
+Base Currency Exchange Rate,Data,HUF,0.002929
+Base Currency Exchange Rate,Data,ILS,0.281100
+Base Currency Exchange Rate,Data,INR,0.012208
+Base Currency Exchange Rate,Data,JPY,0.007049
+Base Currency Exchange Rate,Data,KRW,0.000783
+Base Currency Exchange Rate,Data,MXN,0.058548
+Base Currency Exchange Rate,Data,NOK,0.094701
+Base Currency Exchange Rate,Data,NZD,0.623620
+Base Currency Exchange Rate,Data,PLN,0.245050
+Base Currency Exchange Rate,Data,RON,0.220640
+Base Currency Exchange Rate,Data,RUB,0.011976
+Base Currency Exchange Rate,Data,SAR,0.266650
+Base Currency Exchange Rate,Data,SEK,0.093897
+Base Currency Exchange Rate,Data,SGD,0.747650
+Base Currency Exchange Rate,Data,THB,0.028823
+Base Currency Exchange Rate,Data,TRY,0.042341
+Base Currency Exchange Rate,Data,TWD,0.032584
+Base Currency Exchange Rate,Data,ZAR,0.054981
+Codes,Header,Code,Meaning,Code (Cont.),Meaning (Cont.)
+Codes,Data,A,Assignment
+Codes,Data,ADR,ADR Fee Accrual
+Codes,Data,AEx,Automatic exercise for dividend-related recommendation.
+Codes,Data,AFx,AutoFX conversion resulting from trading
+Codes,Data,Adj,Adjustment
+Codes,Data,Al,Allocation
+Codes,Data,Aw,Away Trade
+Codes,Data,B,Automatic Buy-in
+Codes,Data,Bo,Direct Borrow
+Codes,Data,C,Closing Trade
+Codes,Data,CD,Cash Delivery
+Codes,Data,CP,Complex Position
+Codes,Data,Ca,Cancelled
+Codes,Data,Co,Corrected Trade
+Codes,Data,Cx,Part or all of this transaction was a Crossing executed as dual agent by IB for two IB customers
+Codes,Data,ETF,ETF Creation/Redemption
+Codes,Data,Ep,Resulted from an Expired Position
+Codes,Data,Ex,Exercise
+Codes,Data,FP,The fractional portion of this trade was executed against IB or an affiliate.
+Codes,Data,FPA,The fractional portion of this trade was executed against IB or an affiliate. IB acted as agent for the whole share portion of this trade.
+Codes,Data,G,Trade in Guaranteed Account Segment
+Codes,Data,GEA,Exercise or Assignment resulting from offsetting positions
+Codes,Data,HC,Highest Cost tax basis election
+Codes,Data,HFI,Investment Transferred to Hedge Fund
+Codes,Data,HFR,Redemption from Hedge Fund
+Codes,Data,I,Internal Transfer
+Codes,Data,IA,The transaction was executed against IB or an affiliate
+Codes,Data,IM,A portion of the order was executed against IB or an affiliate; IB acted as agent on a portion.
+Codes,Data,INV,Investment Transfer from Investor
+Codes,Data,IPO,This transaction was executed as part of an IPO in which IB was a member of the selling group and is classified as a Principal trade.
+Codes,Data,L,Ordered by IB (Margin Violation)
+Codes,Data,LD,Adjusted by Loss Disallowed from Wash Sale
+Codes,Data,LI,"Last In, First Out (LIFO) tax basis election"
+Codes,Data,LT,Long Term P/L
+Codes,Data,Lo,Direct Loan
+Codes,Data,M,Entered manually by IB
+Codes,Data,MEx,Manual exercise for dividend-related recommendation.
+Codes,Data,ML,Maximize Losses tax basis election
+Codes,Data,MLG,Maximize Long Term Gain tax basis election
+Codes,Data,MLL,Maximize Long Term Loss tax basis election
+Codes,Data,MSG,Maximize Short Term Gain tax basis election
+Codes,Data,MSL,Maximize Short Term Loss tax basis election
+Codes,Data,O,Opening Trade
+Codes,Data,P,Partial Execution
+Codes,Data,PI,Price Improvement
+Codes,Data,Po,Interest or Dividend Accrual Posting
+Codes,Data,Pr,Part or all of this transaction was executed by the Exchange as a Crossing by IB against an IB affiliate and is therefore classified as a Principal and not an agency trade
+Codes,Data,R,Dividend Reinvestment
+Codes,Data,RED,Redemption to Investor
+Codes,Data,RI,Recurring Investment
+Codes,Data,RP,"IB acted as agent for the fractional share portion of this trade, which was executed by an IB affiliate as riskless principal."
+Codes,Data,RPA,IB acted as agent for both the fractional share portion and the whole share portion of this trade; the fractional share portion was executed by an IB Affiliate as riskless principal.
+Codes,Data,Rb,Rebill
+Codes,Data,Re,Interest or Dividend Accrual Reversal
+Codes,Data,Ri,Reimbursement
+Codes,Data,SI,This order was solicited by Interactive Brokers
+Codes,Data,SL,Specific Lot tax basis election
+Codes,Data,SO,This order was marked as solicited by your Introducing Broker
+Codes,Data,SS,Customer designated this trade for shortened settlement and so is subject to execution at prices above the prevailing market
+Codes,Data,ST,Short Term P/L
+Codes,Data,T,Transfer
+Codes,Data,Un,Unvested shares from stock grant
+Notes/Legal Notes,Header,Type,Note
+Notes/Legal Notes,Data,Notes,"Most stock exchange transactions settle on the trade date plus two business days. Options, futures and US open-end mutual fund transactions settle on trade date plus one business day. (Some exchanges and other transaction types may have longer or shorter settlement periods.) Ending settled cash reflects the cash that has actually settled.  "
+Notes/Legal Notes,Data,Notes,Initial and maintenance margin requirements are available within the Account Window of the Trader Workstation.
+REMOVED LINE
+Notes/Legal Notes,Data,Notes,"IB acts as agent in executing the fractional share portion of your order. In certain circumstances, IB routes the fractional portion of your order to an affiliate, which may execute the fractional portion of the order as principal. In such circumstances, this is indicated by the codes associated with the trade. If an IB affiliate acts as principal in executing any fractional share portion of your order, the order will be executed at the price displayed for the opposite side of the NBBO from your order (the offer if you are buying and the bid if you are selling) at the time of execution. If an IB affiliate is acting as riskless principal in connection with filling the fractional share portion of your order, the affiliate will execute the fractional share portion of your order at the price it receives for the execution of the whole share."
+Notes/Legal Notes,Data,Notes,"In case of partial executions, commissions are charged on the total quantity executed on the original order. The commission is displayed on the first partial execution only."
+Notes/Legal Notes,Data,Notes,Each closed lot indicated above with a reference to note (6) was chosen by the end of the trading day to be sold versus the specific opening purchase identified in that row.
+Notes/Legal Notes,Data,Notes,Trade execution times are displayed in Eastern Time.
+Notes/Legal Notes,Data,Notes,Applicable commodity Regulatory Fees for your transactions are available on the IB website at www.interactivebrokers.com/en/accounts/fees/exchangeAndRegulatoryFees.php.
+Notes/Legal Notes,Data,Notes,"Borrow Fee Rate represents the cost to borrow stock expressed in percent per annum. It is applied to the collateral value on the stock borrow contract and is separate from any interest earned on credit cash balances. Similarly, Loan Fee Rate represents the benefit to lend stock. A positive rate indicates a cost to the borrower/benefit to the lender and a negative rate indicates a benefit to the borrower/cost to the lender. In general, the fee rates for hard-to-borrow stocks are higher than for normal availability stocks."
+Notes/Legal Notes,Data,Notes,Interest Rate on Customer Collateral represents the interest paid on the collateral posted to the customer's account and received from lending stock.  A positive rate indicates a benefit to the lender.
+Notes/Legal Notes,Data,Notes,"The closing prices on this Activity Statement are indicative and may come from third-party sources. Interactive Brokers does not warrant the accuracy of the prices provided by third-party sources. Due to time zone differences, certain non-US mutual funds may deliver closing prices after the Activity Statement has been produced and the closing prices for such funds will reflect the previous day's price."
+Notes/Legal Notes,Data,Notes,All Market Data and Research services are provided through Global Financial Information Services (GmbH).
+Notes/Legal Notes,Data,Notes,"Market data is provided by Global Financial Information Services (GmbH). Your local broker collects amounts owed for fees and tax for such data on behalf of Global Financial Information Services (GmbH). Note, you are responsible for any applicable taxes relating to the provision of these services."
+Notes/Legal Notes,Data,Notes,"Please note that the ""cost"" of a security position refers to its ""book cost"" which means, in the case of a long security position, the total amount paid for the security, including any transaction charges related to the purchase and in the case of a short security position, the total amount received for the security, net of any transaction charges related to the sale, adjusted for distributions (other than dividends for short security position), returns of capital and corporate actions. In the case of securities transferred in, ""cost"" may in some instances refer to the market value of the security position as at the date of transfer and in such cases, market value information will be used to estimate part or all of the book cost of the relevant security position unless IBC reasonably believes it cannot determine the book cost of such security position.  Accordingly, the stated cost may not be appropriate for account performance or tax reporting purposes."
+Notes/Legal Notes,Data,Fixed Income Notes,"Call features for bonds or preferred stocks may affect the yield. For zero coupon, compound interest and multiplier securities, there are no periodic payments and securities may be callable below maturity value without notice to holder unless registered. For asset-backed securities, the actual yield may vary depending on the speed at which the underlying note is pre-paid. For additional information regarding bond yield, please contact the IB Help Desk at: help@interactivebrokers.com. If this debt security is unrated by a nationally recognized statistical rating organization, it may pose a high risk of default. You should consult a financial advisor to determine whether unrated bonds are appropriate for your portfolio in light of your goals and your financial circumstances. Fees charged by bond trading centers are included in the cost of bond transactions."
+Notes/Legal Notes,Data,Legal Notes,"THIS STATEMENT IS BEING ISSUED TO YOU BY INTERACTIVE BROKERS CANADA INC. WHO HAS AGREED TO ACT AS THE CUSTODIAN FOR THE ASSETS DISCLOSED ON THIS STATEMENT. THE ASSETS THAT MAY BE ELIGIBLE FOR THE CANADIAN INVESTOR PROTECTION FUND (CIPF) COVERAGE, WITHIN SPECIFIED LIMITS, ARE LIMITED TO THOSE DISCLOSED IN THIS ACCOUNT STATEMENT.Please promptly report any inaccuracy or discrepancy in this statement, or in your account. Contact the IB Customer Service Department in writing using the form available on the IB website. You may also contact IB by phone, but if you report an error by phone, you should re-confirm such oral communication in writing in order to protect your rights, including rights under the Canadian Investor Protection Fund (CIPF).Interactive Brokers Canada Inc., www.interactivebrokers.ca, 877-745-4222 (Can.)"
+Notes/Legal Notes,Data,Legal Notes,"Interactive Brokers Group, Inc. (IBKR-NASDAQ) is a related or connected issuer of Interactive Brokers Canada Inc."
+Notes/Legal Notes,Data,Legal Notes,"Trades marked with the exchange indicator of TMBR were effected by Interactive Brokers Canada Inc.(""IB"" or ""IB Canada"") as agent through a market making affiliate, which acted as principal in the transaction and may have a long or short position in the security and may have profited or lost in connection with the transaction."
+Notes/Legal Notes,Data,Legal Notes,"All Volume Weighted Average Price (VWAP) trades are effected pursuant to an average price formula based on a reference price provided by a third-party data provider. Additional information about reference prices are available upon request.  IB, as agent, effects VWAP transactions through a market making affiliate, which acts as principal in such transactions and may have a long or short position in the security and may have profited or lost in connection with the transaction."
+Notes/Legal Notes,Data,Legal Notes,"IB accepts liquidity rebates or other order flow payments from Alternative Trading Systems, market makers and exchanges for certain orders in stocks. IB receives payment for some option orders pursuant to exchange-mandated marketing fee programs or other arrangements. The source and nature of any compensation received by IB in connection with any transaction is available upon written request of the customer. For further information, check the IB website and the Order Routing and Payment for Order Flow Disclosure provided when you opened your account and annually or email help@interactivebrokers.com."
+Notes/Legal Notes,Data,Legal Notes,"For security futures trades, if not already indicated on this statement, information about the time of any transaction, the identity of the counterparty to the transaction, and whether IB is acting as agent or principal, as agent for the counterparty, as agent for both parties to the contract, or as principal, and if acting as principal, whether the transaction was a block transaction or an exchange for physicals transaction, will be available upon written request of the customer."
+Notes/Legal Notes,Data,Legal Notes,"Interactive Brokers Canada Inc. offers ""Order-Execution Only Accounts."" This is an order execution only account. In addition, Customer is requested to promptly advise IB Canada of any material change in Customer's investment objectives or financial situation."
+Notes/Legal Notes,Data,Legal Notes,"Any free credit balances represent funds payable on demand which, although properly recorded in our books, are not segregated and may be used in the conduct of our business."
+Notes/Legal Notes,Data,Legal Notes,The audited financial summary statements of Interactive Brokers Canada Inc. and a list of the Partners/Directors/Officers (PDOs) of Interactive Brokers Canada Inc. are available upon request.
+Notes/Legal Notes,Data,Legal Notes,We are required to disclose to the Canada Revenue Agency all transactions involving the disposition  of securities.  Therefore we recommend that you keep your statements for tax purposes.
+Notes/Legal Notes,Data,Legal Notes,Customers' accounts are protected by the Canadian Investor Protection Fund within specified limits.  A brochure describing the nature and limits of coverage is available upon request.
+Notes/Legal Notes,Data,Legal Notes,"In accordance with IIROC Rule 3217, Interactive Brokers Canada Inc. is required to provide you with the following Leverage Risk Disclosure Statement:  Using borrowed money to finance the purchase of securities involves greater risk than using cash resources only.  If you borrow money to purchase securities, your responsibility to repay the loan and pay interest as required by its terms remains the same even if the value of the securities purchased declines."
+Notes/Legal Notes,Data,Legal Notes,"**If this portfolio statement differs from your records, please report the differences directly to our external auditors. If no differences are reported, they will assume this portfolio statement is correct.** Deloitte s.e.n.c.r.l., Assurance & Advisory Services, audit-IBC@deloitte.ca, Telephone: 514-390-1712, Fax: 514-390-4113"
+Notes/Legal Notes,Data,Legal Notes,"Interactive Brokers LLC provides execution, clearing and custody services to Interactive Brokers Canada Inc."
+Notes/Legal Notes,Data,Legal Notes,"Interactive Brokers Canada Inc. is a member of the Investment Industry Regulatory Organization of Canada (IIROC) and Member - Canadian Investor Protection Fund. Trading of securities and derivatives may involve a high degree of risk and investors should be prepared for the risk of losing their entire investment and losing further amounts. Interactive Brokers Canada Inc. is an execution-only dealer and does not provide investment advice or recommendations regarding the purchase or sale of any securities or derivatives. Our registered office is located at 1800 McGill College Avenue, Suite 2106, Montreal, Quebec, H3A 3J6, Canada."
+Notes/Legal Notes,Data,Legal Notes,"Interactive Brokers Canada Inc. Self-Directed Plan assets are held in trust by the trustee, The Royal Trust Company."
+Notes/Legal Notes,Data,Legal Notes,Cash balances held in registered accounts are held in trust by The Royal Trust Company.
+Notes/Legal Notes,Data,Legal Notes,There are tax consequences pursuant to the Income Tax Act (Canada) on the acquisition or holding by the registered account of non-qualified investments. Please consult a tax adviser and the Canada Revenue Agency for more details.
