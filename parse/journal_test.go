@@ -315,7 +315,7 @@ func TestReadTransactions(t *testing.T) {
 		},
 		"expired OTM put": {
 			expectedTransactions: expectedTransactions9,
-			filePath:             "../testdata/input/9-sell-put.csv",
+			filePath:             "../testdata/input/9-lapsed-put.csv",
 		},
 	}
 
