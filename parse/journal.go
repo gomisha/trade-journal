@@ -217,8 +217,10 @@ func (j *Journal) ReadTransactions(csvPath string) []Transaction {
 					panic(err)
 				}
 
-				// option assignments (e.g. short calls called away) will have a price of 0
-				if price == 0 {
+				// short call option assignments (i.e. short calls called away) will have a price of 0
+				// check last character of transaction.optionContract to see if it's a call
+				if price == 0 && transaction.optionContract[len(transaction.optionContract)-1:] == "C" {
+					//if price == 0 && transaction.optionContract{
 					// look up transactions by ticker and ensure there's a single stock trade transaction
 					singleTransaction := j.findSingleTransaction(transaction.ticker, "Trade")
 					if singleTransaction == nil {
@@ -245,6 +247,13 @@ func (j *Journal) ReadTransactions(csvPath string) []Transaction {
 
 					// don't add this transaction because assignments will be condensed to a single transaction which already exists
 					continue
+				} else if price == 0 && transaction.optionContract[len(transaction.optionContract)-1:] == "P" {
+					// long put lapse (i.e. long puts expiring OTM) will have a price of 0
+					// check last character of transaction.optionContract to see if it's a put
+
+					// skip this transaction since it's a long put lapse
+					continue
+
 				}
 
 				// hit GTC target or closed manually - only for calls
