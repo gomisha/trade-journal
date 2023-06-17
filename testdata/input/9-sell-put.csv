@@ -643,52 +643,10 @@ Complex Positions Summary,Data,USD,WOLVERINE WORLD WIDE INC,WWW,400,1,14.14,5656
 Complex Positions Summary,Data,USD,WWW 21JUL23 12.5 C,WWW   230721C00012500,-4,100,1.9007,-760.28,35.300156
 Complex Positions Summary,Data,Total,,,,,,104527.68,-214.398728
 Trades,Header,DataDiscriminator,Asset Category,Currency,Symbol,Date/Time,Quantity,T. Price,C. Price,Proceeds,Comm/Fee,Basis,Realized P/L,MTM P/L,Code
-Trades,Data,Order,Stocks,USD,C,"2023-06-16, 16:20:00",-100,40,48.19,4000,-0.0465,-4597.370257,92.526225,-819,A;C;CP
-Trades,SubTotal,,Stocks,USD,C,,-100,,,4000,-0.0465,-4597.370257,92.526225,-819,
-Trades,Data,Order,Stocks,USD,EQT,"2023-06-16, 16:20:00",-100,27,39.64,2700,-0.0361,-3305.370257,66.536769,-1264,A;C;CP
-Trades,SubTotal,,Stocks,USD,EQT,,-100,,,2700,-0.0361,-3305.370257,66.536769,-1264,
-Trades,Data,Order,Stocks,USD,JWN,"2023-06-16, 16:20:00",-200,14.5,19.06,2900,-0.0522,-3234.840514,91.698382,-912,A;C;CP
-Trades,SubTotal,,Stocks,USD,JWN,,-200,,,2900,-0.0522,-3234.840514,91.698382,-912,
-Trades,Data,Order,Stocks,USD,NXPI,"2023-06-16, 16:20:00",-100,140,197.85,14000,-0.1265,-17502.370257,326.821113,-5785,A;C
-Trades,SubTotal,,Stocks,USD,NXPI,,-100,,,14000,-0.1265,-17502.370257,326.821113,-5785,
-Trades,Data,Order,Stocks,USD,TSM,"2023-06-16, 13:27:38",-100,105.06,104.57,10506,-0.46880525,-9866.370257,639.160938,49,C;CP
-Trades,SubTotal,,Stocks,USD,TSM,,-100,,,10506,-0.46880525,-9866.370257,639.160938,49,
-Trades,Data,Order,Stocks,USD,WWW,"2023-06-16, 14:26:03",400,14.26,14.14,-5704,-1.881029,5705.881029,0,-48,CP;O;P
-Trades,SubTotal,,Stocks,USD,WWW,,400,,,-5704,-1.881029,5705.881029,0,-48,
-Trades,Total,,Stocks,USD,,,,,,28402,-2.61113425,-32800.440513,1216.743427,-8779, 
+Trades,Total,,Stocks,USD,,,,,,28402,-2.61113425,-32800.440513,1216.743427,-8779,
 Trades,Header,DataDiscriminator,Asset Category,Currency,Symbol,Date/Time,Quantity,T. Price,C. Price,Proceeds,Comm/Fee,Basis,Realized P/L,MTM P/L,Code
-Trades,Data,Order,Equity and Index Options,USD,APA 16JUN23 35 P,"2023-06-16, 11:32:10",-1,0.75,0.62,75,-0.70209,-345.69905,-271.40114,13,C
-Trades,SubTotal,,Equity and Index Options,USD,APA 16JUN23 35 P,,-1,,,75,-0.70209,-345.69905,-271.40114,13,
-Trades,Data,Order,Equity and Index Options,USD,APA 28JUL23 35 P,"2023-06-16, 11:32:10",1,2.32,2.2159,-232,-0.69905,232.69905,0,-10.41,O
-Trades,SubTotal,,Equity and Index Options,USD,APA 28JUL23 35 P,,1,,,-232,-0.69905,232.69905,0,-10.41,
-Trades,Data,Order,Equity and Index Options,USD,C 16JUN23 40 C,"2023-06-16, 16:20:00",1,0,8.19,0,0,689.942982,0,819,A;C;CP
-Trades,SubTotal,,Equity and Index Options,USD,C 16JUN23 40 C,,1,,,0,0,689.942982,0,819,
 Trades,Data,Order,Equity and Index Options,USD,CVE 16JUN23 15 P,"2023-06-16, 16:20:00",-1,0,0,0,0,-137.24905,-137.24905,0,C;Ep
 Trades,SubTotal,,Equity and Index Options,USD,CVE 16JUN23 15 P,,-1,,,0,0,-137.24905,-137.24905,0,
-Trades,Data,Order,Equity and Index Options,USD,DKS 16JUN23 130 P,"2023-06-16, 16:20:00",-1,0,0,0,0,-850.29905,-850.29905,0,C;Ep
-Trades,SubTotal,,Equity and Index Options,USD,DKS 16JUN23 130 P,,-1,,,0,0,-850.29905,-850.29905,0,
-Trades,Data,Order,Equity and Index Options,USD,EQT 16JUN23 27 C,"2023-06-16, 16:20:00",1,0,12.64,0,0,671.943126,0,1264,A;C;CP
-Trades,SubTotal,,Equity and Index Options,USD,EQT 16JUN23 27 C,,1,,,0,0,671.943126,0,1264,
-Trades,Data,Order,Equity and Index Options,USD,HP 16JUN23 35 P,"2023-06-16, 11:44:37",-2,0.58,0.39,116,-0.253908,-601.9981,-486.252008,38,C;P
-Trades,SubTotal,,Equity and Index Options,USD,HP 16JUN23 35 P,,-2,,,116,-0.253908,-601.9981,-486.252008,38,
-Trades,Data,Order,Equity and Index Options,USD,HP 21JUL23 35 P,"2023-06-16, 11:44:37",2,1.96,1.8237,-392,-0.2481,392.2481,0,-27.26,O;P
-Trades,SubTotal,,Equity and Index Options,USD,HP 21JUL23 35 P,,2,,,-392,-0.2481,392.2481,0,-27.26,
-Trades,Data,Order,Equity and Index Options,USD,HPQ 16JUN23 30 P,"2023-06-16, 16:20:00",-2,0,0,0,0,-218.6581,-218.6581,0,C;Ep
-Trades,SubTotal,,Equity and Index Options,USD,HPQ 16JUN23 30 P,,-2,,,0,0,-218.6581,-218.6581,0,
-Trades,Data,Order,Equity and Index Options,USD,JWN 16JUN23 14.5 C,"2023-06-16, 16:20:00",2,0,4.56,0,0,426.591096,0,912,A;C;CP
-Trades,SubTotal,,Equity and Index Options,USD,JWN 16JUN23 14.5 C,,2,,,0,0,426.591096,0,912,
-Trades,Data,Order,Equity and Index Options,USD,NXPI 16JUN23 140 C,"2023-06-16, 16:20:00",1,0,57.85,0,0,3829.31787,0,5785,A;C
-Trades,SubTotal,,Equity and Index Options,USD,NXPI 16JUN23 140 C,,1,,,0,0,3829.31787,0,5785,
-Trades,Data,Order,Equity and Index Options,USD,PARA 16JUN23 17.5 P,"2023-06-16, 11:27:08",-2,1.335,1.22,267,-0.665116,-430.6581,-164.323216,23,C;P
-Trades,SubTotal,,Equity and Index Options,USD,PARA 16JUN23 17.5 P,,-2,,,267,-0.665116,-430.6581,-164.323216,23,
-Trades,Data,Order,Equity and Index Options,USD,PARA 28JUL23 17.5 P,"2023-06-16, 11:27:08",2,1.8,1.685,-360,-0.6581,360.6581,0,-23,O;P
-Trades,SubTotal,,Equity and Index Options,USD,PARA 28JUL23 17.5 P,,2,,,-360,-0.6581,360.6581,0,-23,
-Trades,Data,Order,Equity and Index Options,USD,STLD 16JUN23 100 P,"2023-06-16, 16:20:00",-1,0,0,0,0,-591.64905,-591.64905,0,C;Ep
-Trades,SubTotal,,Equity and Index Options,USD,STLD 16JUN23 100 P,,-1,,,0,0,-591.64905,-591.64905,0,
-Trades,Data,Order,Equity and Index Options,USD,TSM 07JUL23 90 C,"2023-06-16, 13:27:38",1,15.49,15.0584,-1549,-1.04905,983.94063,-566.10842,-43.16,C;CP
-Trades,SubTotal,,Equity and Index Options,USD,TSM 07JUL23 90 C,,1,,,-1549,-1.04905,983.94063,-566.10842,-43.16,
-Trades,Data,Order,Equity and Index Options,USD,WWW 21JUL23 12.5 C,"2023-06-16, 14:26:03",-4,1.995,1.9007,798,-2.419844,-795.580156,0,37.72,CP;O;P
-Trades,SubTotal,,Equity and Index Options,USD,WWW 21JUL23 12.5 C,,-4,,,798,-2.419844,-795.580156,0,37.72,
 Trades,Total,,Equity and Index Options,USD,,,,,,-1277,-6.695258,3615.550298,-3285.940034,8787.89,
 Dividends,Header,Currency,Date,Description,Amount
 Dividends,Data,USD,2023-06-16,EBAY(US2786421030) Cash Dividend USD 0.25 per Share (Ordinary Dividend),25
