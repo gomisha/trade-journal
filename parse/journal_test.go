@@ -276,6 +276,10 @@ func TestReadTransactions(t *testing.T) {
 		},
 	}
 
+	expectedTransactions9 := []Transaction{
+		// should be an empty array because the put option expired out of the money
+	}
+
 	testDataMap := map[string]TestData{
 		"stock, short call, long put": {
 			expectedTransactions: expectedTransactions1,
@@ -308,6 +312,10 @@ func TestReadTransactions(t *testing.T) {
 		"dividend - withholding tax + other transactions same ticker": {
 			expectedTransactions: expectedTransactions8,
 			filePath:             "../testdata/input/8-dividend-withholding-tax-other-tx.csv",
+		},
+		"expired OTM put": {
+			expectedTransactions: expectedTransactions9,
+			filePath:             "../testdata/input/9-lapsed-put.csv",
 		},
 	}
 
