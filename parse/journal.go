@@ -217,16 +217,15 @@ func (j *Journal) ReadTransactions(csvPath string) []Transaction {
 					panic(err)
 				}
 
+				// skip lapsed call or put (expired OTM) which won't have a matching stock trade transaction
+				singleTransaction := j.findSingleTransaction(transaction.ticker, "Trade")
+				if price == 0 && singleTransaction == nil {
+					continue
+				}
+
 				// short call option assignments (i.e. short calls called away) will have a price of 0
 				// check last character of transaction.optionContract to see if it's a call
 				if price == 0 && transaction.optionContract[len(transaction.optionContract)-1:] == "C" {
-					// look up transactions by ticker and ensure there's a single stock trade transaction
-					singleTransaction := j.findSingleTransaction(transaction.ticker, "Trade")
-					if singleTransaction == nil {
-						// if there's no single stock trade transaction, then this is a lapsed call (expired OTM)
-						continue
-					}
-
 					// update that stock trade transaction with option contract name
 					singleTransaction.actionModified = "Trade - Option - Assignment"
 					singleTransaction.costBasisBuyOrOption = ""
@@ -247,13 +246,6 @@ func (j *Journal) ReadTransactions(csvPath string) []Transaction {
 
 					// don't add this transaction because assignments will be condensed to a single transaction which already exists
 					continue
-				} else if price == 0 && transaction.optionContract[len(transaction.optionContract)-1:] == "P" {
-					// long put lapse (i.e. long puts expiring OTM) will have a price of 0
-					// check last character of transaction.optionContract to see if it's a put
-
-					// skip this transaction since it's a long put lapse
-					continue
-
 				}
 
 				// hit GTC target or closed manually - only for calls
