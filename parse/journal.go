@@ -266,7 +266,7 @@ func (j *Journal) ReadTransactions(csvPath string) []Transaction {
 
 					j.updateSingleTransaction(transaction.ticker, *singleTransaction)
 
-					// don't add this transaction because exercise will be condensed to a single transaction which already exists
+					// don't add this transaction because long put exercise / short call assignment will be condensed to a single transaction which already exists
 					continue
 				}
 
