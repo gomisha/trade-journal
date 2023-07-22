@@ -220,11 +220,11 @@ func (j *Journal) ReadTransactions(csvPath string) []Transaction {
 				// short call option assignments (i.e. short calls called away) will have a price of 0
 				// check last character of transaction.optionContract to see if it's a call
 				if price == 0 && transaction.optionContract[len(transaction.optionContract)-1:] == "C" {
-					//if price == 0 && transaction.optionContract{
 					// look up transactions by ticker and ensure there's a single stock trade transaction
 					singleTransaction := j.findSingleTransaction(transaction.ticker, "Trade")
 					if singleTransaction == nil {
-						panic(fmt.Sprintf("expected single Trade transaction for ticker %s", transaction.ticker))
+						// if there's no single stock trade transaction, then this is a lapsed call (expired OTM)
+						continue
 					}
 
 					// update that stock trade transaction with option contract name

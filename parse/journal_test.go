@@ -317,6 +317,10 @@ func TestReadTransactions(t *testing.T) {
 			expectedTransactions: expectedTransactions9,
 			filePath:             "../testdata/input/9-lapsed-put.csv",
 		},
+		"expired OTM call, OTM puts": {
+			expectedTransactions: expectedTransactions9,
+			filePath:             "../testdata/input/10-lapsed-call-puts.csv",
+		},
 	}
 
 	for k, testData := range testDataMap {
