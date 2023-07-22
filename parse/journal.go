@@ -254,6 +254,7 @@ func (j *Journal) ReadTransactions(csvPath string) []Transaction {
 					// short call option assignments (i.e. short calls called away) will have a price of 0
 					case "C":
 						singleTransaction.actionModified = "Trade - Option - Assignment"
+						singleTransaction.notes = "called away for profit"
 
 					// long put option exercises will have a price of 0
 					case "P":
@@ -289,7 +290,7 @@ func (j *Journal) ReadTransactions(csvPath string) []Transaction {
 						}
 
 						costBasisPerShare := costBasisTotal / shares
-						//singleTransaction.costBasisShare = fmt.Sprint(costBasisPerShare)
+						// always round to 8 decimal places - Go sometimes is slightly off in decimal calculations
 						singleTransaction.costBasisShare = fmt.Sprintf("%.8f", costBasisPerShare)
 						singleTransaction.notes = "hit GTC target"
 						transaction.notes = "hit GTC target"

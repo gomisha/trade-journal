@@ -135,6 +135,7 @@ func TestReadTransactions(t *testing.T) {
 			costBasisTotal: "17267.370257", // import IBKR value and multiply by -1
 			realizedPL:     "3873.744617",  // imports IBKR value
 			commission:     "-0.1385",
+			notes:          "called away for profit",
 		},
 	}
 
