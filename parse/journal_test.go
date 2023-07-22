@@ -149,7 +149,7 @@ func TestReadTransactions(t *testing.T) {
 			shares:               "-100",
 			price:                "41.44",
 			proceeds:             "4144.00",
-			costBasisShare:       "-38.17",
+			costBasisShare:       "-38.17000000",
 			costBasisBuyOrOption: "",
 			costBasisTotal:       "3817",       // imports IBKR value and multiply by -1
 			realizedPL:           "326.482091", // imports IBKR value
@@ -276,6 +276,45 @@ func TestReadTransactions(t *testing.T) {
 		},
 	}
 
+	expectedTransactions9 := []Transaction{
+		{
+			date:                 "2023-07-21",
+			account:              "RRSP",
+			action:               "Trade - Option - Exercise",
+			actionModified:       "Trade - Option - Exercise",
+			ticker:               "STNG",
+			optionContract:       "21JUL23 50 P",
+			buySell:              "Sell",
+			shares:               "-100",
+			price:                "50",
+			proceeds:             "5000.00",
+			costBasisShare:       "-62.61370257",
+			costBasisBuyOrOption: "",
+			costBasisTotal:       "6261.370257",  // imports IBKR value and multiply by -1
+			realizedPL:           "-1791.673807", // imports IBKR value
+			commission:           "-0.0545",
+			notes:                "exercised long put",
+		},
+		{
+			date:                 "2023-07-21",
+			account:              "RRSP",
+			action:               "Trade - Option - Exercise",
+			actionModified:       "Trade - Option - Exercise",
+			ticker:               "TGT",
+			optionContract:       "21JUL23 140 P",
+			buySell:              "Sell",
+			shares:               "-100",
+			price:                "140",
+			proceeds:             "14000.00",
+			costBasisShare:       "-163.60370257",
+			costBasisBuyOrOption: "",
+			costBasisTotal:       "16360.370257", // imports IBKR value and multiply by -1
+			realizedPL:           "-3011.535807", // imports IBKR value
+			commission:           "-0.1265",
+			notes:                "exercised long put",
+		},
+	}
+
 	expectedEmptyTransactions := []Transaction{
 		// should be an empty array because the put option expired out of the money
 	}
@@ -320,6 +359,10 @@ func TestReadTransactions(t *testing.T) {
 		"expired OTM call, OTM puts": {
 			expectedTransactions: expectedEmptyTransactions,
 			filePath:             "../testdata/input/10-lapsed-call-puts.csv",
+		},
+		"exercise put, lapsed call for same ticker": {
+			expectedTransactions: expectedTransactions9,
+			filePath:             "../testdata/input/11-exercise-put.csv",
 		},
 	}
 

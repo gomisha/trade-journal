@@ -223,6 +223,18 @@ func (j *Journal) ReadTransactions(csvPath string) []Transaction {
 					continue
 				}
 
+				// extract the strike price from the option contract name
+				// e.g. 21JUL23 50 C will extract 50
+				// e.g. 21JUL23 140 P will extract 140
+				strike := strings.Split(transaction.optionContract, " ")[1]
+
+				// check that the option strike price matches the stock trade transaction
+				// e.g. 21JUL23 50 C will match a stock sell price of 50
+				// e.g. 21JUL23 140 P will match a stock sell price of 140
+				if price == 0 && singleTransaction.price != strike {
+					continue
+				}
+
 				// short call option assignments (i.e. short calls called away) will have a price of 0
 				// check last character of transaction.optionContract to see if it's a call
 				if price == 0 && transaction.optionContract[len(transaction.optionContract)-1:] == "C" {
@@ -246,6 +258,30 @@ func (j *Journal) ReadTransactions(csvPath string) []Transaction {
 
 					// don't add this transaction because assignments will be condensed to a single transaction which already exists
 					continue
+				} else if price == 0 && transaction.optionContract[len(transaction.optionContract)-1:] == "P" {
+					// long put option exercises will have a price of 0
+					// update that stock trade transaction with option contract name
+					singleTransaction.actionModified = "Trade - Option - Exercise"
+					singleTransaction.costBasisBuyOrOption = ""
+					singleTransaction.optionContract = transaction.optionContract
+					costBasisTotal, err := strconv.ParseFloat(singleTransaction.costBasisTotal, 64)
+					if err != nil {
+						panic(err)
+					}
+					shares, err := strconv.ParseFloat(singleTransaction.shares, 64)
+					if err != nil {
+						panic(err)
+					}
+
+					costBasisPerShare := costBasisTotal / shares
+					//singleTransaction.costBasisShare = fmt.Sprint(costBasisPerShare)
+					singleTransaction.costBasisShare = fmt.Sprintf("%.8f", costBasisPerShare)
+					singleTransaction.notes = "exercised long put"
+
+					j.updateSingleTransaction(transaction.ticker, *singleTransaction)
+
+					// don't add this transaction because exercise will be condensed to a single transaction which already exists
+					continue
 				}
 
 				// hit GTC target or closed manually - only for calls
@@ -268,7 +304,8 @@ func (j *Journal) ReadTransactions(csvPath string) []Transaction {
 						}
 
 						costBasisPerShare := costBasisTotal / shares
-						singleTransaction.costBasisShare = fmt.Sprint(costBasisPerShare)
+						//singleTransaction.costBasisShare = fmt.Sprint(costBasisPerShare)
+						singleTransaction.costBasisShare = fmt.Sprintf("%.8f", costBasisPerShare)
 						singleTransaction.notes = "hit GTC target"
 						transaction.notes = "hit GTC target"
 
