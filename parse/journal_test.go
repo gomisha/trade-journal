@@ -276,7 +276,7 @@ func TestReadTransactions(t *testing.T) {
 		},
 	}
 
-	expectedTransactions9 := []Transaction{
+	expectedEmptyTransactions := []Transaction{
 		// should be an empty array because the put option expired out of the money
 	}
 
@@ -314,11 +314,11 @@ func TestReadTransactions(t *testing.T) {
 			filePath:             "../testdata/input/8-dividend-withholding-tax-other-tx.csv",
 		},
 		"expired OTM put": {
-			expectedTransactions: expectedTransactions9,
+			expectedTransactions: expectedEmptyTransactions,
 			filePath:             "../testdata/input/9-lapsed-put.csv",
 		},
 		"expired OTM call, OTM puts": {
-			expectedTransactions: expectedTransactions9,
+			expectedTransactions: expectedEmptyTransactions,
 			filePath:             "../testdata/input/10-lapsed-call-puts.csv",
 		},
 	}
