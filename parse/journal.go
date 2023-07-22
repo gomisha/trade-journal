@@ -223,12 +223,19 @@ func (j *Journal) ReadTransactions(csvPath string) []Transaction {
 					continue
 				}
 
-				// short call option assignments (i.e. short calls called away) will have a price of 0
-				// check last character of transaction.optionContract to see if it's a call
-				if price == 0 && transaction.optionContract[len(transaction.optionContract)-1:] == "C" {
-					// update that stock trade transaction with option contract name
-					singleTransaction.actionModified = "Trade - Option - Assignment"
+				// extract the strike price from the option contract name
+				// e.g. 21JUL23 50 C will extract 50
+				// e.g. 21JUL23 140 P will extract 140
+				strike := strings.Split(transaction.optionContract, " ")[1]
+
+				// check that the option strike price matches the stock trade transaction
+				// e.g. 21JUL23 50 C will match a stock sell price of 50
+				// e.g. 21JUL23 140 P will match a stock sell price of 140
+				if price == 0 && singleTransaction.price != strike {
+					continue
+				} else if price == 0 && singleTransaction.price == strike {
 					singleTransaction.costBasisBuyOrOption = ""
+					// update stock trade transaction with option contract name
 					singleTransaction.optionContract = transaction.optionContract
 					costBasisTotal, err := strconv.ParseFloat(singleTransaction.costBasisTotal, 64)
 					if err != nil {
@@ -238,13 +245,28 @@ func (j *Journal) ReadTransactions(csvPath string) []Transaction {
 					if err != nil {
 						panic(err)
 					}
-
 					costBasisPerShare := costBasisTotal / shares
-					singleTransaction.costBasisShare = fmt.Sprint(costBasisPerShare)
+					// always round to 8 decimal places - Go sometimes is slightly off in decimal calculations
+					singleTransaction.costBasisShare = fmt.Sprintf("%.8f", costBasisPerShare)
+
+					// check if contract is a call or put (e.g. PR 20JAN23 9 C would extract C)
+					switch transaction.optionContract[len(transaction.optionContract)-1:] {
+					// short call option assignments (i.e. short calls called away) will have a price of 0
+					case "C":
+						singleTransaction.actionModified = "Trade - Option - Assignment"
+						singleTransaction.notes = "called away for profit"
+
+					// long put option exercises will have a price of 0
+					case "P":
+						singleTransaction.actionModified = "Trade - Option - Exercise"
+						singleTransaction.notes = "exercised long put"
+					default:
+						panic("unknown option contract type")
+					}
 
 					j.updateSingleTransaction(transaction.ticker, *singleTransaction)
 
-					// don't add this transaction because assignments will be condensed to a single transaction which already exists
+					// don't add this transaction because long put exercise / short call assignment will be condensed to a single transaction which already exists
 					continue
 				}
 
@@ -268,7 +290,8 @@ func (j *Journal) ReadTransactions(csvPath string) []Transaction {
 						}
 
 						costBasisPerShare := costBasisTotal / shares
-						singleTransaction.costBasisShare = fmt.Sprint(costBasisPerShare)
+						// always round to 8 decimal places - Go sometimes is slightly off in decimal calculations
+						singleTransaction.costBasisShare = fmt.Sprintf("%.8f", costBasisPerShare)
 						singleTransaction.notes = "hit GTC target"
 						transaction.notes = "hit GTC target"
 
